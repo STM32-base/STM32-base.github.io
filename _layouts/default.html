@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        {% seo %}
+
+        <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+        <script type="text/javascript">
+            var _paq = _paq || [];
+            _paq.push(['trackPageView']);
+            _paq.push(['enableLinkTracking']);
+            (function() {
+            var u="//matomo.p0mp.com/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '3']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+            })();
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+            {% if site.logo %}
+                <div class="logo">
+                    <a href="{{ "/" | absolute_url }}">
+                        <img src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }}" />
+                    </a>
+                </div>
+            {% endif %}
+                <p>{{ site.description | default: site.github.project_tagline }}</p>
+                <menu>
+                {% for item in site.data.menus.menu %}
+                    <li>
+                    {{ item.title }}
+                        <menu>
+                        {% for entry in item.subitems %}
+                            <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                        {% endfor %}
+                        </menu>
+                    </li>
+                {% endfor %}
+                </menu>
+            </header>
+            <section>
+            {{ content }}
+            </section>
+            <footer>
+                <p><small>Hosted on GitHub Pages</small></p>
+            </footer>
+        </div>
+        <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    </body>
+</html>

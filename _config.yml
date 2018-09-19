@@ -1,10 +1,8 @@
-theme: jekyll-theme-minimal
-
 plugins:
  - jekyll-feed
  - jekyll-sitemap
 
 title: "STM32-base project"
-logo: "/assets/img/logos/STM32-base_logo_small_transparent.png"
-description: "The project pages for the STM32-base project."
+logo: "/assets/img/logos/STM32-base_logo_full_transparent.png"
+description: "These Github pages contain additional information on the STM32-base project and related topics."
 author: "Thomas Gravekamp"

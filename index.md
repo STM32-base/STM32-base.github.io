@@ -2,8 +2,6 @@
 title: "Home"
 ---
 
-![STM32-base Logo]({{ site.url }}/assets/img/logos/STM32-base_logo_full_transparent.png)
-
 # Welcome
 
 _Welcome to the STM32-base project pages!_ These pages provide guides, cheatsheets and backgroud information on all things related to the [STM32-base project](https://github.com/STM32-base).

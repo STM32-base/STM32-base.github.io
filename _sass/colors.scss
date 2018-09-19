@@ -1,0 +1,36 @@
+$STM32-brand-blue:  #2daae2;
+$STM32-brand-navy:  #0b1f51;
+$STM32-brand-pink:  #d6007e;
+$STM32-brand-green: #b8ce02;
+
+$font-color-primary:   #727272;
+$font-color-secondary: #444444;
+$font-color-code:      #333333;
+$font-color-bold:      #222222;
+
+$font-size-XXL: 2.000rem;
+$font-size-XL:  1.500rem;
+$font-size-L:   1.250rem;
+$font-size-M:   1.000rem;
+$font-size-S:    .825rem;
+$font-size-XS:   .750rem;
+
+$font-color-h1: $font-color-bold;
+$font-color-h2: $font-color-code;
+$font-color-h3: $font-color-secondary;
+$font-color-h4: $font-color-secondary;
+$font-color-h5: $font-color-secondary;
+$font-color-h6: $font-color-secondary;
+
+$font-color-anchor:        $STM32-brand-blue;
+$font-color-anchor-active: $STM32-brand-blue;
+$font-color-anchor-hover:  $STM32-brand-navy;
+$font-color-anchor-focus:  $STM32-brand-navy;
+
+$border-color-default: #e5e5e5;
+$border-style-default: .0625rem solid $border-color-default;
+
+$frame-color-background: #f8f8f8;
+
+$page-color-background: #ffffff;
+$page-padding: 3rem;

@@ -1,0 +1,175 @@
+@import "colors";
+@import "fonts";
+
+html {
+    color: $font-color-primary;
+    font-family: "Lato", "Arial", "Helvetica", sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+body {
+    background-color: $page-color-background;
+    line-height: 1.25;
+}
+
+a {
+    border: none;
+    color: $font-color-anchor;
+    text-decoration: none;
+
+    &:active { color: $font-color-anchor-active; }
+    &:hover  { color: $font-color-anchor-hover; }
+    &:focus  { color: $font-color-anchor-focus; }
+}
+
+abbr[title] {
+    cursor: help;
+    text-decoration: underline dotted;
+}
+
+b, strong, samp {
+    color: $font-color-bold;
+    font-weight: bold;
+}
+
+code, pre {
+    color: $font-color-code;
+    font-family: "Monaco", "Lucida Console", "Consolas", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+    font-size: $font-size-S;
+}
+
+i, em, cite, dfn[id], q, var {
+    font-style: italic;
+}
+
+kbd {
+    background-color: $frame-color-background;
+    border: $border-style-default;
+    border-radius: .25rem;
+}
+
+mark {
+    background-color: #ffff00;
+}
+
+s, del {
+    text-decoration: line-through;
+}
+
+sub, sup {
+    font-size: $font-size-S;
+}
+
+sub {
+    vertical-align: sub;
+}
+
+sup {
+    vertical-align: super;
+}
+
+u {
+    text-decoration: underline;
+}
+
+small {
+    font-size: $font-size-XS;
+}
+
+p, ul, ol, table, pre, dl, blockquote, hr {
+    margin: 0 0 1.5rem 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Source Sans Pro", "Arial", "Helvetica", sans-serif;
+    font-weight: 600;
+    margin: 0 0 .75rem 0;
+}
+
+h1 {
+    color: $font-color-h1;
+    font-size: $font-size-XXL;
+}
+
+h2 {
+    color: $font-color-h2;
+    font-size: $font-size-XL;
+}
+
+h3 {
+    color: $font-color-h3;
+    font-size: $font-size-L;
+}
+
+h4 {
+    color: $font-color-h4;
+    font-size: $font-size-M;
+}
+
+h5 {
+    color: $font-color-h5;
+    font-size: $font-size-M;
+    font-style: italic;
+}
+
+h6 {
+    color: $font-color-h6;
+    font-size: $font-size-S;
+    font-style: italic;
+}
+
+blockquote {
+    border-left: $border-style-default;
+    font-style: italic;
+    padding: 0 0 0 1rem;
+    quotes: none;
+}
+
+pre {
+    background-color: $frame-color-background;
+    border: $border-style-default;
+    border-radius: .25rem;
+    overflow-x: auto;
+    padding: .5rem 1rem;
+}
+
+ol, ul {
+    padding: 0 0 0 2.5rem;
+}
+
+li {
+    padding: 0 0 .125rem 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+td, th {
+    border-bottom: $border-style-default;
+    padding: .25rem .5rem;
+    text-align: left;
+}
+
+dt, th {
+    color: $font-color-secondary;
+    font-weight: bold;
+}
+
+dd {
+    padding: 0 0 0 1rem;
+    margin: 0 0 .5rem 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    border: 0;
+    background-color: $border-color-default;
+    height: .0625rem;
+}

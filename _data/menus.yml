@@ -1,0 +1,19 @@
+menu:
+  - title: "Guides"
+    subitems:
+      - page: "Setup"
+        url: "https://stm32-base.org/guides/setup"
+      - page: "Flashing"
+        url: "https://stm32-base.org/guides/flashing"
+  - title: "Docs"
+    subitems:
+      - page: "Boards"
+        url: "https://stm32-base.org/boards"
+      - page: "Device name mapping"
+        url: "https://stm32-base.org/device-name-mapping"
+  - title: "External"
+    subitems:
+      - page: "STM32-base project"
+        url: "https://github.com/STM32-base"
+      - page: "STMicroelectronics"
+        url: "https://www.st.com/"

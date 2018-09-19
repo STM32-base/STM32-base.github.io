@@ -1,0 +1,102 @@
+@import "code-highlight";
+@import "colors";
+@import "content";
+@import "fonts";
+
+body {
+    padding: $page-padding;
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 54rem;
+}
+
+header, footer {
+    float: left;
+    position: fixed;
+    width: 18rem;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+footer {
+    bottom: $page-padding;
+}
+
+.logo {
+    margin: 0 0 2rem 0;
+}
+
+menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    & > li {
+        color: $font-color-h3;
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    menu {
+        padding: .5rem 2.5rem;
+        list-style: disc;
+
+        & > li {
+            color: $font-color-primary;
+            font-size: 1rem;
+            font-weight: normal;
+        }
+    }
+}
+
+section {
+    float: right;
+    padding-bottom: $page-padding;
+    width: 34rem;
+}
+
+@media print, screen and (max-width: 960px) {
+    .container {
+        margin: 0;
+        width: auto;
+    }
+
+    header, section, footer {
+        float: none;
+        position: static;
+        width: auto;
+    }
+
+    section {
+        border-top: $border-style-default;
+        border-bottom: $border-style-default;
+        margin: 0 0 1rem 0;
+        padding: 1rem 0;
+    }
+}
+
+@media print, screen and (max-width: 720px) {
+    body {
+        word-wrap: break-word;
+    }
+
+    code, pre {
+        word-wrap: normal;
+    }
+}
+
+@media print, screen and (max-width: 480px) {
+    body {
+        padding: 1rem;
+    }
+}
+
+@media print {
+    body {
+        padding: .4in;
+        font-size: 12pt;
+        color: #444444;
+    }
+}
