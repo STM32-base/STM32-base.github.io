@@ -4,7 +4,7 @@ menu:
       - page: "Home"
         url: "https://stm32-base.org"
       - page: "Project overview"
-        url: "https://stm32-base-org/overview"
+        url: "https://stm32-base.org/overview"
 
   - title: "Guides"
     subitems:
