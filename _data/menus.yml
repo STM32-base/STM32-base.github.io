@@ -1,16 +1,41 @@
 menu:
+  - title: "STM32-base"
+    subitems:
+      - page: "Home"
+        url: "https://stm32-base.org"
+      - page: "Project overview"
+        url: "https://stm32-base-org/overview"
+
   - title: "Guides"
     subitems:
+      # - page: "Guides overview"
+      #   url: "https://stm32-base.org/guides"
       - page: "Setup"
         url: "https://stm32-base.org/guides/setup"
       - page: "Flashing"
         url: "https://stm32-base.org/guides/flashing"
-  - title: "Docs"
+
+  # - title: "Background"
+  #   subitems:
+  #     - page: "Background overview"
+  #       url: "https://stm32-base.org/background"
+  #     - page: "Startup code"
+  #       url: "https://stm32-base.org/background/startup-code"
+
+  - title: "Boards"
     subitems:
-      - page: "Boards"
+      - page: "Boards overview"
         url: "https://stm32-base.org/boards"
+      - page: "Blue pill (STM32F103C8T6)"
+        url: "https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill"
+      - page: "Black pill (STM32F103C8T6)"
+        url: "https://stm32-base.org/boards/STM32F103C8T6-Black-Pill"
+
+  - title: "Cheatsheets"
+    subitems:
       - page: "Device name mapping"
-        url: "https://stm32-base.org/device-name-mapping"
+        url: "https://stm32-base.org/cheatsheets/device-name-mapping"
+
   - title: "External"
     subitems:
       - page: "STM32-base project"

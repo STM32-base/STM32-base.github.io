@@ -4,7 +4,7 @@ title: "Home"
 
 # Welcome
 
-_Welcome to the STM32-base project pages!_ These pages provide guides, cheatsheets and backgroud information on all things related to the [STM32-base project](https://github.com/STM32-base).
+_Welcome to the STM32-base project Github pages!_ These pages provide guides, cheatsheets and background information on all things related to the [STM32-base project](https://github.com/STM32-base).
 
 **WARNING: This project is work in progress! Anything can (and probably will) change! Do not use the code found in this project for any critical system(s). The use of this code is at your own risk!**
 
