@@ -14,6 +14,7 @@ Create a folder named `STM32-base`. You can put this folder anywhere you like on
 
 Then move into this folder and create the following folders:
 
+ - `libraries`: for storing any libraries you might use
  - `projects`: for storing your STM32 projects
  - `templates`: for storing the STM32-base templates
  - `tools`: for storing tools related to the STM32-base toolchain

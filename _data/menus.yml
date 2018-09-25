@@ -5,6 +5,10 @@ menu:
         url: "https://stm32-base.org"
       - page: "Project overview"
         url: "https://stm32-base.org/overview"
+      - page: "Project roadmap"
+        url: "https://stm32-base.org/roadmap"
+      - page: "What's new"
+        url: "https://stm32-base.org/whats-new"
 
   - title: "Guides"
     subitems:
