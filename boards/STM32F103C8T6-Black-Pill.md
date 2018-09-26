@@ -67,7 +67,7 @@ title: "STM32F103C8T6 - Black Pill"
     </tr>
     <tr>
         <td>Regulator part number</td>
-        <td>Unkown (S20K)</td>
+        <td>Unknown (S20K)</td>
     </tr>
     <tr>
         <td>Regulator package</td>
