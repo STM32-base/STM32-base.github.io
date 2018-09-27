@@ -6,6 +6,10 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2018-09-27
+
+ - Added the [STM32F407VGT6 Diymore board]({{ site.url }}/boards/STM32F407VGT6-diymore).
+
 ## 2018-09-25
 
  - Introduced this page.

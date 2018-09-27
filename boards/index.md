@@ -69,6 +69,7 @@ The board pages contain one main table with different groups of information on t
  * [STM32F407VET6 - Euse M4 DEMO]({{ site.url }}/boards/STM32F407VET6-Euse-M4-DEMO-Medium)
  * [STM32F407VET6 - STM32 F4VE V2.0]({{ site.url }}/boards/STM32F407VET6-STM32-F4VE-V2.0)
  * [STM32F407VET6 - vcc-gnd.com Small]({{ site.url }}/boards/STM32F407VET6-VCC-GND-Small)
+ * [STM32F407VGT6 - Diymore]({{ site.url }}/boards/STM32F407VGT6-diymore)
  * [STM32F407VGT6 - SR Board]({{ site.url }}/boards/STM32F407VGT6-SR-Board)
  * [STM32F407ZGT6 - Euse M4 DEMO]({{ site.url }}/boards/STM32F407ZGT6-Euse-M4-DEMO-Large)
  * [STM32F407ZGT6 - vcc-gnd.com Large]({{ site.url }}/boards/STM32F407ZGT6-VCC-GND-Large)
