@@ -6,9 +6,13 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2018-09-28
+
+ - Added the [STM32F103C8U6 - ST-LINK V2 debugger page]({{ site.url }}/boards/Debugger-STM32F103C8U6-STLINKV2)
+
 ## 2018-09-27
 
- - Added the [STM32F407VGT6 Diymore board]({{ site.url }}/boards/STM32F407VGT6-diymore).
+ - Added the [STM32F407VGT6 - Diymore board page]({{ site.url }}/boards/STM32F407VGT6-diymore).
 
 ## 2018-09-25
 

@@ -1,10 +1,10 @@
 ---
-title: "STM32F101C8T6 - ST-LINK V2 Debugger"
+title: "STM32F103C8U6 - ST-LINK V2 Debugger"
 ---
 
 # {{ page.title }}
 
-![JLINK Debugger]({{ site.url }}/assets/img/boards/STM32F101C8T6_ST-LINK_V2-1.jpg)
+![ST-LINK V2 clone]({{ site.url }}/assets/img/boards/STM32F103C8U6_ST-LINK_V2-4.jpg)
 
 ## Overview
 
@@ -12,7 +12,7 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
     <tr>
         <td rowspan="3"><b>Board</b></td>
         <td>Name</td>
-        <td>JLINK Debugger</td>
+        <td>ST-LINK V2 clone</td>
     </tr>
     <tr>
         <td>Brand</td>
@@ -25,11 +25,11 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
     <tr>
         <td rowspan="6"><b>Microcontroller</b></td>
         <td>Part</td>
-        <td>STM32F103C8T6</td>
+        <td>STM32F103C8U6</td>
     </tr>
     <tr>
         <td>Package</td>
-        <td>LQFP48</td>
+        <td>UFQFPN48</td>
     </tr>
     <tr>
         <td>Core</td>
@@ -67,7 +67,7 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
     </tr>
     <tr>
         <td>Regulator part number</td>
-        <td>Unkown (S20C)</a></td>
+        <td>Unkown (S2R0)</a></td>
     </tr>
     <tr>
         <td>Regulator package</td>
@@ -75,7 +75,7 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
     </tr>
     <tr>
         <td>Output</td>
-        <td>+3.3V @ 150mA</td>
+        <td>+3.3V</td>
     </tr>
     <tr>
         <td>Battery holder</td>
@@ -101,7 +101,7 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
     <tr>
         <td rowspan="3>"><b>I/O</b></td>
         <td>LEDs</td>
-        <td>RUN LED (<b>D1</b>, <code>PA9</code>, source)</td>
+        <td>B<br>R</td>
     </tr>
     <tr>
         <td>Buttons, switches and jumpers</td>
@@ -114,11 +114,11 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
     <tr>
         <td rowspan="3"><b>PCB</b></td>
         <td>Colour</td>
-        <td>Purple</td>
+        <td>Green</td>
     </tr>
     <tr>
         <td>Size</td>
-        <td>30mm x 14mm</td>
+        <td>30mm x 15mm</td>
     </tr>
     <tr>
         <td>Mounting</td>
@@ -136,11 +136,11 @@ title: "STM32F101C8T6 - ST-LINK V2 Debugger"
 
 ## Pictures
 
-![JLINK Debugger]({{ site.url }}/assets/img/boards/STM32F101C8T6_ST-LINK_V2-1.jpg)
+![ST-LINK V2 clone]({{ site.url }}/assets/img/boards/STM32F103C8U6_ST-LINK_V2-1.jpg)
 
-![JLINK Debugger Top view]({{ site.url }}/assets/img/boards/STM32F101C8T6_ST-LINK_V2-2.jpg)
+![ST-LINK V2 clone Top view]({{ site.url }}/assets/img/boards/STM32F103C8U6_ST-LINK_V2-2.jpg)
 
-![JLINK Debugger Bottom view]({{ site.url }}/assets/img/boards/STM32F101C8T6_ST-LINK_V2-3.jpg)
+![ST-LINK V2 clone Bottom view]({{ site.url }}/assets/img/boards/STM32F103C8U6_ST-LINK_V2-3.jpg)
 
 ## SWD out
 

@@ -18,6 +18,7 @@ The board pages contain one main table with different groups of information on t
 
  * [STM32F101C8T6 - ST-LINK V2]({{ site.url }}/boards/Debugger-STM32F101C8T6-STLINKV2)
  * [STM32F103C8T6 - JLINK]({{ site.url }}/boards/Debugger-STM32F103C8T6-JLINK)
+ * [STM32F103C8U6 - ST-LINK V2]({{ site.url }}/boards/Debugger-STM32F103C8U6-STLINKV2)
 
 ## STM32F0 boards
 
