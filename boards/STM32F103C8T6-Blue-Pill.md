@@ -131,8 +131,8 @@ title: "STM32F103C8T6 - Blue Pill"
                 <li><b>Warning:</b> The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time.</li>
                 <li><b>Warning:</b> This board may have a wrong value of resistor on the USB D+ pin. Instead of a 1.5kΩ it has either a 10kΩ or 4.7kΩ resistor. This can be solved by replacing the resistor with the right value.</li>
                 <li><b>Trivia:</b> This board might be one of the most populair Chinese STM32 development boards currently available. This board is based on the Maple Mini.</li>
-                <li><b>Trivia:</b> This board got its name from a <a href="http://www.stm32duino.com/viewtopic.php?f=28&t=117&hilit=blue+pill">forum post</a> at the STM32duino forums and is a reference to the movie <a href="https://www.imdb.com/title/tt0133093/">The Matrix</a>.
-                <li><b>Trivia:</b> This board is <a href="https://github.com/ThomasGravekamp/STM32-base/wiki/STM32F051C8T6-Blue-Pill">also available</a> with an <code>STM32F051C8T6</code> microcontroller, although slightly different.</li>
+                <li><b>Trivia:</b> This board got its name from a <a href="http://www.stm32duino.com/viewtopic.php?f=28&t=117&hilit=blue+pill">forum post</a> at the STM32duino forums and is a reference to the movie <a href="https://www.imdb.com/title/tt0133093/">The Matrix</a>.</li>
+                <li><b>Trivia:</b> This board is <a href="{{ site.url }}/boards/STM32F051C8T6-Blue-Pill">also available</a> with an <code>STM32F051C8T6</code> microcontroller, although slightly different.</li>
             </ul>
         </td>
     </tr>

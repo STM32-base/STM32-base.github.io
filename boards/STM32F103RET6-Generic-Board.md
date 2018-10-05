@@ -130,7 +130,7 @@ title: "STM32F103RET6 - Generic Board"
             <ul>
                 <li><b>Warning:</b> The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time.</li>
                 <li><b>Note:</b> This board has a switch to enable the +5V from the USB connector.</li>
-                <li><b>Note:</b> This generic board comes in three different forms, one with an <a href="https://github.com/ThomasGravekamp/STM32-base/wiki/STM32F103RBT6-Generic-Board"><code>STM32F103RBT6</code></a> microcontroller, one with an <a href="https://github.com/ThomasGravekamp/STM32-base/wiki/STM32F103RCT6-Generic-Board"><code>STM32F103RCT6</code></a> microcontroller and one with an <code>STM32F103RET6</code> microcontroller.</li>
+                <li><b>Note:</b> This generic board comes in three different forms, one with an <a href="{{ site.url }}/boards/STM32F103RBT6-Generic-Board"><code>STM32F103RBT6</code></a> microcontroller, one with an <a href="{{ site.url }}/boards/STM32F103RCT6-Generic-Board"><code>STM32F103RCT6</code></a> microcontroller and one with an <code>STM32F103RET6</code> microcontroller.</li>
             </ul>
         </td>
     </tr>

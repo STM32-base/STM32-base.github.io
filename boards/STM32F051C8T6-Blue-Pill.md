@@ -130,7 +130,7 @@ title: "STM32F051C8T6 - F0 Blue Pill"
             <ul>
                 <li><b>Note:</b> Because the <code>STM32F051C8T6</code> does not support USB, only the power pins on the USB connector are connected.</li>
                 <li><b>Warning:</b> The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time.</li>
-                <li><b>Trivia:</b> This board is very similar to the "original" <a href="https://github.com/ThomasGravekamp/STM32-base/wiki/STM32F103C8T6-Blue-Pill">Blue Pill</a> board. It has the same dimensions and looks very similar. However, instead of an <code>STM32F103C8T6</code> this board features an <code>STM32F051C8T6</code> microcontroller.</li>
+                <li><b>Trivia:</b> This board is very similar to the "original" <a href="{{ site.url }}/boards/STM32F103C8T6-Blue-Pill">Blue Pill</a> board. It has the same dimensions and looks very similar. However, instead of an <code>STM32F103C8T6</code> this board features an <code>STM32F051C8T6</code> microcontroller.</li>
             </ul>
         </td>
     </tr>

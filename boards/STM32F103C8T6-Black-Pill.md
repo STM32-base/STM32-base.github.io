@@ -128,7 +128,7 @@ title: "STM32F103C8T6 - Black Pill"
         <td><b>Remarks</b></td>
         <td colspan="2">
             <ul>
-                <li><b>Trivia:</b> This board is a improved version of the <a href="https://github.com/ThomasGravekamp/STM32-base/wiki/STM32F103C8T6-Blue-Pill">Blue Pill</a> board. The name of this board is also derived from the Blue Pill.</li>
+                <li><b>Trivia:</b> This board is a improved version of the <a href="{{ site.url }}/boards/STM32F103C8T6-Blue-Pill">Blue Pill</a> board. The name of this board is also derived from the Blue Pill.</li>
             </ul>
         </td>
     </tr>

@@ -129,7 +129,7 @@ title: "STM32F103C8T6 - RobotDyn Black Pill"
         <td colspan="2">
             <ul>
                 <li><b>Warning:</b> The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time.</li>
-                <li><b>Trivia:</b> This board is a variation on the better known <a href="https://github.com/ThomasGravekamp/STM32-base/wiki/STM32F103C8T6-Blue-Pill">Blue Pill</a>.</li>
+                <li><b>Trivia:</b> This board is a variation on the better known <a href="{{ site.url }}/boards/STM32F103C8T6-Blue-Pill">Blue Pill</a>.</li>
             </ul>
         </td>
     </tr>
