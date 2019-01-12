@@ -246,25 +246,25 @@ title: "STM32F103RCT6 - STM32F103RCT6 V1.0"
 | Pin   | Connected to | JTAG  | SWD   |
 | ----- | ------------ | ----- | ----- |
 | 1     | +3.3V rail   | VCC   | -     |
-| 2     | PB4          | TRST  | -     |
-| 3     | PA15         | TDI   | -     |
-| 4     | PA13         | TMS   | SWDIO |
-| 5     | PA14         | TCLK  | SWCLK |
-| 6     | N.C.         | RTCK  | -     |
-| 7     | PB3          | TDO   | SWO   |
-| 8     | NRST         | RESET | -     |
-| 9     | N.C.         | N.C.  | -     |
-| 10    | N.C.         | N.C.  | -     |
-| 11    | Ground plane | GND   | -     |
+| 2     | +3.3V rail   | VCC   | -     |
+| 3     | PB4          | TRST  | -     |
+| 4     | Ground plane | GND   | -     |
+| 5     | PA15         | TDI   | -     |
+| 6     | Ground plane | GND   | -     |
+| 7     | PA13         | TMS   | SWDIO |
+| 8     | Ground plane | GND   | -     |
+| 9     | PA14         | TCLK  | SWCLK |
+| 10    | Ground plane | GND   | -     |
+| 11    | N.C.         | RTCK  | -     |
 | 12    | Ground plane | GND   | -     |
-| 13    | Ground plane | GND   | -     |
+| 13    | PB3          | TDO   | SWO   |
 | 14    | Ground plane | GND   | -     |
-| 15    | Ground plane | GND   | -     |
+| 15    | NRST         | RESET | -     |
 | 16    | Ground plane | GND   | -     |
-| 17    | Ground plane | GND   | -     |
+| 17    | N.C.         | N.C.  | -     |
 | 18    | Ground plane | GND   | -     |
-| 19    | Ground plane | GND   | -     |
-| 20    | +3.3V rail   | VCC   | -     |
+| 19    | N.C.         | N.C.  | -     |
+| 20    | Ground plane | GND   | -     |
 
 ## Serial
 

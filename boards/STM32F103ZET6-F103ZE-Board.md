@@ -4,7 +4,7 @@ title: "STM32F103ZET6 - F103ZE board"
 
 # {{ page.title }}
 
-![F103ZE board]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE-Board-1.jpg)
+![F103ZE board]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE_Board-1.jpg)
 
 ## Overview
 
@@ -136,11 +136,11 @@ title: "STM32F103ZET6 - F103ZE board"
 
 ## Pictures
 
-![F103ZE board]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE-Board-1.jpg)
+![F103ZE board]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE_Board-1.jpg)
 
-![F103ZE board Top view]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE-Board-2.jpg)
+![F103ZE board Top view]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE_Board-2.jpg)
 
-![F103ZE board Bottom view]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE-Board-3.jpg)
+![F103ZE board Bottom view]({{ site.url }}/assets/img/boards/STM32F103ZET6_F103ZE_Board-3.jpg)
 
 ## Header 1
 
@@ -286,25 +286,25 @@ title: "STM32F103ZET6 - F103ZE board"
 | Pin   | Connected to | JTAG  | SWD   |
 | ----- | ------------ | ----- | ----- |
 | 1     | +3.3V rail   | VCC   | -     |
-| 2     | PB4          | TRST  | -     |
-| 3     | PA15         | TDI   | -     |
-| 4     | PA13         | TMS   | SWDIO |
-| 5     | PA14         | TCLK  | SWCLK |
-| 6     | N.C.         | RTCK  | -     |
-| 7     | PB3          | TDO   | SWO   |
-| 8     | NRST         | RESET | -     |
-| 9     | N.C.         | N.C.  | -     |
-| 10    | +5V rail     | N.C.  | -     |
-| 11    | Ground plane | GND   | -     |
+| 2     | +3.3V rail   | VCC   | -     |
+| 3     | PB4          | TRST  | -     |
+| 4     | Ground plane | GND   | -     |
+| 5     | PA15         | TDI   | -     |
+| 6     | Ground plane | GND   | -     |
+| 7     | PA13         | TMS   | SWDIO |
+| 8     | Ground plane | GND   | -     |
+| 9     | PA14         | TCLK  | SWCLK |
+| 10    | Ground plane | GND   | -     |
+| 11    | N.C.         | RTCK  | -     |
 | 12    | Ground plane | GND   | -     |
-| 13    | Ground plane | GND   | -     |
+| 13    | PB3          | TDO   | SWO   |
 | 14    | Ground plane | GND   | -     |
-| 15    | Ground plane | GND   | -     |
+| 15    | NRST         | RESET | -     |
 | 16    | Ground plane | GND   | -     |
-| 17    | Ground plane | GND   | -     |
+| 17    | N.C.         | N.C.  | -     |
 | 18    | Ground plane | GND   | -     |
-| 19    | Ground plane | GND   | -     |
-| 20    | +3.3V rail   | VCC   | -     |
+| 19    | N.C.         | N.C.  | -     |
+| 20    | Ground plane | GND   | -     |
 
 ## TFT
 
