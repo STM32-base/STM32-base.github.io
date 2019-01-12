@@ -8,6 +8,7 @@ This page contains a list of updates to this website and any of the repositories
 
 ## 2019-01-12
 
+ - Add schematics to some board pages.
  - Fixed an error in the JTAG header pin numbers.
 
 ## 2018-09-28

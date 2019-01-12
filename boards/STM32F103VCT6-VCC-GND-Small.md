@@ -134,6 +134,10 @@ title: "STM32F103VCT6 - vcc-gnd.com Small"
     </tr>
 </table>
 
+## Resources
+
+- [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F103VET6-vcc-gnd.com_small.pdf)
+
 ## Pictures
 
 ![STM32F103VCT6 vcc-gnd.com Small]({{ site.url }}/assets/img/boards/STM32F103VCT6_vcc-gnd.com_Small-1.jpg)

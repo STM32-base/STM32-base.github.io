@@ -135,6 +135,10 @@ title: "STM32F103C8T6 - SMT32 Smart V2.0"
     </tr>
 </table>
 
+## Resources
+
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F103C8T6-STM32_Smart_V2.0.pdf)
+
 ## Pictures
 
 ![STM32 Smart V2.0]({{ site.url }}/assets/img/boards/STM32F103C8T6_STM32_Smart_V2.0-1.jpg)

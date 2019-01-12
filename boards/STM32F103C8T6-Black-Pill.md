@@ -134,6 +134,10 @@ title: "STM32F103C8T6 - Black Pill"
     </tr>
 </table>
 
+## Resources
+
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F103C8T6-Black_Pill.pdf)
+
 ## Pictures
 
 ![Black Pill]({{ site.url }}/assets/img/boards/STM32F103C8T6_Black_Pill-1.jpg)

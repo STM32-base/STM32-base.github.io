@@ -134,6 +134,10 @@ title: "STM32F103VET6 - CZ miniSTM32F103VE-EK"
     </tr>
 </table>
 
+## Resources
+
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F103VET6-CZ_miniSTM32F103VE-EK.pdf)
+
 ## Pictures
 
 ![CZ miniSTM32F103VE-EK]({{ site.url }}/assets/img/boards/STM32F103VET6_CZ_mini-EK-1.jpg)

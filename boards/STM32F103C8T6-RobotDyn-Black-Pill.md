@@ -135,6 +135,12 @@ title: "STM32F103C8T6 - RobotDyn Black Pill"
     </tr>
 </table>
 
+## Resources
+
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F103C8T6-RobotDyn_Black_Pill.pdf)
+ - [Pinout]({{ site.url }}/assets/pdf/boards/original-pinout-STM32F103C8T6-RobotDyn_Black_Pill.pdf)
+ - [Dimensions]({{ site.url }}/assets/pdf/boards/original-dimensions-STM32F103C8T6-RobotDyn_Black_Pill.pdf)
+
 ## Pictures
 
 ![RobotDyn Black Pill]({{ site.url }}/assets/img/boards/STM32F103C8T6_RobotDyn_Black_Pill-1.jpg)

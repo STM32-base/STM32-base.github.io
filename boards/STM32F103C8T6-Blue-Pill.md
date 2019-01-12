@@ -138,6 +138,10 @@ title: "STM32F103C8T6 - Blue Pill"
     </tr>
 </table>
 
+## Resources
+
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F103C8T6-Blue_Pill.pdf)
+
 ## Pictures
 
 ![Blue Pill]({{ site.url }}/assets/img/boards/STM32F103C8T6_Blue_Pill-1.jpg)
