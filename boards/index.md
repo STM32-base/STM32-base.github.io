@@ -24,6 +24,7 @@ The board pages contain one main table with different groups of information on t
 
  * [STM32F030F4P6 - Baite]({{ site.url }}/boards/STM32F030F4P6-Baite)
  * [STM32F030F4P6 - STM32F030 DEMO BOARD V1.1]({{ site.url }}/boards/STM32F030F4P6-STM32F030-DEMO-BOARD-V1.1)
+ * [STM32F030F4P6 - STM32F030F4 V2.00]({{ site.url }}/boards/STM32F030F4P6-STM32F030F4-V2.00)
  * [STM32F030F4P6 - vcc-gnd.com]({{ site.url }}/boards/STM32F030F4P6-VCC-GND)
  * [STM32F051C8T6 - Blue Pill]({{ site.url }}/boards/STM32F051C8T6-Blue-Pill)
  * [STM32F051C8T6 - LC Technology]({{ site.url }}/boards/STM32F051C8T6-LC-Technology)
@@ -43,6 +44,7 @@ The board pages contain one main table with different groups of information on t
  * [STM32F103C8T6 - Strange Thing]({{ site.url }}/boards/STM32F103C8T6-Strange-Thing)
  * [STM32F103C8T6 - Ugly Board]({{ site.url }}/boards/STM32F103C8T6-Ugly-Board)
  * [STM32F103RBT6 - Generic Board]({{ site.url }}/boards/STM32F103RBT6-Generic-Board)
+ * [STM32F103RBT6 - STM32F103RxT6 DEMO]({{ site.url }}/boards/STM32F103RBT6-STM32F103RxT6-DEMO)
  * [STM32F103RBT6 - vcc-gnd.com]({{ site.url }}/boards/STM32F103RBT6-VCC-GND)
  * [STM32F103RCT6 - Euse Board]({{ site.url }}/boards/STM32F103RCT6-Euse-Board)
  * [STM32F103RCT6 - Generic Board]({{ site.url }}/boards/STM32F103RCT6-Generic-Board)
@@ -59,6 +61,7 @@ The board pages contain one main table with different groups of information on t
  * [STM32F103ZET6 - F103ZE Board]({{ site.url }}/boards/STM32F103ZET6-F103ZE-Board)
  * [STM32F103ZET6 - LC Technology]({{ site.url }}/boards/STM32F103ZET6-LC-Technology)
  * [STM32F103ZET6 - vcc-gnd.com XLarge]({{ site.url }}/boards/STM32F103ZET6-VCC-GND-XLarge)
+ * [STM32F103ZET6 - YL-29]({{ site.url }}/boards/STM32F103ZET6-YL-29)
 
 ## STM32F2 boards
 
