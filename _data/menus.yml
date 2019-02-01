@@ -2,47 +2,42 @@ menu:
   - title: "STM32-base"
     subitems:
       - page: "Home"
-        url: "https://stm32-base.org"
-      - page: "Project overview"
-        url: "https://stm32-base.org/overview"
-      - page: "Project roadmap"
-        url: "https://stm32-base.org/roadmap"
+        url: ""
+      - page: "Overview"
+        url: "general/overview"
+      - page: "Roadmap"
+        url: "general/roadmap"
       - page: "What's new"
-        url: "https://stm32-base.org/whats-new"
+        url: "general/whats-new"
+      - page: "About"
+        url: "general/about"
 
   - title: "Guides"
     subitems:
-      # - page: "Guides overview"
-      #   url: "https://stm32-base.org/guides"
       - page: "Setup"
-        url: "https://stm32-base.org/guides/setup"
+        url: "guides/setup"
       - page: "Flashing"
-        url: "https://stm32-base.org/guides/flashing"
-
-  # - title: "Background"
-  #   subitems:
-  #     - page: "Background overview"
-  #       url: "https://stm32-base.org/background"
-  #     - page: "Startup code"
-  #       url: "https://stm32-base.org/background/startup-code"
+        url: "guides/flashing"
 
   - title: "Boards"
     subitems:
       - page: "Boards overview"
-        url: "https://stm32-base.org/boards"
+        url: "boards"
       - page: "Blue pill (STM32F103C8T6)"
-        url: "https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill"
+        url: "boards/STM32F103C8T6-Blue-Pill"
       - page: "Black pill (STM32F103C8T6)"
-        url: "https://stm32-base.org/boards/STM32F103C8T6-Black-Pill"
+        url: "boards/STM32F103C8T6-Black-Pill"
 
   - title: "Cheatsheets"
     subitems:
       - page: "Device name mapping"
-        url: "https://stm32-base.org/cheatsheets/device-name-mapping"
+        url: "cheatsheets/device-name-mapping"
 
   - title: "External"
     subitems:
       - page: "STM32-base project"
         url: "https://github.com/STM32-base"
+        external: true
       - page: "STMicroelectronics"
         url: "https://www.st.com/"
+        external: true

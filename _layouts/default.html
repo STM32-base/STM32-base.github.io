@@ -19,14 +19,19 @@
                     </a>
                 </div>
             {% endif %}
-                <p>{{ site.description | default: site.github.project_tagline }}</p>
                 <menu>
                 {% for item in site.data.menus.menu %}
                     <li>
                     {{ item.title }}
                         <menu>
                         {% for entry in item.subitems %}
-                            <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+                            <li>
+                                {% if entry.external %}
+                                <a href="{{ entry.url }}">{{ entry.page }}</a>
+                                {% else %}
+                                <a href="{{ site.url }}/{{ entry.url }}">{{ entry.page }}</a>
+                                {% endif %}
+                            </li>
                         {% endfor %}
                         </menu>
                     </li>

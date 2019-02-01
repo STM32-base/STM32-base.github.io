@@ -4,5 +4,4 @@ plugins:
 
 title: "STM32-base project"
 logo: "/assets/img/logos/STM32-base_logo_full_transparent.png"
-description: "These Github pages contain additional information on the STM32-base project and related topics. This project is in no way affiliated to STMicroelectronics."
 author: "Thomas Gravekamp"

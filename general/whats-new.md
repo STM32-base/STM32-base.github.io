@@ -6,6 +6,13 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2019-02-02
+
+ - Updated the [home page]({{ site.url }})
+ - Updated the [roadmap page]({{ site.url }}/whats-new)
+ - Updated the [overview page]({{ site.url }}/overview)
+ - Added the [about page]({{ site.url }}/about) page
+
 ## 2019-01-13
 
  - Added the [STM32F030F4P6 - STM32F030F4 V2.00]({{ site.url }}/boards/STM32F030F4P6-STM32F030F4-V2.00), [STM32F103RBT6 - STM32F103RxT6 DEMO]({{ site.url }}/boards/STM32F103RBT6-STM32F103RxT6-DEMO), and [STM32F103ZET6 - YL-29]({{ site.url }}/boards/STM32F103ZET6-YL-29) boards.
