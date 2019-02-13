@@ -5,7 +5,7 @@ title: "Device name mapping"
 # {{ page.title }}
 
 To define the device you are using, you must set its name in the make file in your project. This name should be in the form of `STM32F___x_`, except for some [STM32F4 devices](#stm32f4-mapping). In addition to the device name mapping, the tables also provide an overview of de sizes of FLASH and SRAM available on the device. The sizes of the backup SRAM, CCM (Core Coupled Memory), ITCM (Instruction Tightly Coupled Memory), and
-DTCM (Data Tightly Coupled Memory) are given where applicable.
+DTCM (Data Tightly Coupled Memory) are given where applicable and are part of the total amount of SRAM available on each device.
 
 **Bold device names** will be mapped to another value. _Italic device names_ deviate from the standard naming convention. Device names without styling are not mapped and thus are directly used. Memory sizes are given in KB, unless otherwise noted.
 
@@ -15,6 +15,13 @@ DTCM (Data Tightly Coupled Memory) are given where applicable.
  * [Jump to STM32F3 mapping](#stm32f3-mapping)
  * [Jump to STM32F4 mapping](#stm32f4-mapping)
  * [Jump to STM32F7 mapping](#stm32f7-mapping)
+ * [Jump to STM32G0 mapping](#stm32g0-mapping)
+ * [Jump to STM32H7 mapping](#stm32h7-mapping)
+ * [Jump to STM32L0 mapping](#stm32l0-mapping)
+ * [Jump to STM32L1 mapping](#stm32l1-mapping)
+ * [Jump to STM32L4 mapping](#stm32l4-mapping)
+ * [Jump to STM32L4+ mapping](#stm32l4-mapping-1)
+ * [Jump to STM32L5 mapping](#stm32l5-mapping)
 
 ## STM32F0 mapping
 
@@ -215,3 +222,167 @@ _\* NOTE: These device names deviate from the standard naming, using the full na
 | **STM32F778xI** |   STM32F778xx   |  2048 |  384 |  128 |   16 |      4 |
 | **STM32F779xG** |   STM32F779xx   |  1024 |  384 |  128 |   16 |      4 |
 | **STM32F779xI** |   STM32F779xx   |  2048 |  384 |  128 |   16 |      4 |
+
+## STM32G0 mapping
+
+| Device:         | Maps to:        | FLASH | SRAM |
+| --------------- | --------------- | :---: | :--: |
+| **STM32G031x4** |   STM32G031xx*  |    16 |    8 |
+| **STM32G031x6** |   STM32G031xx*  |    32 |    8 |
+| **STM32G031x8** |   STM32G031xx*  |    64 |    8 |
+| **STM32G041x4** |   STM32G041xx*  |    16 |    8 |
+| **STM32G041x6** |   STM32G041xx*  |    32 |    8 |
+| **STM32G041x8** |   STM32G041xx*  |    64 |    8 |
+| **STM32G070xB** |   STM32G070xx   |   128 |   36 |
+| **STM32G071x8** |   STM32G071xx   |    64 |   36 |
+| **STM32G071xB** |   STM32G071xx   |   128 |   36 |
+| **STM32G081xB** |   STM32G081xx   |   128 |   36 |
+| **STM32G0B1xC** |   STM32G0B1xx*  |   256 |  128 |
+| **STM32G0B1xE** |   STM32G0B1xx*  |   512 |  128 |
+| **STM32G0C1xC** |   STM32G0C1xx*  |   256 |  128 |
+| **STM32G0C1xE** |   STM32G0C1xx*  |   512 |  128 |
+
+_\* Note: These devices are not yet released. The mapping is a guess based on the mapping available for the STM32G070, STM32G071, and STM32G081 mappings._
+
+## STM32H7 mapping
+
+| Device:         | Maps to:        | FLASH | SRAM | DTCM | ITCM | Backup |
+| --------------- | --------------- | :---: | :--: | :--: | :--: | :----: |
+| **STM32H743xG** |   STM32H743xx   |  1024 | 1024 |  128 |   64 |      4 |
+| **STM32H743xI** |   STM32H743xx   |  2048 | 1024 |  128 |   64 |      4 |
+| **STM32H750xB** |   STM32H750xx   |   128 | 1024 |  128 |   64 |      4 |
+| **STM32H753xI** |   STM32H753xx   |  2048 | 1024 |  128 |   64 |      4 |
+
+## STM32L0 mapping
+
+| Device:         | Maps to:        | FLASH | SRAM | EEPROM | Backup Registers |
+| --------------- | --------------- | :---: | :--: | :----: | :--------------: |
+|   STM32L010x4   |   STM32L010x4   |    16 |    2 |   128B |              20B |
+|   STM32L010x6   |   STM32L010x6   |    32 |    8 |   256B |              20B |
+|   STM32L010x8   |   STM32L010x8   |    64 |    8 |   256B |              20B |
+|   STM32L010xB   |   STM32L010xB   |   128 |   20 |   512B |              20B |
+| **STM32L011x3** |   STM32L011xx   |     8 |    2 |   512B |              20B |
+| **STM32L011x4** |   STM32L011xx   |    16 |    2 |   512B |              20B |
+| **STM32L021x4** |   STM32L021xx   |    16 |    2 |   512B |              20B |
+| **STM32L031x4** |   STM32L031xx   |    16 |    8 |      1 |              20B |
+| **STM32L031x6** |   STM32L031xx   |    32 |    8 |      1 |              20B |
+| **STM32L041x6** |   STM32L041xx   |    32 |    8 |      1 |              20B |
+| **STM32L051x6** |   STM32L051xx   |    32 |    8 |      2 |              20B |
+| **STM32L051x8** |   STM32L051xx   |    64 |    8 |      2 |              20B |
+| **STM32L052x6** |   STM32L052xx   |    32 |    8 |      2 |              20B |
+| **STM32L052x8** |   STM32L052xx   |    64 |    8 |      2 |              20B |
+| **STM32L053x6** |   STM32L053xx   |    32 |    8 |      2 |              20B |
+| **STM32L053x8** |   STM32L053xx   |    64 |    8 |      2 |              20B |
+| **STM32L062x8** |   STM32L062xx   |    64 |    8 |      2 |              20B |
+| **STM32L063x8** |   STM32L063xx   |    64 |    8 |      2 |              20B |
+| **STM32L071x8** |   STM32L071xx   |    64 |   20 |      6 |              20B |
+| **STM32L071xB** |   STM32L071xx   |   128 |   20 |      6 |              20B |
+| **STM32L071xZ** |   STM32L071xx   |   192 |   20 |      6 |              20B |
+| **STM32L072x8** |   STM32L072xx   |    64 |   20 |      6 |              20B |
+| **STM32L072xB** |   STM32L072xx   |   128 |   20 |      6 |              20B |
+| **STM32L072xZ** |   STM32L072xx   |   192 |   20 |      6 |              20B |
+| **STM32L073x8** |   STM32L073xx   |    64 |   20 |      6 |              20B |
+| **STM32L073xB** |   STM32L073xx   |   128 |   20 |      6 |              20B |
+| **STM32L073xZ** |   STM32L073xx   |   192 |   20 |      6 |              20B |
+| **STM32L081xB** |   STM32L081xx   |   128 |   20 |      6 |              20B |
+| **STM32L081xZ** |   STM32L081xx   |   192 |   20 |      6 |              20B |
+| **STM32L082xB** |   STM32L082xx   |   128 |   20 |      6 |              20B |
+| **STM32L082xZ** |   STM32L082xx   |   192 |   20 |      6 |              20B |
+| **STM32L083x8** |   STM32L083xx   |    64 |   20 |      6 |              20B |
+| **STM32L083xB** |   STM32L083xx   |   128 |   20 |      6 |              20B |
+| **STM32L083xZ** |   STM32L083xx   |   192 |   20 |      6 |              20B |
+
+## STM32L1 mapping
+
+| Device:           | Maps to:        | FLASH | SRAM | EEPROM | Backup Registers |
+| ----------------- | --------------- | :---: | :--: | :----: | :--------------: |
+| **STM32L100x6**   |   STM32L100xB   |    32 |    4 |      2 |              20B |
+| **STM32L100x6-A** |   STM32L100xBA  |    32 |    4 |      2 |              20B |
+| **STM32L100x8**   |   STM32L100xB   |    64 |    8 |      2 |              20B |
+| **STM32L100x8-A** |   STM32L100xBA  |    64 |    8 |      2 |              20B |
+|   STM32L100xB     |   STM32L100xB   |   128 |   10 |      2 |              20B |
+| **STM32L100xB-A** |   STM32L100xBA  |   128 |   16 |      2 |              20B |
+|   STM32L100xC     |   STM32L100xC   |   256 |   16 |      4 |              20B |
+| **STM32L151x6**   |   STM32L151xB   |    32 |   10 |      4 |              80B |
+| **STM32L151x8**   |   STM32L151xB   |    64 |   10 |      4 |              80B |
+|   STM32L151xB     |   STM32L151xB   |   128 |   16 |      4 |              80B |
+|   STM32L151xC     |   STM32L151xC   |   256 |   32 |      8 |             128B |
+|   STM32L151xD     |   STM32L151xD   |   384 |   48 |     12 |             128B |
+|   STM32L151xE     |   STM32L151xE   |   512 |   80 |     16 |             128B |
+| **STM32L151x6-A** |   STM32L151xBA  |    32 |   16 |      4 |              80B |
+| **STM32L151x8-A** |   STM32L151xBA  |    64 |   32 |      4 |              80B |
+| **STM32L151xB-A** |   STM32L151xBA  |   128 |   32 |      4 |              80B |
+| **STM32L151xC-A** |   STM32L151xCA  |   256 |   32 |      8 |             128B |
+| **STM32L151xD-X** |   STM32L151xDX  |   384 |   80 |     16 |             128B |
+| **STM32L152x6**   |   STM32L152xB   |    32 |   10 |      4 |              80B |
+| **STM32L152x8**   |   STM32L152xB   |    64 |   10 |      4 |              80B |
+|   STM32L152xB     |   STM32L152xB   |   128 |   16 |      4 |              80B |
+|   STM32L152xC     |   STM32L152xC   |   256 |   32 |      8 |             128B |
+|   STM32L152xD     |   STM32L152xD   |   384 |   48 |     12 |             128B |
+|   STM32L152xE     |   STM32L152xE   |   512 |   80 |     16 |             128B |
+| **STM32L152x6-A** |   STM32L152xBA  |    32 |   16 |      4 |              80B |
+| **STM32L152x8-A** |   STM32L152xBA  |    64 |   32 |      4 |              80B |
+| **STM32L152xB-A** |   STM32L152xBA  |   128 |   32 |      4 |              80B |
+| **STM32L152xC-A** |   STM32L152xCA  |   256 |   32 |      8 |             128B |
+| **STM32L152xD-X** |   STM32L152xDX  |   384 |   80 |     16 |             128B |
+|   STM32L162xC     |   STM32L162xC   |   256 |   32 |      8 |             128B |
+| **STM32L162xC-A** |   STM32L162xCA  |   256 |   32 |      8 |             128B |
+|   STM32L162xD     |   STM32L162xD   |   384 |   48 |     12 |             128B |
+| **STM32L162xD-X** |   STM32L162xDA  |   384 |   80 |     16 |             128B |
+|   STM32L162xE     |   STM32L162xE   |   512 |   80 |     16 |             128B |
+
+## STM32L4 mapping
+
+| Device:           | Maps to:        | FLASH | SRAM |
+| ----------------- | --------------- | :---: | :--: |
+| **STM32L412x8**   |   STM32L412xx   |    64 |   40 |
+| **STM32L412xB**   |   STM32L412xx   |   128 |   40 |
+| **STM32L422xB**   |   STM32L422xx   |   128 |   40 |
+| **STM32L431xB**   |   STM32L431xx   |   128 |   64 |
+| **STM32L431xC**   |   STM32L431xx   |   256 |   64 |
+| **STM32L432xB**   |   STM32L432xx   |   128 |   64 |
+| **STM32L432xC**   |   STM32L432xx   |   256 |   64 |
+| **STM32L433xB**   |   STM32L433xx   |   128 |   64 |
+| **STM32L433xC**   |   STM32L433xx   |   128 |   64 |
+| **STM32L442xC**   |   STM32L442xx   |   256 |   64 |
+| **STM32L443xC**   |   STM32L443xx   |   256 |   64 |
+| **STM32L451xC**   |   STM32L451xx   |   256 |  160 |
+| **STM32L451xE**   |   STM32L451xx   |   512 |  160 |
+| **STM32L452xC**   |   STM32L452xx   |   256 |  160 |
+| **STM32L452xE**   |   STM32L452xx   |   512 |  160 |
+| **STM32L462xE**   |   STM32L462xx   |   512 |  160 |
+| **STM32L471xE**   |   STM32L471xx   |   512 |  128 |
+| **STM32L471xG**   |   STM32L471xx   |  1024 |  128 |
+| **STM32L475xC**   |   STM32L475xx   |   256 |  128 |
+| **STM32L475xE**   |   STM32L475xx   |   512 |  128 |
+| **STM32L475xG**   |   STM32L475xx   |  1024 |  128 |
+| **STM32L476xC**   |   STM32L476xx   |   256 |  128 |
+| **STM32L476xE**   |   STM32L476xx   |   512 |  128 |
+| **STM32L476xG**   |   STM32L476xx   |  1024 |  128 |
+| **STM32L486xG**   |   STM32L486xx   |  1024 |  128 |
+| **STM32L496xE**   |   STM32L496xx   |   512 |  320 |
+| **STM32L496xG**   |   STM32L496xx   |  1024 |  320 |
+| **STM32L4A6xG**   |   STM32L4A6xx   |  1024 |  320 |
+
+## STM32L4+ mapping
+
+| Device:           | Maps to:        | FLASH | SRAM |
+| ----------------- | --------------- | :---: | :--: |
+| **STM32L4R5xG**   |   STM32L4R5xx   |  1024 |  640 |
+| **STM32L4R5xI**   |   STM32L4R5xx   |  2048 |  640 |
+| **STM32L4S5xI**   |   STM32L4S5xx   |  2048 |  640 |
+| **STM32L4R7xI**   |   STM32L4R7xx   |  2048 |  640 |
+| **STM32L4S7xI**   |   STM32L4S7xx   |  2048 |  640 |
+| **STM32L4R9xG**   |   STM32L4R9xx   |  1024 |  640 |
+| **STM32L4R9xI**   |   STM32L4R9xx   |  2048 |  640 |
+| **STM32L4S9xI**   |   STM32L4S9xx   |  2048 |  640 |
+
+## STM32L5 mapping
+
+| Device:           | Maps to:        | FLASH | SRAM |
+| ----------------- | --------------- | :---: | :--: |
+| **STM32L552xC**   |   STM32L552xx*  |   256 |  256 |
+| **STM32L552xE**   |   STM32L552xx*  |   512 |  256 |
+| **STM32L562xE**   |   STM32L562xx*  |   512 |  256 |
+
+_\* Note: These devices are not yet released. The mapping is a guess based on the mapping available for the STM32L4 mappings._
