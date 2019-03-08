@@ -71,12 +71,13 @@ It is recommended to extract the contents of the downloaded archive to the `tool
 
 Install the open-source alternative for ST-link. See [their Github page](https://github.com/texane/stlink#installation) for installation instructions. This tool will be used to flash the device with an ST-link, both clones and official ST-links. It also provides a way to debug your device using GDB.
 
-## Step 2: Clone the STM32-base repository
+## Step 2: Clone the STM32-base and STM32-base-STM32Cube repositories
 
-Move back to you workspace folder. Clone the [STM32-base](https://github.com/STM32-base/STM32-base) repository to your workspace folder.
+Move back to you workspace folder. Clone the [STM32-base](https://github.com/STM32-base/STM32-base) and [STM32-base-STM32Cube](https://github.com/STM32-base/STM32-base-STM32Cube) repositories to your workspace folder.
 
 ```
 > git clone git@github.com:STM32-base/STM32-base.git
+> git clone git@github.com:STM32-base/STM32-base-STM32Cube.git
 ```
 
 This results in the following folder structure:
@@ -86,6 +87,7 @@ This results in the following folder structure:
  ├─ libraries
  ├─ projects
  ├─ STM32-base
+ ├─ STM32-base-STM32Cube
  ├─ templates
  └┬ tools
   ├─ arm-none-eabi
@@ -139,13 +141,14 @@ This results in the following folder structure:
 
 ## Step 4: Test your setup
 
-Move into one of the template projects. Create a symbolic link to the STM32-base project in there.
+Move into one of the template projects. Create a symbolic link to the STM32-base and STM32-base-STM32Cube repositories in there.
 
 ```
 > ln -s ../../STM32-base
+> ln -s ../../STM32-base-STM32Cube
 ```
 
-When you've made the symbolic link to the STM32-base project, it should be possible to compile the code given by the template. You can compile the code in there simply by running the following command:
+When you've created the symbolic links, you should be able to compile the example code in the template. You can compile this code by simply running the following command:
 
 ```
 > make

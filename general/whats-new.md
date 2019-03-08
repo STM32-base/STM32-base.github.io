@@ -6,6 +6,10 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2019-03-09
+
+ - Update the [setup guide]({{ site.url }}/guides/setup)
+
 ## 2019-02-13
 
  - Updated the [device name mapping cheatsheet]({{ site.url }}/cheatsheets/device-name-mapping)
