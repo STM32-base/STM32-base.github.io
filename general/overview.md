@@ -10,9 +10,9 @@ Over time, the STM32-base project grew in both size and complexity and is still 
 
 The [STM32-base Github](https://github.com/STM32-base) organization is the place where everything comes together. The organization is used to keep all STM32-base related repositories organized. This website is hosted on the Github pages platform. Using a Github organization allowed for a much nicer URL (stm32-base.github.io). The source for this website can be found in its own [repository](https://github.com/STM32-base/STM32-base.github.io).
 
-## Code
+## Code repositories
 
-The code of this project is spread over two repositories. One contains the [STM32-base project](https://github.com/STM32-base/STM32-base) itself. It contains things like startup code, linker scripts and makefiles. The other contains the official CMSIS and HAL which are slightly altered to better fit in this project. For more information, see the [CMSIS repository](https://github.com/STM32-base/STM32-base-CMSIS).
+The code of this project is located in a single repository. It contains the [STM32-base project](https://github.com/STM32-base/STM32-base) itself. The startup code, linker scripts and makefiles are located in that repository. Then there is the [STM32-base-STM32Cube repository](https://github.com/STM32-base/STM32-base-STM32Cube). This repository contains the CMSIS and HAL coded as provided by STMicroelectronics.
 
 ## Project templates
 
@@ -22,7 +22,7 @@ Each supported device series has its own project template repository. These temp
 
  * [STM32-base project](https://github.com/STM32-base)
  * [STM32-base repository](https://github.com/STM32-base/STM32-base)
- * [STM32-base CMSIS](https://github.com/STM32-base/STM32-base-CMSIS)
+ * [STM32-base STM32Cube repository](https://github.com/STM32-base/STM32-base-STM32Cube)
  * [STM32-base Github pages repository](https://github.com/STM32-base/STM32-base.github.io)
  * [STM32-base F0 template](https://github.com/STM32-base/STM32-base-F0-template)
  * [STM32-base F1 template](https://github.com/STM32-base/STM32-base-F1-template)

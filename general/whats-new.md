@@ -9,6 +9,7 @@ This page contains a list of updates to this website and any of the repositories
 ## 2019-03-09
 
  - Update the [setup guide]({{ site.url }}/guides/setup)
+ - Update the [overview page]({{ site.url }}/overview)
 
 ## 2019-02-13
 
