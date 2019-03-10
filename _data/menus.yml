@@ -32,6 +32,8 @@ menu:
     subitems:
       - page: "Device name mapping"
         url: "cheatsheets/device-name-mapping"
+      - page: "Makefile options"
+        url: "cheatsheets/makefile-options"
 
   - title: "External"
     subitems:
