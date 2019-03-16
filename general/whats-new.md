@@ -6,6 +6,12 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2019-03-16
+
+ - Created the [knowledge base index page]({{ site.url }}/kb)
+ - Created the [makefiles page]({{ site.url }}/kb/makefiles)
+ - Updated the [home page]({{ site.url }})
+
 ## 2019-03-10
 
  - Created the [makefile options cheatsheet]({{ site.url }}/cheatsheets/makefile-options)

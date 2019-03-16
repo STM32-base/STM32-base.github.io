@@ -18,6 +18,10 @@ To find out how you can flash your device, refer to the [flashing guide]({{ site
 
 If you are looking for an overview of the many different STM32 development boards, take a look at the [boards page]({{ site.url }}/boards).
 
+## Knowledge base
+
+The [knowledge base]({{ site.url }}/kb) contains (background) articles about the technologies used in the STM32-base project.
+
 ## Contributing
 
 If you want to contribute to this project, refer to the [`CONTRIBUTING.md`](https://github.com/STM32-base/STM32-base/blob/master/CONTRIBUTING.md) file for more information on how to do that. Take a look at the [roadmap]({{ site.url }}/general/roadmap) if you are looking for something to work on.
