@@ -34,9 +34,9 @@ The `STM32_CUBE` variable can be set to define a non-standard location for the S
 
 ### TOOLCHAIN_PATH
 
-_Defaults to: undefined_
+_Defaults to: `../../tools/bin`_
 
-The `TOOLCHAIN_PATH` variable can be set to define a non-standard location for the toolchain. With setting this variable, it is also possible to use different versions of the toolchain for different projects. The default behaviour is to use the globally installed toolchain.
+The `TOOLCHAIN_PATH` variable can be set to define a non-standard location for the toolchain. With setting this variable, it is also possible to use different versions of the toolchain for different projects. By default, this variable is set to use the tools located at the in the setup guide recommended place. To use the globally installed tools, set the `TOOLCHAIN_PATH` to undefined in your projects makefile like this: `TOOLCHAIN_PATH =`.
 
 ### BIN_FOLDER
 
