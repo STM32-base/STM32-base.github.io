@@ -22,6 +22,7 @@ DTCM (Data Tightly Coupled Memory) are given where applicable and are part of th
  * [Jump to STM32L4 mapping](#stm32l4-mapping)
  * [Jump to STM32L4+ mapping](#stm32l4-mapping-1)
  * [Jump to STM32L5 mapping](#stm32l5-mapping)
+ * [Jump to STM32WB mapping](#stm32wb-mapping)
 
 ## STM32F0 mapping
 
@@ -190,7 +191,7 @@ DTCM (Data Tightly Coupled Memory) are given where applicable and are part of th
 | **STM32F479xG** |   STM32F479xI   |  1024 |  320 |  64 |      4 |
 |   STM32F479xI   |   STM32F479xI   |  2048 |  320 |  64 |      4 |
 
-_\* NOTE: These device names deviate from the standard naming, using the full name of the device (without the "x")._
+_\* Note: These device names deviate from the standard naming, using the full name of the device (without the "x")._
 
 ## STM32F7 mapping
 
@@ -386,3 +387,11 @@ _\* Note: These devices are not yet released. The mapping is a guess based on th
 | **STM32L562xE**   |   STM32L562xx*  |   512 |  256 |
 
 _\* Note: These devices are not yet released. The mapping is a guess based on the mapping available for the STM32L4 mappings._
+
+## STM32WB mapping
+
+| Device:           | Maps to:        | FLASH | SRAM |
+| ----------------- | --------------- | :---: | :--: |
+| **STM32WB55xC**   |   STM32WB55xx   |   256 |  128 |
+| **STM32WB55xE**   |   STM32WB55xx   |   512 |  256 |
+| **STM32WB55xG**   |   STM32WB55xx   |  1024 |  256 |
