@@ -286,7 +286,7 @@ title: "STM32F103RCT6 - STM32 Mini V2.0"
 
 | Pin   | Connected to |
 | ----- | ------------ |
-| /CS   | +3.3V rail via 10kΩ resistor |
+| /CS   | PA2, +3.3V rail via 10kΩ resistor |
 | DO    | PA6          |
 | IO2   | +3.3V rail   |
 | GND   | Ground plane |
