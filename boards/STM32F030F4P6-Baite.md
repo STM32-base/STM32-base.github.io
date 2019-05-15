@@ -96,7 +96,7 @@ title: "STM32F101C8T6 - Baite STM32F030F4 Module"
     </tr>
     <tr>
         <td>USB</td>
-        <td>Micro (+5V power only)</td>
+        <td>None</td>
     </tr>
     <tr>
         <td rowspan="3"><b>I/O</b></td>
@@ -128,9 +128,7 @@ title: "STM32F101C8T6 - Baite STM32F030F4 Module"
         <td><b>Remarks</b></td>
         <td colspan="2">
             <ul>
-                <li><b>Note:</b> Because the <code>STM32F030F4P6</code> does not support USB, only the power pins on the USB connector are connected.</li>
                 <li><b>Note:</b> This board has a 16MHz HSE crystal installed instead of a more common 8MHz variant.</li>
-                <li><b>Warning:</b> The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time.</li>
             </ul>
         </td>
     </tr>
@@ -173,16 +171,6 @@ title: "STM32F101C8T6 - Baite STM32F030F4 Module"
 | F1    | PF1          |
 | F0    | PF0          |
 | BT0   | BOOT0        |
-
-## USB
-
-| Pin   | Connected to |
-| ----- | ------------ |
-| VCC   | +5V rail     |
-| D-    | N.C.         |
-| D+    | N.C.         |
-| ID    | N.C.         |
-| GND   | Ground plane |
 
 ## Serial
 
