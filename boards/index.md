@@ -6,7 +6,7 @@ title: "Development boards"
 
 This page contains a list of all the STM32 development board pages currently available on this wiki. Every board page describes one unique kind of development board, both Chinese development boards and official ST development boards.
 
-The board pages contain one main table with different groups of information on the board. After that follow three pictures of the board (perspective, top view and bottom view). Afther the pictures, the pinouts of the different headers and connectors are listed. Headers and their pins are listed clock-wise (based on the top view) with the outer pin first (for double row headers). Click [here](#debuggers) to jump to the boards list.
+The board pages contain one main table with different groups of information on the board. After that follow three pictures of the board (perspective, top view and bottom view). After the pictures, the pinouts of the different headers and connectors are listed. Headers and their pins are listed clock-wise (based on the top view) with the outer pin first (for double row headers). Click [here](#debuggers) to jump to the boards list.
 
 **Warning:** Most Chinese development boards do not have any kind of protection on the +5V rail. This means that the +5V pin of the USB connector is directly connected to any +5V/VIN pin on the development board. Always check if this is the case when you're connecting your development board to an external power source while using the USB port.
 
