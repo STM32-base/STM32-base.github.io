@@ -14,6 +14,8 @@ menu:
 
   - title: "Guides"
     subitems:
+      - page: "Getting started with STM32"
+        url: "guides/getting-started"
       - page: "Setup"
         url: "guides/setup"
       - page: "Flashing"
