@@ -6,6 +6,10 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2019-07-07
+
+ - Updated the [About this project page]({{ site.url }}/general/about)
+
 ## 2019-06-24
 
  - Created the [Getting started with STM32 guide]({{ site.url }}/guides/getting-started)

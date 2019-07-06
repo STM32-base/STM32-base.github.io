@@ -9,7 +9,7 @@ menu:
         url: "general/roadmap"
       - page: "What's new"
         url: "general/whats-new"
-      - page: "About"
+      - page: "About this project"
         url: "general/about"
 
   - title: "Guides"
