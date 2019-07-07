@@ -9,6 +9,8 @@ This page contains a list of updates to this website and any of the repositories
 ## 2019-07-07
 
  - Updated the [About this project page]({{ site.url }}/general/about)
+ - Updated the [Setting up STM32-base guide]({{ site.url }}/guides/setup)
+ - Added the [Guides index page]({{ site.url }}/guides)
 
 ## 2019-06-24
 
