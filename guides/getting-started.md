@@ -4,7 +4,7 @@ title: Getting started with STM32
 
 # {{ page.title }}
 
-Welcome to the first guide in a series of guides. This guide is intended for mainly hobbyists who want to get started with STM32 microcontrollers but don't know _how_ to or _where_ to get started.
+Welcome to the first guide in a series of guides. This guide is intended for beginners (hobbyists, students) who want to get started with STM32 microcontrollers but don't know _how_ to or _where_ to get started.
 
 This guide gives you an overview of the available hardware and software for working with STM32 microcontrollers. Also, it will briefly introduce you to the STM32 family of microcontrollers.
 
