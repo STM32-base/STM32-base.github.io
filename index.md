@@ -10,7 +10,7 @@ _Welcome to the STM32-base project documentation!_ Here you will find documentat
 
 ## About
 
-The purpose of the STM32-base project is to provide you with a simple and easy to use base project for working with STM32 microcontrollers. You can find more information on why this project came into being on the [About page]({{ site.url }}/general/about).
+The purpose of the STM32-base project is to provide you with a simple and easy to use base project for working with STM32 microcontrollers. More information on why this project came into being can be found on the [about page]({{ site.url }}/general/about).
 
 The STM32-base project is divided over multiple Github repositories. See the [project overview page]({{ site.url }}/general/overview) to get an overview of the repositories and how they relate to each other.
 
