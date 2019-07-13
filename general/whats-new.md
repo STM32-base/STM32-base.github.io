@@ -6,6 +6,10 @@ title: "What's new"
 
 This page contains a list of updates to this website and any of the repositories belonging to the STM32-base project.
 
+## 2019-07-13
+
+ - Updated the [Roadmap and scope page]({{ site.url }}/general/roadmap)
+
 ## 2019-07-09
 
  - Updated the [Home page]({{ site.url }})

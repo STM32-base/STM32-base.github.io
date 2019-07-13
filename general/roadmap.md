@@ -1,18 +1,23 @@
 ---
-title: "Roadmap"
+title: "Roadmap and scope"
 ---
 
 # {{ page.title }}
 
-This is the roadmap page for the STM32-base project. It's nothing fancy, just a list of things still to be done. This also means that there is no particular order or priority.
+On this page you will find information on the roadmap and the scope of this project.
 
-* **Add a guide on debugging**<br>Add a guide on debugging STM32 devices using GDB.
-* **Look into Visual Studio Code GDB support**<br>As an addition to the guide on debugging with GDB, it might be nice to at least look into the support Visual Studio Code offers for working with GDB.
-* **Remove the CCM SRAM definitions for devices not having CCM SRAM**<br>CCM SRAM is not found on the lower performance STM32 devices. However, due to the way the linker scripts are currently set up, the `CCMRAM` memory region is also defined for these devices. The linker script files for these devices would look a little better if this memory region could simply be omitted.
-* **Add support for backup SRAM, DTCM and ITCM**<br>Should these types of memory have their own memory region in the linker file? If so, add them to the apporpriate linker files. If not, at least document how these types of memory can be used.
-* **Add a guide on flashing a device via its serial port**<br>All devices come with a pre-programmed bootloader which is capable of flashing a device via its UART and sometimes other peripherals. There is a open-source utility available for flashing STM32 devices via their UART using a UART to USB bridge.
-* **Look into supporting the official [ARM CMSIS](https://developer.arm.com/embedded/cmsis)**<br>The official CMSIS could (optionally) replace the one that comes with the ST Cube packages.
-* **Create an installer**<br>The setup instructions aren't rocket science at the moment, but an automatic installer is even easier.
-* **Test support for STM32F7 and STM32F3**<br>An STM32F7 development board is available, but not yet tested. An STM32F3 board needs to be bought.
-* **Ongoing: Improve documentation**
-* **Ongoing: Buy more unique STM32 development boards**<br>Keep expanding the STM32 boards collection!
+## Roadmap
+
+The roadmap for the STM32-base project has been moved to a [Github project](https://github.com/orgs/STM32-base/projects/1). Issues created on either the [STM32-base](https://github.com/STM32-base/STM32-base) or the [STM32-base.github.io](https://github.com/STM32-base/STM32-base.github.io) repositories are tracked with in that project.
+
+Issues listed on the project board are not guaranteed to be handled within a certain time frame. For now, the project board is a nice way to keep track of things that still need to be done.
+
+## Scope
+
+The scope of a project like this one can grow rapidly. Therefore it is important to keep an eye on what should and what should not be a part of the STM32-base project.
+
+If you have read the [about page]({{ site.url }}/general/about), you will know that the purpose of the STM32-base project is to provide you with a simple and easy to use base project for working with STM32 microcontrollers.
+
+To keep things simple and easy to use, the STM32-base repository is limited to makefiles, linker scripts, and startup code. It will not contain any C or C++ code. The project templates are limited to only those files that are required to make the example project work.
+
+All work on the STM32-base project is currently aimed at improving the documentation and polishing the base project. There are still a few major issues that need to be solved.

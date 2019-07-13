@@ -5,7 +5,7 @@ menu:
         url: ""
       - page: "Overview"
         url: "general/overview"
-      - page: "Roadmap"
+      - page: "Roadmap and scope"
         url: "general/roadmap"
       - page: "What's new"
         url: "general/whats-new"
