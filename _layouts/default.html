@@ -8,6 +8,7 @@
         {% seo %}
 
         <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+        {% if jekyll.environment == "production" %}
         <script type="text/javascript">
             var _paq = window._paq || [];
             _paq.push(['trackPageView']);
@@ -19,7 +20,8 @@
                 var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
                 g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
             })();
-  </script>
+        </script>
+        {% endif %}
     </head>
     <body>
         <div class="container">
