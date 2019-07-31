@@ -7,8 +7,6 @@ menu:
         url: "general/overview"
       - page: "Roadmap and scope"
         url: "general/roadmap"
-      - page: "What's new"
-        url: "general/whats-new"
       - page: "About this project"
         url: "general/about"
 
