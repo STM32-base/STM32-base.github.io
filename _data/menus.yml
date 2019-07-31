@@ -32,6 +32,8 @@ menu:
 
   - title: "Cheatsheets"
     subitems:
+      - page: "Linker: Memory blocks"
+        url: "cheatsheets/linker-memory-blocks/"
       - page: "Device name mapping"
         url: "cheatsheets/device-name-mapping"
       - page: "Makefile options"

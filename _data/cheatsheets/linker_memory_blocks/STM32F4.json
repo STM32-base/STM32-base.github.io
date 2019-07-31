@@ -1,0 +1,618 @@
+{
+    "blocks": [
+        "FLASH_BANK_1",
+        "SRAM_1",
+        "SRAM_2",
+        "SRAM_3",
+        "CCM_SRAM",
+        "BKP_SRAM",
+        "FSMC_BANK_1_1",
+        "FSMC_BANK_1_2",
+        "FSMC_BANK_1_3",
+        "FSMC_BANK_1_4",
+        "FSMC_BANK_2",
+        "FSMC_BANK_3",
+        "FSMC_BANK_4",
+        "FSMC_BANK_5",
+        "FSMC_BANK_6",
+        "QSPI"
+    ],
+    "devices": [
+        {
+            "name": "STM32F401xB",
+            "source": { "document": "DS9716", "revision": 11 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "128KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "64KiB" }
+            }
+        },
+        {
+            "name": "STM32F401xC",
+            "source": { "document": "DS9716", "revision": 11 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "256KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "64KiB" }
+            }
+        },
+        {
+            "name": "STM32F401xD",
+            "source": { "document": "DS10086", "revision": 3 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "384KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "96KiB" }
+            }
+        },
+        {
+            "name": "STM32F401xE",
+            "source": { "document": "DS10086", "revision": 3 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "96KiB" }
+            }
+        },
+
+        {
+            "name": "STM32F410x8",
+            "source": { "document": "DS11144", "revision": 6 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "64KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "32KiB" }
+            }
+        },
+        {
+            "name": "STM32F410xB",
+            "source": { "document": "DS11144", "revision": 6 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "128KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "32KiB" }
+            }
+        },
+
+        {
+            "name": "STM32F411xC",
+            "source": { "document": "DS10314", "revision": 7 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "256KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "128KiB" }
+            }
+        },
+        {
+            "name": "STM32F411xE",
+            "source": { "document": "DS10314", "revision": 7 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "128KiB" }
+            }
+        },
+
+        {
+            "name": "STM32F412xE",
+            "source": { "document": "DS11139", "revision": 7 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "256KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "QSPI": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F412xG",
+            "source": { "document": "DS11139", "revision": 7 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "256KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "QSPI": { "origin": "0x9000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F413xG",
+            "source": { "document": "DS11581", "revision": 6 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "256KiB" },
+                "SRAM_2": { "origin": "0x2004 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "QSPI": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F413xH",
+            "source": { "document": "DS11581", "revision": 6 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1536KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "256KiB" },
+                "SRAM_2": { "origin": "0x2004 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "QSPI": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F423xH",
+            "source": { "document": "DS11580", "revision": 7 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1536KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "256KiB" },
+                "SRAM_2": { "origin": "0x2004 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "QSPI": { "origin": "0x9000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F405xE",
+            "source": { "document": "DS8626", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F405xG",
+            "source": { "document": "DS8626", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F415xG",
+            "source": { "document": "DS8597", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F407xE",
+            "source": { "document": "DS8626", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F417xE",
+            "source": { "document": "DS8597", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F407xG",
+            "source": { "document": "DS8626", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+        {
+            "name": "STM32F417xG",
+            "source": { "document": "DS8597", "revision": 8 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F446xC",
+            "source": { "document": "DS10693", "revision": 6 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "256KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F446xE",
+            "source": { "document": "DS10693", "revision": 6 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F427xG",
+            "source": { "document": "DS9405", "revision": 10 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F437xG",
+            "source": { "document": "DS9484", "revision": 11 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F427xI",
+            "source": { "document": "DS9405", "revision": 10 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "2048KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F437xI",
+            "source": { "document": "DS9484", "revision": 11 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "2048KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F429xE",
+            "source": { "document": "DS9405", "revision": 10 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F429xG",
+            "source": { "document": "DS9405", "revision": 10 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F439xG",
+            "source": { "document": "DS9484", "revision": 11 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F429xI",
+            "source": { "document": "DS9405", "revision": 10 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "2048KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F439xI",
+            "source": { "document": "DS9484", "revision": 11 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "2048KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
+                "SRAM_3": { "origin": "0x2002 0000", "size": "64KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_2": { "origin": "0x7000 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "FSMC_BANK_4": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+
+        {
+            "name": "STM32F469xE",
+            "source": { "document": "DS11189", "revision": 5 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "160KiB" },
+                "SRAM_2": { "origin": "0x2002 8000", "size": "32KiB" },
+                "SRAM_3": { "origin": "0x2003 0000", "size": "128KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F469xG",
+            "source": { "document": "DS11189", "revision": 5 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "160KiB" },
+                "SRAM_2": { "origin": "0x2002 8000", "size": "32KiB" },
+                "SRAM_3": { "origin": "0x2003 0000", "size": "128KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F479xG",
+            "source": { "document": "DS11118", "revision": 5 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "160KiB" },
+                "SRAM_2": { "origin": "0x2002 8000", "size": "32KiB" },
+                "SRAM_3": { "origin": "0x2003 0000", "size": "128KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F469xI",
+            "source": { "document": "DS11189", "revision": 5 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "2048KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "160KiB" },
+                "SRAM_2": { "origin": "0x2002 8000", "size": "32KiB" },
+                "SRAM_3": { "origin": "0x2003 0000", "size": "128KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        },
+        {
+            "name": "STM32F479xI",
+            "source": { "document": "DS11118", "revision": 5 },
+            "memory": {
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "2048KiB" },
+                "SRAM_1": { "origin": "0x2000 0000", "size": "160KiB" },
+                "SRAM_2": { "origin": "0x2002 8000", "size": "32KiB" },
+                "SRAM_3": { "origin": "0x2003 0000", "size": "128KiB" },
+                "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
+                "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
+                "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
+                "FSMC_BANK_1_2": { "origin": "0x6400 0000" },
+                "FSMC_BANK_1_3": { "origin": "0x6800 0000" },
+                "FSMC_BANK_1_4": { "origin": "0x6C00 0000" },
+                "FSMC_BANK_3": { "origin": "0x8000 0000" },
+                "QSPI": { "origin": "0x9000 0000" },
+                "FSMC_BANK_5": { "origin": "0xC000 0000" },
+                "FSMC_BANK_6": { "origin": "0xD000 0000" }
+            }
+        }
+    ]
+}

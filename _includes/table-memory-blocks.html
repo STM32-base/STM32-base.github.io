@@ -1,0 +1,30 @@
+{% assign devices = include.data["devices"] | sort: "name" %}
+{% assign blocks = include.data["blocks"] %}
+
+<div class="scrollable-table memory-blocks-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Device</th>
+                {% for block in blocks %}
+                <th>{{ block }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for device in devices %}
+            <tr>
+                <td>{{ device["name"] }}</td>
+                {% for block in blocks %}
+                {% assign memory = device["memory"][block] %}
+                {% if memory %}
+                <td>{% if memory["size"] %}{{ memory["size"] }} @ {% endif %}<code>{{ memory["origin"] }}</code></td>
+                {% else %}
+                <td>N/A</td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>

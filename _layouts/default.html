@@ -1,64 +1,39 @@
-<!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+---
+layout: base
+---
 
-        {% seo %}
-
-        <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-        {% if jekyll.environment == "production" %}
-        <script type="text/javascript">
-            var _paq = window._paq || [];
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
-            (function() {
-                var u="//tracking.stm32-base.org/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                _paq.push(['setSiteId', '1']);
-                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-            })();
-        </script>
-        {% endif %}
-    </head>
-    <body>
-        <div class="container">
-            <header>
-            {% if site.logo %}
-                <div class="logo">
-                    <a href="{{ "/" | absolute_url }}">
-                        <img src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }}" />
-                    </a>
-                </div>
-            {% endif %}
+<div class="container">
+    <header>
+    {% if site.logo %}
+        <div class="logo">
+            <a href="{{ "/" | absolute_url }}">
+                <img src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }}" />
+            </a>
+        </div>
+    {% endif %}
+        <menu>
+        {% for item in site.data.menus.menu %}
+            <li>
+            {{ item.title }}
                 <menu>
-                {% for item in site.data.menus.menu %}
+                {% for entry in item.subitems %}
                     <li>
-                    {{ item.title }}
-                        <menu>
-                        {% for entry in item.subitems %}
-                            <li>
-                                {% if entry.external %}
-                                <a href="{{ entry.url }}">{{ entry.page }}</a>
-                                {% else %}
-                                <a href="{{ site.url }}/{{ entry.url }}">{{ entry.page }}</a>
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                        </menu>
+                        {% if entry.external %}
+                        <a href="{{ entry.url }}">{{ entry.page }}</a>
+                        {% else %}
+                        <a href="{{ site.url }}/{{ entry.url }}">{{ entry.page }}</a>
+                        {% endif %}
                     </li>
                 {% endfor %}
                 </menu>
-            </header>
-            <section>
-            {{ content }}
-            </section>
-            <footer>
-                <p><small>Hosted on GitHub Pages</small></p>
-            </footer>
-        </div>
-        <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    </body>
-</html>
+            </li>
+        {% endfor %}
+        </menu>
+    </header>
+    <section>
+    {{ content }}
+    </section>
+    <footer>
+        <p><small>Hosted on GitHub Pages</small></p>
+    </footer>
+</div>
