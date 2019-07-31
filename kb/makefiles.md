@@ -1,5 +1,5 @@
 ---
-title: Makefiles
+title: "Makefiles"
 ---
 
 # {{ page.title }}

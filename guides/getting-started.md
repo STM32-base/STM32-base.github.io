@@ -1,5 +1,5 @@
 ---
-title: Getting started with STM32
+title: "Getting started with STM32"
 ---
 
 # {{ page.title }}

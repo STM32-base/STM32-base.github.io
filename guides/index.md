@@ -1,5 +1,5 @@
 ---
-title: Guides index
+title: "Guides index"
 ---
 
 # {{ page.title }}
