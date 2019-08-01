@@ -164,7 +164,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
@@ -182,7 +182,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
@@ -200,7 +200,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
@@ -219,7 +219,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
@@ -237,7 +237,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "512KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
@@ -255,7 +255,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
@@ -273,7 +273,7 @@
             "memory": {
                 "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
-                "SRAM_2": { "origin": "0x2001 0000", "size": "16KiB" },
+                "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "CCM_SRAM": { "origin": "0x1000 0000", "size": "64KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
                 "FSMC_BANK_1_1": { "origin": "0x6000 0000" },
