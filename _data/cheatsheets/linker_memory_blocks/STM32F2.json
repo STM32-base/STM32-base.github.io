@@ -85,7 +85,7 @@
             "name": "STM32F205xG",
             "source": { "document": "DS6329", "revision": 16 },
             "memory": {
-                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1MiB" },
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
                 "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
@@ -119,7 +119,7 @@
             "name": "STM32F215xG",
             "source": { "document": "DS6697", "revision": 13 },
             "memory": {
-                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1MiB" },
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
                 "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
@@ -188,7 +188,7 @@
             "name": "STM32F207xG",
             "source": { "document": "DS6329", "revision": 16 },
             "memory": {
-                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1MiB" },
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
                 "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
@@ -222,7 +222,7 @@
             "name": "STM32F217xG",
             "source": { "document": "DS6697", "revision": 13 },
             "memory": {
-                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1MiB" },
+                "FLASH_BANK_1": { "origin": "0x0800 0000", "size": "1024KiB" },
                 "SRAM_1": { "origin": "0x2000 0000", "size": "112KiB" },
                 "SRAM_2": { "origin": "0x2001 C000", "size": "16KiB" },
                 "BKP_SRAM": { "origin": "0x4002 4000", "size": "4KiB" },
