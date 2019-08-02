@@ -1,5 +1,5 @@
 {
-    "blocks": [
+    "regions": [
         "FLASH_BANK_1",
         "SRAM_1"
     ],

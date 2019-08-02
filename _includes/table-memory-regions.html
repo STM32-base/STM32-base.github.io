@@ -1,13 +1,13 @@
 {% assign devices = include.data["devices"] | sort: "name" %}
-{% assign blocks = include.data["blocks"] %}
+{% assign regions = include.data["regions"] %}
 
-<div class="scrollable-table memory-blocks-table">
+<div class="scrollable-table memory-regions-table">
     <table>
         <thead>
             <tr>
                 <th>Device</th>
-                {% for block in blocks %}
-                <th>{{ block }}</th>
+                {% for region in regions %}
+                <th>{{ region }}</th>
                 {% endfor %}
             </tr>
         </thead>
@@ -15,8 +15,8 @@
             {% for device in devices %}
             <tr>
                 <td>{{ device["name"] }}</td>
-                {% for block in blocks %}
-                {% assign memory = device["memory"][block] %}
+                {% for region in regions %}
+                {% assign memory = device["memory"][region] %}
                 {% if memory %}
                 <td>{% if memory["size"] %}{{ memory["size"] }} @ {% endif %}<code>{{ memory["origin"] }}</code></td>
                 {% else %}
