@@ -1,5 +1,5 @@
 ---
-title: "STM32F407VGT6 - vcc-gnd.com Large"
+title: "STM32F407ZGT6 - vcc-gnd.com Large"
 ---
 
 # {{ page.title }}
@@ -25,7 +25,7 @@ title: "STM32F407VGT6 - vcc-gnd.com Large"
     <tr>
         <td rowspan="6"><b>Microcontroller</b></td>
         <td>Part</td>
-        <td>STM32F407VGT6</td>
+        <td>STM32F407ZGT6</td>
     </tr>
     <tr>
         <td>Package</td>
