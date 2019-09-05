@@ -52,6 +52,7 @@ The board pages contain one main table with different groups of information on t
  * [STM32F103RCT6 - STM32 Mini V2.0]({{ site.url }}/boards/STM32F103RCT6-STM32-Mini-V2.0)
  * [STM32F103RCT6 - STM32F103RCT6 V1.0]({{ site.url }}/boards/STM32F103RCT6-STM32F103RCT6_V1.0)
  * [STM32F103RET6 - Generic Board]({{ site.url }}/boards/STM32F103RET6-Generic-Board)
+ * [STM32F103T8U6 - CJMCU-3206]({{ site.url }}/boards/STM32F103T8U6-CJMCU-3206)
  * [STM32F103VCT6 - vcc-gnd.com Medium]({{ site.url }}/boards/STM32F103VCT6-VCC-GND-Medium)
  * [STM32F103VCT6 - vcc-gnd.com Small]({{ site.url }}/boards/STM32F103VCT6-VCC-GND-Small)
  * [STM32F103VET6 - CZ miniSTM32F103VE-EK]({{ site.url }}/boards/STM32F103VET6-CZ-miniSTM32F103VE-EK)
