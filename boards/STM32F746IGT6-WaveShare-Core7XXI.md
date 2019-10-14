@@ -87,6 +87,10 @@ title: "STM32F746IGT6 - WaveShare Core7XXI"
         <td>2x 2x40 male dupont (2mm)</td>
     </tr>
     <tr>
+        <td>Specific</td>
+        <td>None</td>
+    </tr>
+    <tr>
         <td>Debug</td>
         <td>JTAG (20-pin IDC)</td>
     </tr>
