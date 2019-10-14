@@ -84,7 +84,7 @@ title: "STM32F746IGT6 - WaveShare Core7XXI"
     <tr>
         <td rowspan="4"><b>Connectivity</b></td>
         <td>Headers</td>
-        <td>2x 2x27 male dupont (2.54mm)</td>
+        <td>2x 2x40 male dupont (2mm)</td>
     </tr>
     <tr>
         <td>Specific</td>
