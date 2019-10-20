@@ -109,7 +109,7 @@ title: "STM32F746IGT6 - WaveShare Core7XXI"
     </tr>
     <tr>
         <td>Other devices</td>
-        <td><a href="http://www.issi.com/WW/pdf/42-45S16400J.pdf">ISSI IS42S16400J (64Mb RAM)</a></td>
+        <td><a href="http://www.issi.com/WW/pdf/42-45S16400J.pdf">ISSI IS42S16400J (8MB RAM)</a></td>
     </tr>
     <tr>
         <td rowspan="3"><b>PCB</b></td>
