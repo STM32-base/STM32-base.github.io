@@ -1,5 +1,5 @@
 ---
-title: "STM32F101C8T6 - Baite STM32F030F4 Module"
+title: "STM32F030F4P6 - Baite STM32F030F4 Module"
 ---
 
 # {{ page.title }}
