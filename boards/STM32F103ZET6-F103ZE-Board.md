@@ -344,11 +344,12 @@ title: "STM32F103ZET6 - F103ZE board"
 |  32   | +3.3V rail   |                |
 |  31   | Ground plane |                |
 
-## TFT Notes:
-Note 1: TFT pin 28 is connected to Q1 Collector. Q1 Emitter is connected to 3V3. 
+### Note 1: 
+TFT pin 28 is connected to Q1 Collector. Q1 Emitter is connected to 3V3. 
 Q1 Base is connected to R19 which is NOT INSTALLED. The intended display will always have the backlight on.
 If Your display does not have a backlight driver that works the same, try installing R19.
-Note 2: The XPT2046 touch controller does have a pin that can be used to measure the VBAT voltage, but I have not seen 
+### Note 2: 
+The XPT2046 touch controller does have a pin that can be used to measure the VBAT voltage, but I have not seen 
 anything connected to it.
 
 ## NRF2401
