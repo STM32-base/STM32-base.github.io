@@ -240,6 +240,7 @@ title: "STM32F103ZET6 - F103ZE board"
 | PB0   | PB0          |
 | PC5   | PC5          |
 | PC4   | PC4          |
+| PA7   | PA7          |
 | PA6   | PA6          |
 | PA5   | PA5          |
 | PA4   | PA4          |
@@ -308,40 +309,45 @@ title: "STM32F103ZET6 - F103ZE board"
 
 ## TFT
 
-| Pin   | Connected to |
-| ----- | ------------ |
-|       | NRST         |
-|       | Ground plane |
-|       | PD9          |
-|       | PD10         |
-|       | PE15         |
-|       | PD8          |
-|       | PE13         |
-|       | PE14         |
-|       | PE11         |
-|       | PE12         |
-|       | PE9          |
-|       | PE10         |
-|       | PE7          |
-|       | PE8          |
-|       | PD0          |
-|       | PD1          |
-|       | PD14         |
-|       | PD15         |
-|       | PD5          |
-|       | PD4          |
-|       | PG12         |
-|       | PG0          |
-|       | PB2          |
-|       | PB1          |
-|       | PF8          |
-|       | PF9          |
-|       | N.C.         |
-|       | N.C.         |
-|       | VBAT         |
-|       | Ground plane |
-|       | +3.3V rail   |
-|       | Ground plane |
+| Pin   | Connected to |Function        |
+| ----- | ------------ |----------------|
+|   2   | NRST         |                |
+|   1   | Ground plane |                |
+|   4   | PD9          | FSMC D14       |
+|   3   | PD10         | FSMC D15       |
+|   6   | PE15         | FSMC D12       |
+|   5   | PD8          | FSMC D13       |
+|   8   | PE13         | FSMC D10       |
+|   7   | PE14         | FSMC D11       |
+|  10   | PE11         | FSMC D8        |
+|   9   | PE12         | FSMC D9        |
+|  12   | PE9          | FSMC D6        |
+|  11   | PE10         | FSMC D7        |
+|  14   | PE7          | FSMC D4        |
+|  13   | PE8          | FSMC D5        |
+|  16   | PD0          | FSMC D2        |
+|  15   | PD1          | FSMC D3        |
+|  18   | PD14         | FSMC D0        |
+|  17   | PD15         | FSMC D1        |
+|  20   | PD5          | FSMC NWE       |
+|  19   | PD4          | FSMC NOE       |
+|  22   | PG12         | FSMC NE4       |
+|  21   | PG0          | FSMC A10       |
+|  24   | PB2          | Touch CS       |
+|  23   | PB1          | Touch CLK      |
+|  26   | PF8          | Touch (MI)SO   |
+|  25   | PF9          | Touch (MO)SI   |
+|  28   | N.C.         | Note 1         |
+|  27   | PC13 via R15 | Touch Event    |
+|  30   | VBAT         | Note 2         |
+|  29   | Ground plane |                |
+|  32   | +3.3V rail   |                |
+|  31   | Ground plane |                |
+Note 1: TFT pin 28 is connected to Q1 Collector. Q1 Emitter is connected to 3V3. 
+Q1 Base is connected to R19 which is NOT INSTALLED. The intended display will always have the backlight on.
+If Your display does not have a backlight driver that works the same, try installing R19.
+Note 2: The XPT2046 touch controller does have a pin that can be used to measure the VBAT voltage, but I have not seen 
+anything connected to it.
 
 ## NRF2401
 
