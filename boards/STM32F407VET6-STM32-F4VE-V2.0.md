@@ -135,7 +135,7 @@ title: "STM32F407VET6 - STM32 F4VE V2.0"
 </table>
 ## Resources
 
-    [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F407VET6-STM32_F4VE_V2.0.pdf)
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F407VET6-STM32_F4VE_V2.0.pdf)
 
 ## Pictures
 
