@@ -118,7 +118,7 @@ title: "STM32F103ZET6 - F103ZE board"
     </tr>
     <tr>
         <td>Size</td>
-        <td>95mm x 64mm</td>
+        <td>95mm x 74mm</td>
     </tr>
     <tr>
         <td>Mounting</td>
