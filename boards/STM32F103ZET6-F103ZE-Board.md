@@ -337,15 +337,17 @@ title: "STM32F103ZET6 - F103ZE board"
 |  23   | PB1          | Touch CLK      |
 |  26   | PF8          | Touch (MI)SO   |
 |  25   | PF9          | Touch (MO)SI   |
-|  28   | Q1 collector | [Note 1]       |
+|  28   | Q1 collector | Note 1         |
 |  27   | PC13 via R15 | Touch Event    |
 |  30   | Ground plane |                |
-|  29   | VBAT         | [Note 2]       |
+|  29   | VBAT         | Note 2         |
 |  32   | Ground plane |                |
 |  31   | +3.3V rail   |                |
 
+Note 1:<br>
 The TFT header pin 28 is connected to the collector of Q1. The emitter of Q1 is connected to the +3.3V rail. The base of Q1 is connected to R19 which is **not present** on this board. Neither side of the **uninstalled** R19 is connected to the STM.
 
+Note 2:<br>
 This pin is usually not connected on the TFT.
 
 ## NRF2401
