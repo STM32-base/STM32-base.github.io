@@ -345,7 +345,9 @@ title: "STM32F103ZET6 - F103ZE board"
 |  31   | +3.3V rail   |                |
 
 Note 1:<br>
-The TFT header pin 28 is connected to the collector of Q1. The emitter of Q1 is connected to the +3.3V rail. The base of Q1 is connected to R19 which is **not present** on this board. Neither side of the **uninstalled** R19 is connected to the STM.
+The TFT header pin 28, which is intended to control the backlight on the TFT, is connected to the collector of Q1. The emitter of Q1 is connected to the +3.3V rail. The base of Q1 is connected to R19 which is **not present** on this board. Neither side of the **uninstalled** R19 is connected to the STM, so You have no control of this header pin. The base of transistor Q1 floats, the transistor does not conduct and the header pin is pulled "LOW" by 1K5 resistor R20. If the backlight on Your display does not light up with a "LOW" control signal, You can EITHER:<br>
+    <ul><li>Leave R19 uninstalled and connect the R19 pad closest to Q1 to an STM pin through a 1K5 resistor, giving full control of the header pin. Choose a pin that is not used for anything else.</li>
+    <li>Install a 100 Ohm 0603 resistor as R19. This will turn Q1 on with a base current of about 0.4mA, and the header pin will go "HIGH". How high depends somewhat on what Your display has connected to the header pin: I got from 2.5 to 2.7V during testing, enough to switch the backlight on. You still have no control, the backlight will always be on.</li></ul>
 
 Note 2:<br>
 This pin is usually not connected on the TFT.
