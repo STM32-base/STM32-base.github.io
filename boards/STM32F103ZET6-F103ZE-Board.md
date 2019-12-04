@@ -309,44 +309,43 @@ title: "STM32F103ZET6 - F103ZE board"
 
 ## TFT
 
-| Pin   | TFT  | Connected to | Function       |
-| ----- | ---- | ------------ | -------------- |
-|   2   | RST  | NRST         |                |
-|   1   | GND  | Ground plane |                |
-|   4   | DB14 | PD9          | FSMC D14       |
-|   3   | DB15 | PD10         | FSMC D15       |
-|   6   | DB12 | PE15         | FSMC D12       |
-|   5   | DB13 | PD8          | FSMC D13       |
-|   8   | DB10 | PE13         | FSMC D10       |
-|   7   | DB11 | PE14         | FSMC D11       |
-|  10   | DB08 | PE11         | FSMC D8        |
-|   9   | DB09 | PE12         | FSMC D9        |
-|  12   | DB06 | PE9          | FSMC D6        |
-|  11   | DB07 | PE10         | FSMC D7        |
-|  14   | DB04 | PE7          | FSMC D4        |
-|  13   | DB05 | PE8          | FSMC D5        |
-|  16   | DB02 | PD0          | FSMC D2        |
-|  15   | DB03 | PD1          | FSMC D3        |
-|  18   | DB00 | PD14         | FSMC D0        |
-|  17   | DB01 | PD15         | FSMC D1        |
-|  20   | WR   | PD5          | FSMC NWE       |
-|  19   | RD   | PD4          | FSMC NOE       |
-|  22   | CS_M | PG12         | FSMC NE4       |
-|  21   | RS   | PG0          | FSMC A10       |
-|  24   | SCS  | PB2          | Touch CS       |
-|  23   | SCK  | PB1          | Touch CLK      |
-|  26   | SO   | PF8          | Touch (MI)SO   |
-|  25   | SI   | PF9          | Touch (MO)SI   |
-|  28   | BLK  | Q1 collector | Note 1         |
-|  27   | INT  | PC13 via R15 | Touch Event    |
-|  30   | GND  | Ground plane |                |
-|  29   | SET  | VBAT         |  Note 2        |
-|  32   | GND  | Ground plane |                |
-|  31   | 3V3  | +3.3V rail   |                |
+| Pin   | Connected to | Function       |
+| ----- | ------------ | -------------- |
+|   2   | NRST         |                |
+|   1   | Ground plane |                |
+|   4   | PD9          | FSMC D14       |
+|   3   | PD10         | FSMC D15       |
+|   6   | PE15         | FSMC D12       |
+|   5   | PD8          | FSMC D13       |
+|   8   | PE13         | FSMC D10       |
+|   7   | PE14         | FSMC D11       |
+|  10   | PE11         | FSMC D8        |
+|   9   | PE12         | FSMC D9        |
+|  12   | PE9          | FSMC D6        |
+|  11   | PE10         | FSMC D7        |
+|  14   | PE7          | FSMC D4        |
+|  13   | PE8          | FSMC D5        |
+|  16   | PD0          | FSMC D2        |
+|  15   | PD1          | FSMC D3        |
+|  18   | PD14         | FSMC D0        |
+|  17   | PD15         | FSMC D1        |
+|  20   | PD5          | FSMC NWE       |
+|  19   | PD4          | FSMC NOE       |
+|  22   | PG12         | FSMC NE4       |
+|  21   | PG0          | FSMC A10       |
+|  24   | PB2          | Touch CS       |
+|  23   | PB1          | Touch CLK      |
+|  26   | PF8          | Touch (MI)SO   |
+|  25   | PF9          | Touch (MO)SI   |
+|  28   | Q1 collector | [Note 1]       |
+|  27   | PC13 via R15 | Touch Event    |
+|  30   | Ground plane |                |
+|  29   | VBAT         | [Note 2]       |
+|  32   | Ground plane |                |
+|  31   | +3.3V rail   |                |
 
-### Note 1
 The TFT header pin 28 is connected to the collector of Q1. The emitter of Q1 is connected to the +3.3V rail. The base of Q1 is connected to R19 which is **not present** on this board. Neither side of the **uninstalled** R19 is connected to the STM.
-### Note 2 
+
 This pin is usually not connected on the TFT.
 
 ## NRF2401
