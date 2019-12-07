@@ -1,0 +1,626 @@
+{% assign startSize = 30000 %}
+
+{% assign data = include['data'] %}
+
+{% assign board = data['board'] %}
+{% capture boardName %}
+    {% if board['part']['url'] %}
+    <a href="{{ board['part']['url'] }}">{{ board['part']['name'] }}</a>
+    {% else %}
+    {{ board['part']['name'] }}
+    {% endif %}
+{% endcapture %}
+{% assign boardPart = board['part']['marking'] | default: 'Unknown' %}
+{% capture boardBrand %}
+    {% if board['brand'] %}
+        {% if board['brand']['url'] %}
+        <a href="{{ board['brand']['url'] }}">{{ board['brand']['name'] }}</a>
+        {% else %}
+        {{ board['brand']['name'] }}
+        {% endif %}
+    {% else %}
+    Unknown
+    {% endif %}
+{% endcapture %}
+{% assign boardOrigin = board['origin'] | default: 'Unknown' %}
+
+{% assign part = data['microcontroller'] %}
+{% assign series = part | slice: 0, 7 %}
+{% assign microcontroller = site['data']['devices'][series][part] %}
+{% capture ucPart %}
+<a href="{{ microcontroller['part']['url'] }}">{{ microcontroller['part']['name'] }}</a>
+{% endcapture %}
+{% capture ucManufacturer %}
+<a href="{{ microcontroller['manufacturer']['url'] }}">{{ microcontroller['manufacturer']['name'] }}</a>
+{% endcapture %}
+{% capture ucCore %}
+<a href="{{ microcontroller['core']['url'] }}">{{ microcontroller['core']['name'] }}</a>
+{% endcapture %}
+{% assign ucSpeed = microcontroller['core']['clock'] | append: 'MHz' %}
+{% capture ucPackage %}
+<abbr title="{{ microcontroller['package']['name'] }}">{{ microcontroller['package']['abbreviation'] }}</abbr> {{ microcontroller['package']['pins'] }} pins
+{% endcapture %}
+
+{% assign memories = microcontroller['memories'] %}
+{% assign memFlash = memories['flash'] | append: 'KiB' %}
+{% assign memSram = memories['sram'] | append: 'KiB' %}
+{% assign hasMemCcm = memories['ccm'] %}
+{% assign memCcm = memories['ccm'] | append: 'KiB' %}
+{% assign hasMemBackup = memories['backup'] %}
+{% assign memBackup = memories['backup'] | append: 'KiB' %}
+{% assign hasMemItcmFlash = memories['itcmFlash'] %}
+{% assign memItcmFlash = memories['itcmFlash'] | append: 'KiB' %}
+{% assign hasMemItcmRam = memories['itcmRam'] %}
+{% assign memItcmRam = memories['itcmRam'] | append: 'KiB' %}
+{% assign hasMemDtcmRam = memories['dtcmRam'] %}
+{% assign memDtcmRam = memories['dtcmRam'] | append: 'KiB' %}
+
+{% assign crystals = data['crystals'] %}
+{% assign hsi = microcontroller['oscillators']['hsi'] | append: 'MHz' %}
+{% assign lsi = microcontroller['oscillators']['lsi'] | append: 'kHz' %}
+{% capture hse %}
+{{ crystals['hse'] | default: 'None' }}{% if crystals['hse'] %}MHz{% endif %}
+{% endcapture %}
+{% capture lse %}
+{{ crystals['lse'] | default: 'None' }}{% if crystals['lse'] %}kHz{% endif %}
+{% endcapture %}
+
+{% assign power = data['power'] %}
+{% capture powerSources %}
+{%- for source in power['sources'] -%}
+<div>{{source['name']}} (+{{ source['voltage'] }}V)</div>
+{%- endfor -%}
+{% endcapture %}
+{% capture powerVdda %}
+{% if power['analog']['vdda'] %}Yes{% else %}No{% endif %}
+{% endcapture %}
+{% capture powerVssa %}
+{% if power['analog']['vssa'] %}Yes{% else %}No{% endif %}
+{% endcapture %}
+{% capture powerVrefNegative %}
+{% if power['analog']['vrefNegative'] %}Yes{% else %}No{% endif %}
+{% endcapture %}
+{% capture powerVrefPositive %}
+{% if power['analog']['vrefPositive'] %}Yes{% else %}No{% endif %}
+{% endcapture %}
+{% capture powerBattery %}
+{{ power['battery']['type'] | default: 'none' | capitalize }}{% if power['battery']['size'] %} ({{ power['battery']['size']['diameter'] }}mm / {{ power['battery']['size']['code'] }}){% endif %}
+{% endcapture %}
+
+{% assign regulator = site['data']['devices']['regulators'][data['regulator']] %}
+{% capture regulatorManufacturer %}
+    {% if regulator['manufacturer'] %}
+        {% if regulator['manufacturer']['url'] %}
+        <a href="{{ regulator['manufacturer']['url'] }}">{{ regulator['manufacturer']['name'] }}</a>
+        {% else %}
+        {{ regulator['manufacturer']['name'] }}
+        {% endif %}
+    {% else %}
+    Unknown
+    {% endif %}
+{% endcapture %}
+{% capture regulatorPart %}
+    {% if regulator['part'] %}
+        {% if regulator['part']['url'] %}
+        <a href="{{ regulator['part']['url'] }}">{{ regulator['part']['name'] }}{% if regulator['part']['marking'] %} (<code>{{ regulator['part']['marking'] }}</code>){% endif %}</a>
+        {% else %}
+        {{ regulator['part']['name'] }}{% if regulator['part']['marking'] %} (<code>{{ regulator['part']['marking'] }}</code>){% endif %}
+        {% endif %}
+    {% else %}
+    Unknown
+    {% endif %}
+{% endcapture %}
+{% capture regulatorPackage %}
+<abbr title="{{ regulator['package']['name'] }}">{{ regulator['package']['abbreviation'] }}</abbr> {{ regulator['package']['pins'] }} pins
+{% endcapture %}
+{% capture regulatorInput %}
+    {% if regulator['input'] %}
+    +{{ regulator['input']['min'] }}V to +{{ regulator['input']['max'] }}V
+    {% else %}
+    Unknown
+    {% endif %}
+{% endcapture %}
+{% capture regulatorOutput %}
+    {% if regulator['output'] %}
+    +{{ regulator['output']['voltage'] }}V @ {% if regulator['output']['amperage'] < 1 %}{{ regulator['output']['amperage'] | times: 1000 | floor }}mA{% else %}{{ regulator['output']['amperage'] }}A{% endif %}
+    {% else %}
+    Unknown
+    {% endif %}
+{% endcapture %}
+{% capture regulatorDatasheet %}
+    {% if regulator['part']['datasheet'] %}
+    <a href="{{ site.url }}/assets/pdf/regulators/{{ regulator['part']['datasheet'] }}">{{ regulator['part']['datasheet'] }}</a>
+    {% else %}
+    Unavailable
+    {% endif %}
+{% endcapture %}
+
+{% assign pcb = data['pcb'] %}
+{% assign pcbColor = pcb['color'] | capitalize %}
+{% assign pcbSize = pcb['size']['width'] | append: 'mm x ' | append: pcb['size']['length'] | append: 'mm' %}
+{% assign pcbMounting = pcb['mounting'] | default: 'None' %}
+
+{% assign remarks = data['remarks'] %}
+
+{% assign resources = data['resources'] %}
+{% assign pictures = resources | where: 'type', 'picture' %}
+
+{% assign inputs = data['inputs'] %}
+{% assign outputs = data['outputs'] %}
+
+{% assign connectors = data['connectors'] %}
+{% assign headers = connectors | where: 'function', 'header' %}
+{% assign debugHeaders = connectors | where: 'function', 'debug' %}
+{% assign usbConnectors = connectors | where: 'function', 'usb' %}
+
+{% assign devices = data['devices'] %}
+
+<div class="board-header">
+    <h1>{{ board['part']['name'] }}</h1>
+    <p>{{ microcontroller['part']['name'] }}</p>
+    <hr>
+</div>
+<div class="board-content">
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-sticky-note"></i></div>
+                <h2>Board</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td>Name</td><td>{{ boardName | strip }}</td></tr>
+                    <tr><td>Part</td><td>{{ boardPart | strip }}</td></tr>
+                    <tr><td>Brand</td><td>{{ boardBrand | strip }}</td></tr>
+                    <tr><td>Origin</td><td>{{ boardOrigin | strip }}</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-microchip"></i></div>
+                <h2>Microcontroller</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td>Part</td><td>{{ ucPart | strip }}</td></tr>
+                    <tr><td>Manufacturer</td><td>{{ ucManufacturer | strip }}</td></tr>
+                    <tr><td>Core</td><td>{{ ucCore | strip }}</td></tr>
+                    <tr><td>Max. Clock Speed</td><td>{{ ucSpeed | strip }}</td></tr>
+                    <tr><td>Package</td><td>{{ ucPackage | strip }}</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-memory"></i></div>
+                <h2>Internal memories</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td>FLASH</td><td>{{ memFlash | strip }}</td></tr>
+                    <tr><td>SRAM</td><td>{{ memSram | strip }}</td></tr>
+                    {%- if hasMemCcm -%}
+                    <tr><td><abbr title="Core-Coupled Memory">CCM</abbr></td><td>{{ memCcm | strip }}</td></tr>
+                    {%- endif -%}
+                    {%- if hasMemBackup -%}
+                    <tr><td>Backup SRAM</td><td>{{ memBackup | strip }}</td></tr>
+                    {%- endif -%}
+                    {%- if hasMemItcmFlash -%}
+                    <tr><td><abbr title="Instruction Tightly Coupled Memory">ITCM</abbr> FLASH</td><td>{{ memItcmFlash }}</td></tr>
+                    {%- endif -%}
+                    {%- if hasMemItcmRam -%}
+                    <tr><td><abbr title="Instruction Tightly Coupled Memory">ITCM</abbr> RAM</td><td>{{ memItcmRam }}</td></tr>
+                    {%- endif -%}
+                    {%- if hasMemDtcmRam -%}
+                    <tr><td><abbr title="Data Tightly Coupled Memory">DTCM</abbr> RAM</td><td>{{ memDtcmRam }}</td></tr>
+                    {%- endif -%}
+                </table>
+            </div>
+        </div>
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-wave-square"></i></div>
+                <h2>Oscillators</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td><abbr title="High Speed Internal">HSI</abbr></td><td>{{ hsi | strip }}</td></tr>
+                    <tr><td><abbr title="Low Speed Internal">LSI</abbr></td><td>{{ lsi | strip }}</td></tr>
+                    <tr><td><abbr title="High Speed External">HSE</abbr></td><td>{{ hse | strip }}</td></tr>
+                    <tr><td><abbr title="Low Speed External">LSE</abbr></td><td>{{ lse | strip }}</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-bolt"></i></div>
+                <h2>Power</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td>Sources</td><td>{{ powerSources | strip }}</td></tr>
+                    <tr><td>V<sub>DDA</sub> pin</td><td>{{ powerVdda | strip }}</td></tr>
+                    <tr><td>V<sub>SSA</sub> pin</td><td>{{ powerVssa | strip }}</td></tr>
+                    <tr><td>V<sub>REF-</sub> pin</td><td>{{ powerVrefNegative | strip }}</td></tr>
+                    <tr><td>V<sub>REF+</sub> pin</td><td>{{ powerVrefPositive | strip }}</td></tr>
+                    <tr><td>Backup battery</td><td>{{ powerBattery | strip }}</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-random"></i></div>
+                <h2>Regulator</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td>Manufacturer</td><td>{{ regulatorManufacturer | strip }}</td></tr>
+                    <tr><td>Part</td><td>{{ regulatorPart | strip }}</td></tr>
+                    <tr><td>Package</td><td>{{ regulatorPackage | strip }}</td></tr>
+                    <tr><td>Input</td><td>{{ regulatorInput | strip }}</td></tr>
+                    <tr><td>Output</td><td>{{ regulatorOutput | strip }}</td></tr>
+                    <tr><td>Datasheet</td><td>{{ regulatorDatasheet | strip }}</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-square"></i></div>
+                <h2>PCB</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr><td>Color</td><td>{{ pcbColor | strip }}</td></tr>
+                    <tr><td>Size (w x l)</td><td>{{ pcbSize | strip }}</td></tr>
+                    <tr><td>Mounting</td><td>{{ pcbMounting | strip }}</td></tr>
+                </table>
+            </div>
+        </div>
+        {% if remarks %}
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-exclamation-circle"></i></div>
+                <h2>Remarks</h2>
+            </div>
+            <div class="board-item-content">
+                <ul>
+                    {% for remark in remarks %}
+                    <li><b>{{ remark['type'] | capitalize }}:</b> {{ remark['content'] }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-image"></i></div>
+                <h2>Pictures</h2>
+            </div>
+            {% for picture in pictures %}
+            <figure>
+                <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['part']['name'] }}: {{ picture['name'] }}">
+                <figcaption>{{ board['part']['name'] }}: {{ picture['name'] }}</figcaption>
+            </figure>
+            {% endfor %}
+        </div>
+        {% if resources %}
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-file"></i></div>
+                <h2>Resources</h2>
+            </div>
+            <div class="board-item-content">
+                <ul class="icon-list">
+                    {% for resource in resources %}
+                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['resourceTypeToIcon'][resource['type']] }}"></i></span><a href="{% if resource['type'] == 'link' %}{{ resources['file'] }}{% else %}{{ site.url }}/assets/{{ site['data']['mappings']['resourceTypeToDirectory'][resource['type']] }}/boards/{{ resource['file'] }}{% endif %}">{{ resource['name'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</div>
+<div class="board-content with-colum-dividers">
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-arrow-down"></i></div>
+                <h2>Inputs</h2>
+            </div>
+            <div class="board-item-content">
+                <ul class="icon-list">
+                    {% for input in inputs %}
+                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['inputAndOutputFunctionToIcon'][input['function']] }}"></i></span><a href="#{{ input['name'] | replace: ' ', '-' }}">{{ input['name'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-arrow-up"></i></div>
+                <h2>Outputs</h2>
+            </div>
+            <div class="board-item-content">
+                <ul class="icon-list">
+                    {% for output in outputs %}
+                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['inputAndOutputFunctionToIcon'][output['function']] }}"></i></span><a href="#{{ output['name'] | replace: ' ', '-' }}">{{ output['name'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-ethernet"></i></div>
+                <h2>Connectors</h2>
+            </div>
+            <div class="board-item-content">
+                <ul class="icon-list">
+                    {% for connector in connectors %}
+                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['connectorFunctionToIcon'][connector['function']] }}"></i></span><a href="#{{ connector['name'] | replace: ' ', '-' }}">{{ connector['name'] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="fas fa-microchip"></i></div>
+                <h2>Devices</h2>
+            </div>
+            <div class="board-item-content">
+                {% if devices.size != 0 %}
+                <ul class="icon-list">
+                    {% for device in devices %}
+                    {% assign deviceData = site.data['devices']['devices'][device['name']] %}
+                    {% assign category = deviceData['type']['category'] %}
+                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['deviceCategoryToIcon'][category] }}"></i></span><a href="#{{ device['name'] | replace: ' ', '-' }}">{{ device['name'] }}</a></li>
+                    {% endfor %}
+                </ul>
+                {% else %}
+                <p>None</p>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="board-header">
+    <h1>Inputs & outputs</h1>
+    <hr>
+</div>
+<div class="board-content">
+    <div class="board-content-column">
+    {% for input in inputs %}
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['inputAndOutputFunctionToIcon'][input['function']] }}"></i></div>
+                <h2 id="{{ input['name'] | replace: ' ', '-' }}">{{ input['name'] }}</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ input['identifiers']['name'] | default: '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Reference</td>
+                        <td>{{ input['identifiers']['reference'] | default: '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>{{ input['type'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Connected to</td>
+                        <td>{{ input['to'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Mode</td>
+                        <td>{{ input['mode'] | default: 'N.A.' }}</td>
+                    </tr>
+                </table>
+                {% if input['remarks'] %}
+                <ul>
+                    {% for remark in input['remarks'] %}
+                    <li><b>{{ remark['type'] | capitalize }}:</b> {{ remark['content'] }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+    <div class="board-content-column">
+    {% for output in outputs %}
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['inputAndOutputFunctionToIcon'][output['function']] }}"></i></div>
+                <h2 id="{{ output['name'] | replace: ' ', '-' }}">{{ output['name'] }}</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ output['identifiers']['name'] | default: '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Reference</td>
+                        <td>{{ output['identifiers']['reference'] | default: '-' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>{{ output['type'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Connected to</td>
+                        <td>{{ output['to'] }}</td>
+                    </tr>
+                    <tr>
+                        <td>Mode</td>
+                        <td>{{ output['mode'] | default: 'N.A.' }}</td>
+                    </tr>
+                </table>
+                {% if output['remarks'] %}
+                <ul>
+                    {% for remark in output['remarks'] %}
+                    <li><b>{{ remark['type'] | capitalize }}:</b> {{ remark['content'] }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+</div>
+
+<div class="board-header">
+    <h1>Connectors & headers</h1>
+    <hr>
+</div>
+{% for connector in connectors %}
+<div class="board-content">
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['connectorFunctionToIcon'][connector['function']] }}"></i></div>
+                <h2 id="{{ connector['name'] | replace: ' ', '-' }}">{{ connector['name'] }} properties{% if connector['footprint'] %} <i>footprint</i>{% endif %}</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ connector['identifiers']['name'] | default: 'Unknown' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Reference</td>
+                        <td>{{ connector['identifiers']['reference'] | default: 'None' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Type</td>
+                        <td>{{ connector['type']['name'] }}{% if connector['type']['gender'] and connector['type']['pitch'] and connector['type']['size'] %} ({{ connector['type']['pitch'] }}mm, {{ connector['type']['size']['length'] }}x{{ connector['type']['size']['width'] }}, {{ connector['type']['gender'] }}){% endif %}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['connectorFunctionToIcon'][connector['function']] }}"></i></div>
+                <h2>{{ connector['name'] }} pins{% if connector['footprint'] %} <i>footprint</i>{% endif %}</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="pin-table">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Function</th>
+                        <th>Connected to</th>
+                    </tr>
+                    {% for pin in connector["pins"] %}
+                    <tr>
+                        <td>{{ pin['number'] }}</td>
+                        <td>{{ pin['name'] | default: '-' }}</td>
+                        <td>{{ pin['function'] | default: '-' }}</td>
+                        <td>{{ pin['to'] | default: 'N.C.' }}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+{% if devices.size > 0 %}
+<div class="board-header">
+    <h1>Devices</h1>
+    <hr>
+</div>
+
+{% for device in devices %}
+{% assign deviceData = site.data['devices']['devices'][device['name']] %}
+{% assign category = deviceData['type']['category'] %}
+
+<div class="board-content">
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['deviceCategoryToIcon'][category] }}"></i></div>
+                <h2>{{ deviceData['part']['name'] }} properties{% if device['footprint'] %} <i>footprint</i>{% endif %}</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="props-table">
+                    <tr>
+                        <td>Name</td>
+                        <td>{{ device['identifiers']['name'] | default: 'Unknown' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Reference</td>
+                        <td>{{ device['identifiers']['reference'] | default: 'Unknown' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Manufacturer</td>
+                        <td>{% if deviceData['manufacturer'] %}{% if deviceData['manufacturer']['url'] %}<a href="{{ deviceData['manufacturer']['url'] }}">{% endif %}{{ deviceData['manufacturer']['name'] }}{% if deviceData['manufacturer']['url'] %}</a>{% endif %}{% else %}Unknown{% endif %}</td>
+                    </tr>
+                    <tr>
+                        <td>Part</td>
+                        <td>{% if deviceData['part']['url'] %}<a href="{{ deviceData['part']['url'] }}">{% endif %}{{ deviceData['part']['name'] }}{% if deviceData['part']['url'] %}</a>{% endif %}</td>
+                    </tr>
+                    <tr>
+                        <td>Marking</td>
+                        <td>{{ deviceData['part']['marking'] | default: 'Unknown' }}</td>
+                    </tr>
+                    <tr>
+                        <td>Datasheet</td>
+                        <td>{% if deviceData['part']['datasheet'] %}<a href="{{ site.url }}/assets/pdf/devices/{{ deviceData['part']['datasheet'] }}">{{ deviceData['part']['datasheet'] }}</a>{% else %}Unavailable{% endif %}</td>
+                    </tr>
+                    <tr>
+                        <td>Package</td>
+                        <td>{% if deviceData['package']['abbreviation'] %}<abbr title="{{ deviceData['package']['name'] }}">{{ deviceData['package']['abbreviation'] }}</abbr>{% else %}{{ deviceData['package']['name'] }}{% endif %} {{ deviceData['package']['pins'] }} pins</td>
+                    </tr>
+                    <tr>
+                        <td>Description</td>
+                        <td>{{ deviceData['type']['description'] }}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="board-content-column">
+        <div class="board-item">
+            <div class="board-item-header">
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['deviceCategoryToIcon'][category] }}"></i></div>
+                <h2 id="{{ device['name'] | replace: ' ', '-' }}">{{ deviceData['part']['name'] }} pins{% if device['footprint'] %} <i>footprint</i>{% endif %}</h2>
+            </div>
+            <div class="board-item-content">
+                <table class="pin-table">
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Function</th>
+                        <th>Connected to</th>
+                    </tr>
+                    {% for pin in device["pins"] %}
+                    <tr>
+                        <td>{{ pin['number'] }}</td>
+                        <td>{{ pin['name'] | default: '-' }}</td>
+                        <td>{{ pin['function'] | default: '-' }}</td>
+                        <td>{% if pin['activeLow'] %}<span class="active-low">{% endif %}{{ pin['to'] | default: 'N.C.' }}{% if pin['activeLow'] %}</span>{% endif %}</td>
+                    </tr>
+                    {% endfor %}
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}
+{% endif %}

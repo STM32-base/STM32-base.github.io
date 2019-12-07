@@ -1,0 +1,36 @@
+{
+    "inputAndOutputFunctionToIcon": {
+        "reset": "fas fa-redo-alt",
+        "boot": "fas fa-asterisk",
+        "user": "fas fa-user",
+        "enable": "fas fa-lightbulb",
+        "power": "fas fa-power-off"
+    },
+    "connectorFunctionToIcon": {
+        "header": "fas fa-exchange-alt",
+        "usb": "fab fa-usb",
+        "debug": "fas fa-bug",
+        "sd": "fas fa-sd-card",
+        "power": "fas fa-plug"
+    },
+    "deviceCategoryToIcon": {
+        "memory": "fas fa-memory",
+        "storage": "fas fa-database",
+        "converter": "fas fa-exchange-alt",
+        "sensor": "fas fa-thermometer"
+    },
+    "resourceTypeToIcon": {
+        "picture": "fas fa-image",
+        "image": "fas fa-image",
+        "document": "fas fa-file",
+        "pdf": "fas fa-file-pdf",
+        "link": "fas fa-link"
+    },
+    "resourceTypeToDirectory": {
+        "picture": "img",
+        "image": "img",
+        "document": "doc",
+        "pdf": "pdf"
+    }
+}
+

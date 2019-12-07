@@ -1,0 +1,91 @@
+.board-header h1 {
+    margin: 0;
+}
+
+.board-header p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.board-header hr {
+    margin: 1.5rem 0 0 0;
+}
+
+.board-content {
+    display: flex;
+    flex-direction: row;
+
+    @media screen and (max-width: $screen-width-threshold) {
+        display: block;
+    }
+}
+
+.board-content-column {
+    flex: 1;
+    width: 32rem;
+
+    @media screen and (max-width: $screen-width-threshold) {
+        flex: none;
+        width: 100%;
+    }
+}
+
+.board-item {
+    margin: 1rem .5rem;
+}
+
+.board-item-header {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: .5rem;
+}
+
+.board-item-header h2 {
+    margin: 0;
+}
+
+.board-item-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+    text-align: center;
+    line-height: 1.25rem;
+    margin: .5rem;
+    font-size: 1.25rem;
+}
+
+.board-item-content figure {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.props-table td:first-child {
+    font-weight: bold;
+    width: 33%;
+}
+
+.pins-table td, .pins-table th {
+    width: 30%;
+}
+
+.pins-table td:first-child, .pins-table th:first-child {
+    width: 10%;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+}
+
+.icon-list-icon {
+    display: inline-block;
+    text-align: center;
+    width: 2.5rem;
+}
+
+.with-column-dividers .board-content-column {
+    border-left: solid 1px $color-page-border;
+}
+
+.with-column-dividers .board-content-column:first-child {
+    border-left: none;
+}

@@ -1,0 +1,102 @@
+{
+    "AMS1117-SOT223": {
+        "manufacturer": {
+            "name": "Advanced Monolithic Systems Inc.",
+            "url": "http://www.advanced-monolithic.com/"
+        },
+        "part": {
+            "name": "AMS1117",
+            "marking": "AMS1117",
+            "datasheet": "AMS1117.pdf",
+            "url": "http://www.advanced-monolithic.com/products/voltreg.html#1117"
+        },
+        "package": {
+            "abbreviation": "SOT223",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 4.6,
+            "max": 15
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 1
+        }
+    },
+    "AMS1117-SOT89-3": {
+        "manufacturer": {
+            "name": "Advanced Monolithic Systems Inc.",
+            "url": "http://www.advanced-monolithic.com/"
+        },
+        "part": {
+            "name": "AMS1117",
+            "marking": "AMS1117",
+            "datasheet": "AMS1117.pdf",
+            "url": "http://www.advanced-monolithic.com/products/voltreg.html#1117"
+        },
+        "package": {
+            "abbreviation": "SOT89-3",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 4.6,
+            "max": 15
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 1
+        }
+    },
+    "ME6211-SOT23-5": {
+        "manufacturer": {
+            "name": "Nanjing Micro One Electronics Inc.",
+            "url": "http://www.microne.com.cn/en/"
+        },
+        "part": {
+            "name": "ME6211",
+            "marking": "S2QK",
+            "datasheet": "ME6211.pdf",
+            "url": "http://www.microne.com.cn/en/ProductDetail.aspx?id=4"
+        },
+        "package": {
+            "abbreviation": "SOT23-5",
+            "name": "Small Outline Transistor",
+            "pins": 5
+        },
+        "input": {
+            "min": 2,
+            "max": 6
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.5
+        }
+    },
+    "TX6211B-SOT23-5": {
+        "manufacturer": {
+            "name": "Shanghai TX Electronics Sci-Tech Co., Ltd",
+            "url": "http://txsemi.com/"
+        },
+        "part": {
+            "name": "TX6211B",
+            "marking": "DE=A1D",
+            "datasheet": "TX6211B.pdf",
+            "url": "http://www.txsemi.com/Upload/TX6211B_V12-11264794020.pdf"
+        },
+        "package": {
+            "abbreviation": "SOT23-5",
+            "name": "Small Outline Transistor",
+            "pins": 5
+        },
+        "input": {
+            "min": 3.6,
+            "max": 5.5
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.3
+        }
+    }
+}

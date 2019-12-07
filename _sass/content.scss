@@ -165,8 +165,17 @@ img {
     max-width: 100%;
 }
 
+figcaption {
+    text-align: center;
+    font-style: italic;
+}
+
 hr {
     border: 0;
     background-color: $color-page-border;
     height: .0625rem;
+}
+
+.active-low {
+    text-decoration: overline;
 }
