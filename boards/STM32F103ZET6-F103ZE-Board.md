@@ -88,7 +88,7 @@ title: "STM32F103ZET6 - F103ZE board"
     </tr>
     <tr>
         <td>Specific</td>
-        <td>TFT (2x16 female dupont (2.54mm))<br>NRF2401 (2x4 female dupont (2.54mm))</td>
+        <td>TFT (2x16 male dupont (2.54mm))<br>NRF2401 (2x4 female dupont (2.54mm))</td>
     </tr>
     <tr>
         <td>Debug</td>
@@ -105,7 +105,7 @@ title: "STM32F103ZET6 - F103ZE board"
     </tr>
     <tr>
         <td>Buttons, switches and jumpers</td>
-        <td>Reset button (<b>REST</b>, <code>NRST</code>, active low)<br>2-way jumper (<code>BOOT0</code>)<br>2-way jumper (<code>BOOT1</code>)<br>User button (<b>KEY1</b>, <code>PE2</code>, active low)<br>User button (<b>KEY2</b>, <code>PE1</code>, active low)<br>User button (<b>WK_UP</b>, <code>PA0</code>, active high)</td>
+        <td>Reset button (<b>REST</b>, <code>NRST</code>, active low)<br>User button (<b>KEY1</b>, <code>PE2</code>, active low)<br>User button (<b>KEY2</b>, <code>PE1</code>, active low)<br>User button (<b>WK_UP</b>, <code>PA0</code>, active high)<br>(BT0/BT1 jumpers are part of HEADER 2)</td>
     </tr>
     <tr>
         <td>Other devices</td>
@@ -213,8 +213,8 @@ title: "STM32F103ZET6 - F103ZE board"
 | ----- | ------------ |
 | 3V3   | +3.3V rail   |
 | 3V3   | +3.3V rail   |
-| BT0   | BOOT0        |
-| BT1   | BOOT1        |
+| _BT0*_  | _BOOT0_        |
+| _BT1*_  | _BOOT1_        |
 | GND   | Ground plane |
 | GND   | Ground plane |
 | PB11  | PB11         |
@@ -271,6 +271,8 @@ title: "STM32F103ZET6 - F103ZE board"
 | PE2   | PE2          |
 | PE1   | PE1          |
 | PE0   | PE0          |
+
+_* Note: **Jumper** Can be jumpered to adjacent 3.3V or GND_
 
 ## USB
 
