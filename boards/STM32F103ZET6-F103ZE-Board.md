@@ -88,7 +88,7 @@ title: "STM32F103ZET6 - F103ZE board"
     </tr>
     <tr>
         <td>Specific</td>
-        <td>TFT (2x16 female dupont (2.54mm))<br>NRF2401 (2x4 female dupont (2.54mm))</td>
+        <td>TFT (2x16 male dupont (2.54mm))<br>NRF2401 (2x4 female dupont (2.54mm))</td>
     </tr>
     <tr>
         <td>Debug</td>
@@ -105,7 +105,7 @@ title: "STM32F103ZET6 - F103ZE board"
     </tr>
     <tr>
         <td>Buttons, switches and jumpers</td>
-        <td>Reset button (<b>REST</b>, <code>NRST</code>, active low)<br>2-way jumper (<code>BOOT0</code>)<br>2-way jumper (<code>BOOT1</code>)<br>User button (<b>KEY1</b>, <code>PE2</code>, active low)<br>User button (<b>KEY2</b>, <code>PE1</code>, active low)<br>User button (<b>WK_UP</b>, <code>PA0</code>, active high)</td>
+        <td>Reset button (<b>REST</b>, <code>NRST</code>, active low)<br>User button (<b>KEY1</b>, <code>PE2</code>, active low)<br>User button (<b>KEY2</b>, <code>PE1</code>, active low)<br>User button (<b>WK_UP</b>, <code>PA0</code>, active high)<br>(BT0/BT1 jumpers are part of HEADER 2)</td>
     </tr>
     <tr>
         <td>Other devices</td>
@@ -118,7 +118,7 @@ title: "STM32F103ZET6 - F103ZE board"
     </tr>
     <tr>
         <td>Size</td>
-        <td>95mm x 64mm</td>
+        <td>95mm x 74mm</td>
     </tr>
     <tr>
         <td>Mounting</td>
@@ -213,8 +213,8 @@ title: "STM32F103ZET6 - F103ZE board"
 | ----- | ------------ |
 | 3V3   | +3.3V rail   |
 | 3V3   | +3.3V rail   |
-| BT0   | BOOT0        |
-| BT1   | BOOT1        |
+| _BT0*_  | _BOOT0_        |
+| _BT1*_  | _BOOT1_        |
 | GND   | Ground plane |
 | GND   | Ground plane |
 | PB11  | PB11         |
@@ -240,6 +240,7 @@ title: "STM32F103ZET6 - F103ZE board"
 | PB0   | PB0          |
 | PC5   | PC5          |
 | PC4   | PC4          |
+| PA7   | PA7          |
 | PA6   | PA6          |
 | PA5   | PA5          |
 | PA4   | PA4          |
@@ -270,6 +271,8 @@ title: "STM32F103ZET6 - F103ZE board"
 | PE2   | PE2          |
 | PE1   | PE1          |
 | PE0   | PE0          |
+
+_* Note: **Jumper** Can be jumpered to adjacent 3.3V or GND_
 
 ## USB
 
@@ -308,40 +311,48 @@ title: "STM32F103ZET6 - F103ZE board"
 
 ## TFT
 
-| Pin   | Connected to |
-| ----- | ------------ |
-|       | NRST         |
-|       | Ground plane |
-|       | PD9          |
-|       | PD10         |
-|       | PE15         |
-|       | PD8          |
-|       | PE13         |
-|       | PE14         |
-|       | PE11         |
-|       | PE12         |
-|       | PE9          |
-|       | PE10         |
-|       | PE7          |
-|       | PE8          |
-|       | PD0          |
-|       | PD1          |
-|       | PD14         |
-|       | PD15         |
-|       | PD5          |
-|       | PD4          |
-|       | PG12         |
-|       | PG0          |
-|       | PB2          |
-|       | PB1          |
-|       | PF8          |
-|       | PF9          |
-|       | N.C.         |
-|       | N.C.         |
-|       | VBAT         |
-|       | Ground plane |
-|       | +3.3V rail   |
-|       | Ground plane |
+| Pin   | Connected to | Function       |
+| ----- | ------------ | -------------- |
+|   2   | NRST         |                |
+|   1   | Ground plane |                |
+|   4   | PD9          | FSMC D14       |
+|   3   | PD10         | FSMC D15       |
+|   6   | PE15         | FSMC D12       |
+|   5   | PD8          | FSMC D13       |
+|   8   | PE13         | FSMC D10       |
+|   7   | PE14         | FSMC D11       |
+|  10   | PE11         | FSMC D8        |
+|   9   | PE12         | FSMC D9        |
+|  12   | PE9          | FSMC D6        |
+|  11   | PE10         | FSMC D7        |
+|  14   | PE7          | FSMC D4        |
+|  13   | PE8          | FSMC D5        |
+|  16   | PD0          | FSMC D2        |
+|  15   | PD1          | FSMC D3        |
+|  18   | PD14         | FSMC D0        |
+|  17   | PD15         | FSMC D1        |
+|  20   | PD5          | FSMC NWE       |
+|  19   | PD4          | FSMC NOE       |
+|  22   | PG12         | FSMC NE4       |
+|  21   | PG0          | FSMC A10       |
+|  24   | PB2          | Touch CS       |
+|  23   | PB1          | Touch CLK      |
+|  26   | PF8          | Touch (MI)SO   |
+|  25   | PF9          | Touch (MO)SI   |
+|  28   | Q1 collector | Note 1         |
+|  27   | PC13 via R15 | Touch Event    |
+|  30   | Ground plane |                |
+|  29   | VBAT         | Note 2         |
+|  32   | Ground plane |                |
+|  31   | +3.3V rail   |                |
+
+Note 1:<br>
+The TFT header pin 28, which is intended to control the backlight on the TFT, is connected to the collector of Q1. The emitter of Q1 is connected to the +3.3V rail. The base of Q1 is connected to R19 which is **not present** on this board. Neither side of the **uninstalled** R19 is connected to the STM, so You have no control of this header pin. The base of transistor Q1 floats, the transistor does not conduct and the header pin is pulled "LOW" by 1K5 resistor R20. If the backlight on Your display does not light up with a "LOW" control signal, You can EITHER:<br>
+    <ul><li>Leave R19 uninstalled and connect the R19 pad closest to Q1 to an STM pin through a 1K5 resistor, giving full control of the header pin. Choose a pin that is not used for anything else.</li>
+    <li>Install a 100 Ohm 0603 resistor as R19. This will turn Q1 on with a base current of about 0.4mA, and the header pin will go "HIGH". How high depends somewhat on what Your display has connected to the header pin: I got from 2.5 to 2.7V during testing, enough to switch the backlight on. You still have no control, the backlight will always be on.</li></ul>
+
+Note 2:<br>
+This pin is usually not connected on the TFT.
 
 ## NRF2401
 
