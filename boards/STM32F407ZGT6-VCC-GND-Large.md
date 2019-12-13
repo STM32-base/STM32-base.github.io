@@ -341,11 +341,11 @@ The left main header as seen on the top view. Pins listed in a clock-wise order,
 
 | Pin   | Connected to |
 | ----- | ------------ |
-| /CS   | +3.3V rail via 10kΩ resistor |
+| /CS   | PC4 (+3.3V rail via 10kΩ resistor) |
 | DO    | PA6          |
-| IO2   | +3.3V rail   |
+| /WP   | +3.3V rail   |
 | GND   | Ground plane |
 | DI    | PA7          |
 | CLK   | PA5          |
-| IO3   | +3.3V rail   |
+| /HOLD | +3.3V rail   |
 | VCC   | +3.3V rail   |
