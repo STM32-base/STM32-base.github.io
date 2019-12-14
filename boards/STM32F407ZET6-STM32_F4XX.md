@@ -403,50 +403,50 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 
 ## IC - SDRAM (Bottom side) IS62WV51216BLL Footprint ONLY
 
-| Pin   | Connected to |
-| ----- | ------------ |
-|   1   | FSMC A4      |
-|   2   | FSMC A3      |
-|   3   | FSMC A2      |
-|   4   | FSMC A1      |
-|   5   | FSMC A0      |
-|   6   | FSMC NE3     |
-|   7   | FSMC D0      |
-|   8   | FSMC D1      |
-|   9   | FSMC D2      |
-|  10   | FSMC D3      |
-|  11   | +3.3V Rail   |
-|  12   | Ground Plane |
-|  13   | FSMC D4      |
-|  14   | FSMC D5      |
-|  15   | FSMC D6      |
-|  16   | FSMC D7      |
-|  17   | FSMC NWE     |
-|  18   | FSMC A16     |
-|  19   | FSMC A15     |
-|  20   | FSMC A14     |
-|  21   | FSMC A13     |
-|  22   | FSMC A12     |
-|  23   | FSMC A17     |
-|  24   | FSMC A11     |
-|  25   | FSMC A10     |
-|  26   | FSMC A9      |
-|  27   | FSMC A8      |
-|  28   | FSMC A18     |
-|  29   | FSMC D8      |
-|  30   | FSMC D9      |
-|  31   | FSMC D10     |
-|  32   | FSMC D11     |
-|  33   | +3.3V Rail   |
-|  34   | Ground Plane |
-|  35   | FSMC D12     |
-|  36   | FSMC D13     |
-|  37   | FSMC D14     |
-|  38   | FSMC D15     |
-|  39   | FSMC NBL0    |
-|  40   | FSMC NBL1    |
-|  41   | FSMC NOE     |
-|  42   | FSMC A7      |
-|  43   | FSMC A6      |
-|  44   | FSMC A5      |
+| Pin   |           | Connected to |
+| ----- | --------- | ------------ |
+|   1   | FSMC A4   |  PF4         |
+|   2   | FSMC A3   |  PF3         |
+|   3   | FSMC A2   |  PF2         |
+|   4   | FSMC A1   |  PF1         |
+|   5   | FSMC A0   |  PF0         |
+|   6   | FSMC NE3  |  PG10        |
+|   7   | FSMC D0   |  PD14        |
+|   8   | FSMC D1   |  PD15        |
+|   9   | FSMC D2   |  PD0         |
+|  10   | FSMC D3   |  PD1         |
+|  11   | VDD       | +3.3V Rail   |
+|  12   | GND       | Ground Plane |
+|  13   | FSMC D4   |  PE7         |
+|  14   | FSMC D5   |  PE8         |
+|  15   | FSMC D6   |  PE9         |
+|  16   | FSMC D7   |  PE10        |
+|  17   | FSMC NWE  |  PD5         |
+|  18   | FSMC A16  |  PD11        |
+|  19   | FSMC A15  |  PG5         |
+|  20   | FSMC A14  |  PG4         |
+|  21   | FSMC A13  |  PG3         |
+|  22   | FSMC A12  |  PG2         |
+|  23   | FSMC A17  |  PD12        |
+|  24   | FSMC A11  |  PG1         |
+|  25   | FSMC A10  |  PG0         |
+|  26   | FSMC A9   |  PF15        |
+|  27   | FSMC A8   |  PF14        |
+|  28   | FSMC A18  |  PD13        |
+|  29   | FSMC D8   |  PE11        |
+|  30   | FSMC D9   |  PE12        |
+|  31   | FSMC D10  |  PE13        |
+|  32   | FSMC D11  |  PE14        |
+|  33   | VDD       | +3.3V Rail   |
+|  34   | GND       | Ground Plane |
+|  35   | FSMC D12  |  PE15        |
+|  36   | FSMC D13  |  PD8         |
+|  37   | FSMC D14  |  PD9         |
+|  38   | FSMC D15  |  PD10        |
+|  39   | FSMC NBL0 |  PE0         |
+|  40   | FSMC NBL1 |  PE1         |
+|  41   | FSMC NOE  |  PD4         |
+|  42   | FSMC A7   |  PF13        |
+|  43   | FSMC A6   |  PF12        |
+|  44   | FSMC A5   |  PF5         |
 
