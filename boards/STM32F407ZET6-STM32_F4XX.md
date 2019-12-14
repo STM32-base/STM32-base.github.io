@@ -347,7 +347,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 |  26   | PB2/BOOT1    | Touch (MI)SO   |
 |  25   | PF11         | Touch (MO)SI   |
 |  28   | PB15 via Q2  | Backlight      |
-|  27   | PC13 via R15 | Touch Event    |
+|  27   | PB1 via R17  | Touch Event    |
 |  30   | Ground plane |                |
 |  29   | nc           |                |
 |  32   | Ground plane |                |
