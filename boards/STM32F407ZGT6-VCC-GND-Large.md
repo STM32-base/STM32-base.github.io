@@ -309,20 +309,20 @@ The left main header as seen on the top view. Pins listed in a clock-wise order,
 | SWDIO | PA13         |
 | 3V3   | +3.3V rail   |
 
-## SD-card connector
+## SD-card connector (SDIO)
 
-| Pin   | Connected to |
-| ----- | ------------ |
-| RSV   | N.C.         |
-| CS    | PC11         |
-| DI    | PD2          |
-| VCC   | +3.3V rail   |
-| SCLK  | PC12         |
-| GND   | Ground plane |
-| DO    | PC8          |
-| RSV   | N.C.         |
-| CD    | PC7          |
-| BODY  | Ground plane |
+| Pin      | Connected to |
+| -------- | ------------ |
+| SDIO_D2  | PC10         |
+| SDIO_D3  | PC11         |
+| SDIO_CMD | PD2          |
+| VCC      | +3.3V rail   |
+| SDIO_CK  | PC12         |
+| GND      | Ground plane |
+| SDIO_D0  | PC8          |
+| SDIO_D1  | PC9          |
+| CD       | PF10         |
+| BODY     | Ground plane |
 
 ## IC - Atmel AT24C08N (8Kb EEPROM)
 
@@ -341,11 +341,11 @@ The left main header as seen on the top view. Pins listed in a clock-wise order,
 
 | Pin   | Connected to |
 | ----- | ------------ |
-| /CS   | +3.3V rail via 10kΩ resistor |
+| /CS   | PC4 (+3.3V rail via 10kΩ resistor) |
 | DO    | PA6          |
-| IO2   | +3.3V rail   |
+| /WP   | +3.3V rail   |
 | GND   | Ground plane |
 | DI    | PA7          |
 | CLK   | PA5          |
-| IO3   | +3.3V rail   |
+| /HOLD | +3.3V rail   |
 | VCC   | +3.3V rail   |
