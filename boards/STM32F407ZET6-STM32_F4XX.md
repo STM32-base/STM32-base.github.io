@@ -82,7 +82,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
         <td>Yes</td>
     </tr>
     <tr>
-        <td rowspan="4"><b>Connectivity</b></td>
+        <td rowspan="6"><b>Connectivity</b></td>
         <td>Headers</td>
         <td>2x 2x30 male dupont (2.54mm)</td>
     </tr>
@@ -99,13 +99,21 @@ title: "STM32F407ZET6 - STM32_F4XX board"
         <td>Mini</td>
     </tr>
     <tr>
+	 <td>SD-card</td>
+	 <td<Micro SD-card socket</td>
+    </tr>
+    <tr>
+	<td>SDRAM</td>
+	<td>44-pin IS62WV51216BLL **Footprint only**</td>
+    </tr>
+    <tr>
         <td rowspan="3>"><b>I/O</b></td>
         <td>LEDs</td>
         <td>Power LED (<b>D3</b>, +3.3V)<br>User LED (<b>D1</b>, <code>PF9</code>, active low)<br>User LED (<b>D2</b>, <code>PF10</code>, active low)</td>
     </tr>
     <tr>
         <td>Buttons, switches and jumpers</td>
-        <td>Reset button (<b>REST</b>, <code>NRST</code>, active low)<br>User button (<b>KEY1</b>, <code>PE2</code>, active low)<br>User button (<b>KEY2</b>, <code>PE1</code>, active low)<br>User button (<b>WK_UP</b>, <code>PA0</code>, active high)<br>(BT0/BT1 jumpers are part of HEADER 2)</td>
+        <td>Reset button (<b>REST</b>, <code>NRST</code>, active low)<br>User button (<b>K0</b>, <code>PE4</code>, active low)<br>User button (<b>K1</b>, <code>PE3</code>, active low)<br>User button (<b>WK_UP</b>, <code>PA0</code>, active high)<br>(BT0/BT1 jumpers are part of HEADER 2)</td>
     </tr>
     <tr>
         <td>Other devices</td>
@@ -361,20 +369,87 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 | VCC   | +3.3V rail   |
 | CE    | PG6          |
 | CSN   | PG7          |
-| SCK   | PB13         |
-| MOSI  | PB15         |
-| MISO  | PB14         |
+| SCK   | PB3          |
+| MOSI  | PB5          |
+| MISO  | PB4          |
 | IRQ   | PG8          |
 
-## IC - Winbond W25Q16JV (16Mb FLASH)
+## SD-card
+
+| Pin |          | Connected to |
+| --- | -------- | ------------ |
+|  1  | SDIO_D2  | PC10         |
+|  2  | SDIO_D3  | PC11         |
+|  3  | SDIO_CMD | PD2          |
+|  4  | VCC      | +3.3V rail   |
+|  5  | SDIO_SCK | PC12         |
+|  6  | GND      | Ground plane |
+|  7  | SDIO_D0  | PC8          |
+|  8  | SDIO_D1  | PC9          |
+|  9  | nc       | Ground plane |
+
+## IC - Winbond W25Q16 (16Mb FLASH)
 
 | Pin   | Connected to |
 | ----- | ------------ |
 | /CS   | +3.3V rail via 10kΩ resistor |
-| DO    | PB14         |
+| DO    | PB4          |
 | IO2   | +3.3V rail   |
 | GND   | Ground plane |
-| DI    | PB15         |
-| CLK   | PB13         |
+| DI    | PB5          |
+| CLK   | PB3          |
 | IO3   | +3.3V rail   |
 | VCC   | +3.3V rail   |
+
+## IC - SDRAM (Bottom side) IS62WV51216BLL Footprint ONLY
+
+| Pin   | Connected to |
+| ----- | ------------ |
+|   1   | FSMC A4      |
+|   2   | FSMC A3      |
+|   3   | FSMC A2      |
+|   4   | FSMC A1      |
+|   5   | FSMC A0      |
+|   6   | FSMC NE3     |
+|   7   | FSMC D0      |
+|   8   | FSMC D1      |
+|   9   | FSMC D2      |
+|  10   | FSMC D3      |
+|  11   | +3.3V Rail   |
+|  12   | Ground Plane |
+|  13   | FSMC D4      |
+|  14   | FSMC D5      |
+|  15   | FSMC D6      |
+|  16   | FSMC D7      |
+|  17   | FSMC NWE     |
+|  18   | FSMC A16     |
+|  19   | FSMC A15     |
+|  20   | FSMC A14     |
+|  21   | FSMC A13     |
+|  22   | FSMC A12     |
+|  23   | FSMC A17     |
+|  24   | FSMC A11     |
+|  25   | FSMC A10     |
+|  26   | FSMC A9      |
+|  27   | FSMC A8      |
+|  28   | FSMC A18     |
+|  29   | FSMC D8      |
+|  30   | FSMC D9      |
+|  31   | FSMC D10     |
+|  32   | FSMC D11     |
+|  33   | +3.3V Rail   |
+|  34   | Ground Plane |
+|  35   | FSMC D12     |
+|  36   | FSMC D13     |
+|  37   | FSMC D14     |
+|  38   | FSMC D15     |
+|  39   | FSMC NBL0    |
+|  40   | FSMC NBL1    |
+|  41   | FSMC NOE     |
+|  42   | FSMC A7      |
+|  43   | FSMC A6      |
+|  44   | FSMC A5      |
+|  10   | FSMC D3      |
+
+
+
