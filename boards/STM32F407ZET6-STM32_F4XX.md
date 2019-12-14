@@ -100,7 +100,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
     </tr>
     <tr>
 	 <td>SD-card</td>
-	 <td<Micro SD-card socket</td>
+	 <td>Micro SD-card socket</td>
     </tr>
     <tr>
 	<td>SDRAM</td>
