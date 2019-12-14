@@ -449,7 +449,4 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 |  42   | FSMC A7      |
 |  43   | FSMC A6      |
 |  44   | FSMC A5      |
-|  10   | FSMC D3      |
-
-
 
