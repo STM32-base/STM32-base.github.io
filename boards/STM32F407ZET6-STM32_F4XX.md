@@ -284,7 +284,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 | PE1   | PE1          |
 | PE0   | PE0          |
 
-*Notes: **Jumper:** BT0 has 10K pulldown R25, but can be jumpered to adjacent 3.3V or GND.<br>
+*Notes:<br> **Jumper:** BT0 has 10K pulldown R25, but can be jumpered to adjacent 3.3V or GND.<br>
         BT1 (BT1/PB2) has 10K pulldown R12, but can be jumpered to adjacent pin 3.3V. 
 	       The other adjacent pin is **NOT GND** <br>
 	       VREF+ has 0R R21 to VDDA and common 0R R22 from there to 3.3V.
