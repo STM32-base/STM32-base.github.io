@@ -103,7 +103,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 	 <td>Micro SD-card socket</td>
     </tr>
     <tr>
-	<td>SDRAM</td>
+	<td>SRAM</td>
 	<td>44-pin IS62WV51216BLL **Footprint only**</td>
     </tr>
     <tr>
@@ -357,7 +357,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 |  28   | PB15 via Q2  | Backlight      |
 |  27   | PB1 via R17  | Touch Event    |
 |  30   | Ground plane |                |
-|  29   | nc           |                |
+|  29   | N.C.         |                |
 |  32   | Ground plane |                |
 |  31   | +3.3V rail   |                |
 
@@ -386,7 +386,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 |  6  | GND      | Ground plane |
 |  7  | SDIO_D0  | PC8          |
 |  8  | SDIO_D1  | PC9          |
-|  9  | nc       | Ground plane |
+|  9  |          | Ground plane |
 
 ## IC - Winbond W25Q16 (16Mb FLASH)
 
@@ -401,7 +401,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 | IO3   | +3.3V rail   |
 | VCC   | +3.3V rail   |
 
-## IC - SDRAM (Bottom side) IS62WV51216BLL Footprint ONLY
+## IC - U2 SRAM (Bottom side) IS62WV51216BLL  ** Footprint ONLY **
 
 | Pin   |           | Connected to |
 | ----- | --------- | ------------ |
@@ -449,4 +449,6 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 |  42   | FSMC A7   |  PF13        |
 |  43   | FSMC A6   |  PF12        |
 |  44   | FSMC A5   |  PF5         |
+
+If/When installing U2, don't forget to install 10K pullup R29 and 0.1uF C17 and C18.
 
