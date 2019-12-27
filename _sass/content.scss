@@ -1,26 +1,16 @@
-@import "colors";
-@import "fonts";
-
-html {
-    color: $font-color-primary;
-    font-family: "Lato", "Arial", "Helvetica", sans-serif;
-    font-size: 16px;
-    font-weight: normal;
-}
-
 body {
-    background-color: $page-color-background;
+    background-color: $color-page-background;
     line-height: 1.5;
 }
 
 a {
     border: none;
-    color: $font-color-anchor;
+    color: $color-text-anchor;
     text-decoration: none;
 
-    &:active { color: $font-color-anchor-active; }
-    &:hover  { color: $font-color-anchor-hover; }
-    &:focus  { color: $font-color-anchor-focus; }
+    &:active { color: $color-text-anchor-active; }
+    &:hover  { color: $color-text-anchor-hover; }
+    &:focus  { color: $color-text-anchor-focus; }
 }
 
 abbr[title] {
@@ -29,12 +19,12 @@ abbr[title] {
 }
 
 b, strong, samp {
-    color: $font-color-bold;
+    color: $color-text-bold;
     font-weight: bold;
 }
 
 code, pre {
-    color: $font-color-code;
+    color: $color-text-code;
     font-family: "Monaco", "Lucida Console", "Consolas", "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
     font-size: $font-size-S;
 }
@@ -44,13 +34,13 @@ i, em, cite, dfn[id], q, var {
 }
 
 kbd {
-    background-color: $frame-color-background;
+    background-color: $color-page-frame;
     border: $border-style-default;
-    border-radius: .25rem;
+    border-radius: $border-radius-default;
 }
 
 mark {
-    background-color: #ffff00;
+    background-color: $color-text-highlight;
 }
 
 s, del {
@@ -77,6 +67,14 @@ small {
     font-size: $font-size-XS;
 }
 
+p, ul, ol, table, pre, dl, blockquote, hr, h1, h2, h3, h4, h5, h6 {
+    padding: 0 1rem;
+
+    @media screen and (max-width: 720px) {
+        padding: 0 .5rem;
+    }
+}
+
 p, ul, ol, table, pre, dl, blockquote, hr {
     margin: 0 0 1.5rem 0;
 }
@@ -87,33 +85,33 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    color: $font-color-h1;
+    color: $color-text-h1;
     font-size: $font-size-XXL;
 }
 
 h2 {
-    color: $font-color-h2;
+    color: $color-text-h2;
     font-size: $font-size-XL;
 }
 
 h3 {
-    color: $font-color-h3;
+    color: $color-text-h3;
     font-size: $font-size-L;
 }
 
 h4 {
-    color: $font-color-h4;
+    color: $color-text-h4;
     font-size: $font-size-M;
 }
 
 h5 {
-    color: $font-color-h5;
+    color: $color-text-h5;
     font-size: $font-size-M;
     font-style: italic;
 }
 
 h6 {
-    color: $font-color-h6;
+    color: $color-text-h6;
     font-size: $font-size-S;
     font-style: italic;
 }
@@ -126,9 +124,9 @@ blockquote {
 }
 
 pre {
-    background-color: $frame-color-background;
+    background-color: $color-page-frame;
     border: $border-style-default;
-    border-radius: .25rem;
+    border-radius: $border-radius-default;
     overflow-x: auto;
     padding: .5rem 1rem;
 }
@@ -154,7 +152,7 @@ td, th {
 }
 
 dt, th {
-    color: $font-color-secondary;
+    color: $color-text-secondary;
     font-weight: bold;
 }
 
@@ -169,6 +167,6 @@ img {
 
 hr {
     border: 0;
-    background-color: $border-color-default;
+    background-color: $color-page-border;
     height: .0625rem;
 }

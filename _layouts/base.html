@@ -1,3 +1,7 @@
+{% assign menu = site["mainMenu"] %}
+{% assign footer = site["footerMenu"] %}
+{% assign socials = site["socialsMenu"] %}
+
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
     <head>
@@ -25,9 +29,51 @@
         {% endif %}
     </head>
     <body>
+        <header class="site-header">
+            <div class="wrapper">
+                <div class="header-logo"><a href="{{ site.url }}"><img src="{{ site.logo }}" alt="STM32-base logo" /></a></div>
+                <div class="header-title"><a href="{{ site.url }}">STM32-base</a></div>
+                <div id="hamburger" class="header-menu-toggle"><i class="fas fa-bars"></i></div>
+            </div>
+        </header>
+        <nav id="main-menu" class="site-navigation">
+            <div class="wrapper">
+                <menu class="main-menu">
+                    {% for item in menu %}
+                    <li><a href="{% if item.external == false %}{{ site.url }}/{% endif %}{{ item.url }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </menu>
+            </div>
+        </nav>
 
-        {{ content }}
+{{ content }}
 
-        <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+        <footer class="site-footer">
+            <div class="wrapper">
+                <div class="footer-columns">
+                    <div class="footer-column">
+                        <nav>
+                            <menu class="footer-menu">
+                                {% for item in footer %}
+                                <li><a href="{% if item.external == false %}{{ site.url }}/{% endif %}{{ item.url }}">{{ item.name }}</a></li>
+                                {% endfor %}
+                            </menu>
+                        </nav>
+                    </div>
+                    <div class="footer-column">
+                        {{ site.footer }}
+                    </div>
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        {% for item in socials %}
+                        <li><a href="{{ item.url }}"><i class="{{ item.icon }}"></i></a></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
+        <script src="{{ '/assets/js/menu.js' | relative_url }}"></script>
     </body>
 </html>

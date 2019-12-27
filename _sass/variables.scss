@@ -1,0 +1,54 @@
+// Font awesome path
+$fa-font-path: '../fonts/Fontawsome';
+
+// Colors
+$color-STM32-brand-blue:  #2daae2;
+$color-STM32-brand-navy:  #0b1f51;
+$color-STM32-brand-pink:  #d6007e;
+$color-STM32-brand-green: #b8ce02;
+
+$color-page-background:   #ffffff;
+$color-page-frame:        #f8f8f8;
+$color-page-border:       #e8e8e8;
+
+$color-text-primary:      #727272;
+$color-text-secondary:    #444444;
+$color-text-code:         #333333;
+$color-text-bold:         #222222;
+$color-text-highlight:    #ffff00;
+
+// Color mappings
+$color-text-h1: $color-text-bold;
+$color-text-h2: $color-text-code;
+$color-text-h3: $color-text-secondary;
+$color-text-h4: $color-text-secondary;
+$color-text-h5: $color-text-secondary;
+$color-text-h6: $color-text-secondary;
+
+$color-text-anchor:        $color-STM32-brand-blue;
+$color-text-anchor-active: $color-STM32-brand-blue;
+$color-text-anchor-hover:  $color-STM32-brand-navy;
+$color-text-anchor-focus:  $color-STM32-brand-navy;
+
+// Font sizes
+// The base size is used for all sized defined with 'rem'
+$font-size-base: 16px;
+
+$font-size-XXL: 2.000rem;
+$font-size-XL:  1.500rem;
+$font-size-L:   1.250rem;
+$font-size-M:   1.000rem;
+$font-size-S:    .825rem;
+$font-size-XS:   .750rem;
+
+// Border styles
+$border-style-default: .0625rem solid $color-page-border;
+$border-style-top:     .25rem solid $color-STM32-brand-navy;
+
+$border-radius-default: .25rem;
+
+// Site max width: 64 * 16px = 1024px
+$site-width: 64rem;
+
+// Site mobile/desktop threshold: 45 * 16px = 720px
+$screen-width-threshold: 45rem;

@@ -1,8 +1,8 @@
 {% assign devices = include.data["devices"] | sort: "name" %}
 {% assign regions = include.data["regions"] %}
 
-<div class="scrollable-table memory-regions-table">
-    <table>
+<div class="scrollable-table-container">
+    <table class="table-memory-regions">
         <thead>
             <tr>
                 <th>Device</th>

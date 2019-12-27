@@ -1,7 +1,59 @@
 plugins:
- - jekyll-feed
- - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-sitemap
 
 title: "STM32-base project"
-logo: "/assets/img/logos/STM32-base_logo_full_transparent.png"
+logo: "/assets/img/logos/STM32-base_logo_no_text_transparent.png"
 author: "Thomas Gravekamp"
+description: >
+  The STM32-base project provides its users with a simple and easy to use base
+  project for working with STM32 microcontrollers.
+
+mainMenu:
+  - name: "Home"
+    url: ""
+    external: false
+  - name: "Guides"
+    url: "guides"
+    external: false
+  - name: "Concepts"
+    url: "concepts"
+    external: false
+  - name: "Boards"
+    url: "boards"
+    external: false
+  - name: "Cheatsheets"
+    url: "cheatsheets"
+    external: false
+  - name: "Github"
+    url: "https://github.com/STM32-base"
+    external: true
+
+footerMenu:
+  - name: "Home"
+    url: ""
+    external: false
+  - name: "About"
+    url: "general/about"
+    external: false
+  - name: "Blue Pill board"
+    url: "boards/STM32F103C8T6-Blue-Pill"
+    external: false
+  - name: "Black Pill board"
+    url: "boards/STM32F103C8T6-Black-Pill"
+    external: false
+  - name: "Getting started with STM32"
+    url: "guides/getting-started"
+    external: false
+
+socialsMenu:
+  - icon: "fas fa-home"
+    url: "https://stm32-base.org/"
+  - icon: "fab fa-github"
+    url: "https://github.com/STM32-base"
+
+footer:
+  - >
+    <p>This website is hosted on <a href="https://pages.github.com/">Github pages</a>.
+    The STM32-base project is <i>in no way</i> affiliated with <a href="">STMicroelectronics</a>.</p>
+    <p><a href="https://jeffhuang.com/designed_to_last/">This page was designed to last</a>.</p>

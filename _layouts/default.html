@@ -2,38 +2,8 @@
 layout: "base"
 ---
 
-<div class="container">
-    <header>
-    {% if site.logo %}
-        <div class="logo">
-            <a href="{{ "/" | absolute_url }}">
-                <img src="{{site.logo | relative_url}}" alt="{{ site.title | default: site.github.repository_name }}" />
-            </a>
-        </div>
-    {% endif %}
-        <menu>
-        {% for item in site.data.menus.menu %}
-            <li>
-            {{ item.title }}
-                <menu>
-                {% for entry in item.subitems %}
-                    <li>
-                        {% if entry.external %}
-                        <a href="{{ entry.url }}">{{ entry.page }}</a>
-                        {% else %}
-                        <a href="{{ site.url }}/{{ entry.url }}">{{ entry.page }}</a>
-                        {% endif %}
-                    </li>
-                {% endfor %}
-                </menu>
-            </li>
-        {% endfor %}
-        </menu>
-    </header>
-    <section>
-    {{ content }}
-    </section>
-    <footer>
-        <p><small>Hosted on GitHub Pages</small></p>
-    </footer>
-</div>
+<main class="site-content">
+    <div class="wrapper">
+        {{ content }}
+    </div>
+</main>
