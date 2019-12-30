@@ -158,4 +158,3 @@ title: "STM32F103C8T6 - JLINK Debugger"
 |        | Ground plane |
 |        | PA14 (SWCLK) |
 |        | PA13 (SWDIO) |
-

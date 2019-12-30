@@ -405,4 +405,3 @@ title: "STM32F746IGT6 - WaveShare Core7XXI"
 | GNDQ  | Ground plane |
 | DQ15  | PD10         |
 | GND   | Ground plane |
-
