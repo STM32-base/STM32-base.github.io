@@ -105,4 +105,3 @@ The `USE_ST_CMSIS` variable should be set when using the CMSIS located in the ST
 _Defaults to: undefined_
 
 The `USE_ST_HAL` variable should be set when using the HAL located in the STM32-base-STM32Cube repository. When this variable is set, the makefile act like the `USE_ST_CMSIS` is also set.
-

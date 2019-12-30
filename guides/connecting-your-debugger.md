@@ -94,4 +94,3 @@ This debugger has a 10-pin IDC connector. The pinout of this connector can be fo
 
 ![ST-LINK/V2 Clone Header]({{ site.url }}/assets/img/pinouts/ST-LINK_V2_Clone_Header.png)
 {: style="text-align: center;"}
-
