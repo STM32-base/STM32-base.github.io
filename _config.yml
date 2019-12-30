@@ -55,5 +55,5 @@ socialsMenu:
 footer:
   - >
     <p>This website is hosted on <a href="https://pages.github.com/">Github pages</a>.
-    The STM32-base project is <i>in no way</i> affiliated with <a href="">STMicroelectronics</a>.</p>
+    The STM32-base project is <i>in no way</i> affiliated with <a href="https://www.st.com/">STMicroelectronics</a>.</p>
     <p><a href="https://jeffhuang.com/designed_to_last/">This page was designed to last</a>.</p>
