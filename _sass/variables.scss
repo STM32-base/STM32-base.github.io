@@ -11,15 +11,15 @@ $color-page-background:   #ffffff;
 $color-page-frame:        #f8f8f8;
 $color-page-border:       #e8e8e8;
 
-$color-text-primary:      #727272;
-$color-text-secondary:    #444444;
-$color-text-code:         #333333;
-$color-text-bold:         #222222;
+$color-text-primary:      #2a2a2a;
+$color-text-secondary:    #222222;
+$color-text-code:         #333344;
+$color-text-bold:         #111111;
 $color-text-highlight:    #ffff00;
 
 // Color mappings
 $color-text-h1: $color-text-bold;
-$color-text-h2: $color-text-code;
+$color-text-h2: $color-text-secondary;
 $color-text-h3: $color-text-secondary;
 $color-text-h4: $color-text-secondary;
 $color-text-h5: $color-text-secondary;
