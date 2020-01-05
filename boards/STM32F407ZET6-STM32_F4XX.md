@@ -4,7 +4,7 @@ title: "STM32F407ZET6 - STM32F4XX board"
 
 # {{ page.title }}
 
-![STM32_F4XXboard]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-1.jpg)
+![STM32F4XX]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4XX-1.jpg)
 
 ## Overview
 
