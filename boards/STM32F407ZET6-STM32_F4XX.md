@@ -1,10 +1,10 @@
 ---
-title: "STM32F407ZET6 - STM32_F4XX board"
+title: "STM32F407ZET6 - STM32F4XX board"
 ---
 
 # {{ page.title }}
 
-![STM32_F4XX board]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32_F4xx_1.jpg)
+![STM32_F4XXboard]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-1.jpg)
 
 ## Overview
 
@@ -12,7 +12,7 @@ title: "STM32F407ZET6 - STM32_F4XX board"
     <tr>
         <td rowspan="3"><b>Board</b></td>
         <td>Name</td>
-        <td>STM32_F4XX</td>
+        <td>STM32F4XX</td>
     </tr>
     <tr>
         <td>Brand</td>
@@ -144,15 +144,15 @@ title: "STM32F407ZET6 - STM32_F4XX board"
 
 ## Resources
 
- - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F407ZET6-STM32_F4XX.pdf)
+ - [Schematic]({{ site.url }}/assets/pdf/boards/original-schematic-STM32F407ZET6-STM32F4XX.pdf)
 
 ## Pictures
 
-![STM32_F4XX board]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32_F4xx_1.jpg)
+![STM32_F4XX board]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-1.jpg)
 
-![STM32_F4XX board Top view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32_F4xx_2.jpg)
+![STM32_F4XX board Top view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-2.jpg)
 
-![STM32_F4XX board Bottom view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32_F4xx_3.jpg)
+![STM32_F4XX board Bottom view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-3.jpg)
 
 ## Header 1
 
