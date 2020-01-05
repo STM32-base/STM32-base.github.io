@@ -148,11 +148,11 @@ title: "STM32F407ZET6 - STM32F4XX board"
 
 ## Pictures
 
-![STM32_F4XX board]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-1.jpg)
+![STM32F4XX board]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4XX-1.jpg)
 
-![STM32_F4XX board Top view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-2.jpg)
+![STM32F4XX board Top view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4XX-2.jpg)
 
-![STM32_F4XX board Bottom view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4xx-3.jpg)
+![STM32F4XX board Bottom view]({{ site.url }}/assets/img/boards/STM32F407ZET6-STM32F4XX-3.jpg)
 
 ## Header 1
 
