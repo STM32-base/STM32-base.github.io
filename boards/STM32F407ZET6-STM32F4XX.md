@@ -107,7 +107,7 @@ title: "STM32F407ZET6 - STM32F4XX board"
 	<td>44-pin IS62WV51216BLL **Footprint only**</td>
     </tr>
     <tr>
-        <td rowspan="3>"><b>I/O</b></td>
+        <td rowspan="3"><b>I/O</b></td>
         <td>LEDs</td>
         <td>Power LED (<b>D3</b>, +3.3V)<br>User LED (<b>D1</b>, <code>PF9</code>, active low)<br>User LED (<b>D2</b>, <code>PF10</code>, active low)</td>
     </tr>
@@ -376,17 +376,17 @@ title: "STM32F407ZET6 - STM32F4XX board"
 
 ## SD-card
 
-| Pin |          | Connected to |
-| --- | -------- | ------------ |
-|  1  | SDIO_D2  | PC10         |
-|  2  | SDIO_D3  | PC11         |
-|  3  | SDIO_CMD | PD2          |
-|  4  | VCC      | +3.3V rail   |
-|  5  | SDIO_SCK | PC12         |
-|  6  | GND      | Ground plane |
-|  7  | SDIO_D0  | PC8          |
-|  8  | SDIO_D1  | PC9          |
-|  9  |          | Ground plane |
+| Pin |             | Connected to |
+| --- | ----------- | ------------ |
+|  1  | SDIO_D2     | PC10         |
+|  2  | SDIO_D3     | PC11         |
+|  3  | SDIO_CMD    | PD2          |
+|  4  | VCC         | +3.3V rail   |
+|  5  | SDIO_SCK    | PC12         |
+|  6  | GND         | Ground plane |
+|  7  | SDIO_D0     | PC8          |
+|  8  | SDIO_D1     | PC9          |
+|  9  | Card Detect | Ground plane |
 
 ## IC - Winbond W25Q16 (16Mb FLASH)
 
