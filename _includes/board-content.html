@@ -299,12 +299,14 @@
                 <div class="board-item-icon"><i class="fas fa-image"></i></div>
                 <h2>Pictures</h2>
             </div>
-            {% for picture in pictures %}
-            <figure>
-                <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['part']['name'] }}: {{ picture['name'] }}">
-                <figcaption>{{ board['part']['name'] }}: {{ picture['name'] }}</figcaption>
-            </figure>
-            {% endfor %}
+            <div class="board-item-content">
+                {% for picture in pictures %}
+                <figure>
+                    <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['part']['name'] }}: {{ picture['name'] }}">
+                    <figcaption>{{ board['part']['name'] }}: {{ picture['name'] }}</figcaption>
+                </figure>
+                {% endfor %}
+            </div>
         </div>
         {% if resources %}
         <div class="board-item">
@@ -331,11 +333,15 @@
                 <h2>Inputs</h2>
             </div>
             <div class="board-item-content">
+                {% if inputs.size != 0 %}
                 <ul class="icon-list">
                     {% for input in inputs %}
                     <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['inputAndOutputFunctionToIcon'][input['function']] }}"></i></span><a href="#{{ input['name'] | replace: ' ', '-' }}">{{ input['name'] }}</a></li>
                     {% endfor %}
                 </ul>
+                {% else %}
+                <p>None</p>
+                {% endif %}
             </div>
         </div>
     </div>
@@ -346,11 +352,15 @@
                 <h2>Outputs</h2>
             </div>
             <div class="board-item-content">
+                {% if outputs.size != 0 %}
                 <ul class="icon-list">
                     {% for output in outputs %}
                     <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['inputAndOutputFunctionToIcon'][output['function']] }}"></i></span><a href="#{{ output['name'] | replace: ' ', '-' }}">{{ output['name'] }}</a></li>
                     {% endfor %}
                 </ul>
+                {% else %}
+                <p>None</p>
+                {% endif %}
             </div>
         </div>
     </div>

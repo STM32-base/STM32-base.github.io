@@ -1,0 +1,144 @@
+{
+    "board": {
+        "brand": null,
+        "part": {
+            "name": "ST-LINK V2 Debugger",
+            "marking": null,
+            "url": null
+        },
+        "origin": "China"
+    },
+    "microcontroller": "STM32F101C8T6",
+    "oscillators": {
+        "hse": 8,
+        "lse": null
+    },
+    "power": {
+        "sources": [
+            { "name": "USB connector", "voltage": 5 }
+        ],
+        "analog": {
+            "vdda": false,
+            "vssa": false,
+            "vrefNegative": false,
+            "vrefPositive": false
+        },
+        "battery": {
+            "attachment": "none",
+            "size": null
+        }
+    },
+    "regulator": "ME6211-SOT23-5",
+    "pcb": {
+        "color": "green",
+        "size": { "length": 30, "width": 14 },
+        "mounting": "None"
+    },
+    "remarks": [
+        { "type": "trivia", "content": "This board uses an STM32F101C8T6 microcontroller which, officially, should not have support for USB. However, they do work which suggests that the silicon is actually there." },
+        { "type": "note", "content": "This board is intended to use as ST-Link device to program and debug other STM32 and STM8 devices." }
+    ],
+    "resources": [
+        {
+            "name": "Variants",
+            "type": "picture",
+            "file": "STM32F101C8T6_ST-LINK_V2-1.jpg"
+        },
+        {
+            "name": "Top view",
+            "type": "picture",
+            "file": "STM32F101C8T6_ST-LINK_V2-2.jpg"
+        },
+        {
+            "name": "Bottom view",
+            "type": "picture",
+            "file": "STM32F101C8T6_ST-LINK_V2-3.jpg"
+        }
+    ],
+    "inputs": [],
+    "outputs": [
+        {
+            "name": "Run LED",
+            "identifiers": {
+                "name": null,
+                "reference": "D1"
+            },
+            "function": "activity",
+            "type": "LED",
+            "to": "PA9",
+            "mode": "Source"
+        }
+    ],
+    "connectors": [
+        {
+            "name": "SWD out",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "IDC",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 5, "width": 2 }
+            },
+            "pins": [
+                { "number": 1,  "name": "RST",   "function": null, "to": "PB6" },
+                { "number": 2,  "name": "SWDIO", "function": null, "to": "PB12" },
+                { "number": 3,  "name": "GND",   "function": null, "to": "Ground plane" },
+                { "number": 4,  "name": "GND",   "function": null, "to": "Ground plane" },
+                { "number": 5,  "name": "SWIM",  "function": null, "to": "PB11" },
+                { "number": 6,  "name": "SWCLK", "function": null, "to": "PA5" },
+                { "number": 7,  "name": "3.3V",  "function": null, "to": "+3.3V rail" },
+                { "number": 8,  "name": "3.3V",  "function": null, "to": "+3.3V rail" },
+                { "number": 9,  "name": "5.0V",  "function": null, "to": "+5V rail" },
+                { "number": 10, "name": "5.0V",  "function": null, "to": "+5V rail" }
+            ]
+        },
+        {
+            "name": "SWD in",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "debug",
+            "footprint": true,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 1,
+                "size": { "length": 4, "width": 1 }
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": "SWDIO", "to": "PA13" },
+                { "number": 2,  "name": null, "function": "GND",   "to": "Ground plane" },
+                { "number": 3,  "name": null, "function": "SWCLK", "to": "PA14" },
+                { "number": 4,  "name": null, "function": "VCC",   "to": "+3.3V rail" }
+            ]
+        },
+        {
+            "name": "USB A connector",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "usb",
+            "footprint": false,
+            "type": {
+                "name": "USB A",
+                "gender": "male",
+                "pitch": null,
+                "size": null
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 2,  "name": null, "function": "D-",  "to": "PA11" },
+                { "number": 3,  "name": null, "function": "D+",  "to": "PA12" },
+                { "number": 4,  "name": null, "function": "GND", "to": "Ground plane" }
+            ]
+        }
+    ],
+    "devices": []
+}

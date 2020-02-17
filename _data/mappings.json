@@ -4,7 +4,8 @@
         "boot": "fas fa-asterisk",
         "user": "fas fa-user",
         "enable": "fas fa-lightbulb",
-        "power": "fas fa-power-off"
+        "power": "fas fa-power-off",
+        "activity": "fas fa-signal"
     },
     "connectorFunctionToIcon": {
         "header": "fas fa-exchange-alt",
