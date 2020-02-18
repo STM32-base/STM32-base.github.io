@@ -55,14 +55,14 @@
 {% assign hasMemDtcmRam = memories['dtcmRam'] %}
 {% assign memDtcmRam = memories['dtcmRam'] | append: 'KiB' %}
 
-{% assign crystals = data['crystals'] %}
+{% assign oscillators = data['oscillators'] %}
 {% assign hsi = microcontroller['oscillators']['hsi'] | append: 'MHz' %}
 {% assign lsi = microcontroller['oscillators']['lsi'] | append: 'kHz' %}
 {% capture hse %}
-{{ crystals['hse'] | default: 'None' }}{% if crystals['hse'] %}MHz{% endif %}
+{{ oscillators['hse'] | default: 'None' }}{% if oscillators['hse'] %}MHz{% endif %}
 {% endcapture %}
 {% capture lse %}
-{{ crystals['lse'] | default: 'None' }}{% if crystals['lse'] %}kHz{% endif %}
+{{ oscillators['lse'] | default: 'None' }}{% if oscillators['lse'] %}kHz{% endif %}
 {% endcapture %}
 
 {% assign power = data['power'] %}

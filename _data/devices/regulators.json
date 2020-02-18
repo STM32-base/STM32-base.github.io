@@ -49,6 +49,31 @@
             "amperage": 1
         }
     },
+    "MIC5219-SOT23-5": {
+        "manufacturer": {
+            "name": "Microchip Technology Inc.",
+            "url": "https://www.microchip.com/"
+        },
+        "part": {
+            "name": "MIC5219",
+            "marking": "LG33",
+            "datasheet": "MIC5219.pdf",
+            "url": "https://www.microchip.com/wwwproducts/en/MIC5219"
+        },
+        "package": {
+            "abbreviation": "SOT23-5",
+            "name": "Small Outline Transistor",
+            "pins": 5
+        },
+        "input": {
+            "min": 4.3,
+            "max": 12
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.5
+        }
+    },
     "ME6211-SOT23-5": {
         "manufacturer": {
             "name": "Nanjing Micro One Electronics Inc.",
