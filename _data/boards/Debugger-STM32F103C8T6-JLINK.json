@@ -32,7 +32,7 @@
     "pcb": {
         "color": "purple",
         "size": { "length": 38, "width": 16.5 },
-        "mouting": "None"
+        "mounting": "None"
     },
     "remarks": [
         { "type": "note", "content": "This board is a debugger. This means that it is intended to be used as an ST-Link to program and debug other STM32 and STM8 microcontrollers." }

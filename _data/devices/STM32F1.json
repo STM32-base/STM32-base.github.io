@@ -57,6 +57,35 @@
             "lsi": 40
         }
     },
+    "STM32F103C8U6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F103C8U6",
+            "marking": "STM32F103C8U6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f103c8.html"
+        },
+        "package": {
+            "abbreviation": "UFQFPN",
+            "name": "Ultra Flat Quad Flat Pack No-lead",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M3",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m3",
+            "clock": 72
+        },
+        "memories": {
+            "flash": 64,
+            "sram": 20
+        },
+        "oscillators": {
+            "hsi": 8,
+            "lsi": 40
+        }
+    },
     "STM32F103VET6": {
         "manufacturer": {
             "name": "ST-Microelectronics",
