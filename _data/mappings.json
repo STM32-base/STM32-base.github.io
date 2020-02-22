@@ -18,7 +18,8 @@
         "memory": "fas fa-memory",
         "storage": "fas fa-database",
         "converter": "fas fa-exchange-alt",
-        "sensor": "fas fa-thermometer"
+        "sensor": "fas fa-thermometer",
+        "power": "fas fa-plug"
     },
     "resourceTypeToIcon": {
         "picture": "fas fa-image",

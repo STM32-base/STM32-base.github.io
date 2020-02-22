@@ -86,6 +86,50 @@
             "description": "Infrared receiver"
         }
     },
+    "IS42S16400J": {
+        "manufacturer": {
+            "name": "Integrated Silicon Solution, Inc.",
+            "url": "http://www.issi.com/US/Index.shtml"
+        },
+        "part": {
+            "name": "IS42S16400J",
+            "marking": "IS42S16400J-71L",
+            "datasheet": "IS42S16400J.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "TSOP - II",
+            "name": "Thin Small Outline Package - Type II",
+            "pins": 54
+        },
+        "type": {
+            "category": "memory",
+            "type": "DRAM",
+            "description": "8MiB SDRAM"
+        }
+    },
+    "MIC2075": {
+        "manufacturer": {
+            "name": "Microchip Technology Inc.",
+            "url": "https://www.microchip.com/"
+        },
+        "part": {
+            "name": "MIC2075",
+            "marking": "2075-28M",
+            "datasheet": "MIC2075.pdf",
+            "url": "https://www.microchip.com/wwwproducts/en/MIC2075"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "power",
+            "type": "switch",
+            "description": "USB High-Side 500mA Current Limiting Power Switch"
+        }
+    },
     "W25Q16DV": {
         "manufacturer": {
             "name": "Winbond Electronics Corporation",
