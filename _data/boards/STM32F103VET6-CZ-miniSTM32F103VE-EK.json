@@ -57,6 +57,11 @@
             "name": "Bottom view",
             "type": "picture",
             "file": "STM32F103VET6_CZ_mini-EK-3.jpg"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32F103VET6-CZ_miniSTM32F103VE-EK.pdf"
         }
     ],
     "inputs": [
@@ -80,7 +85,7 @@
             "function": "boot",
             "type": "2-way jumper",
             "to": "BOOT0",
-            "mode": "Active high",
+            "mode": null,
             "remarks": [
                 {
                     "type": "note",
@@ -97,7 +102,7 @@
             "function": "boot",
             "type": "2-way jumper",
             "to": "BOOT1",
-            "mode": "Active high",
+            "mode": null,
             "remarks": [
                 {
                     "type": "note",

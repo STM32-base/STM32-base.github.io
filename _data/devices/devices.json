@@ -130,6 +130,27 @@
             "description": "USB High-Side 500mA Current Limiting Power Switch"
         }
     },
+    "PL-2303HX": {
+        "manufacturer": {
+            "name": "Prolific Technology Inc.",
+            "url": "http://www.prolific.com.tw/"
+        },
+        "part": {
+            "name": "PL-2303HX",
+            "marking": "PL-2303HX",
+            "datasheet": "PL-2303HX.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SSOP",
+            "name": "Shrink Small-Outline Package",
+            "pins": 28
+        },
+        "type": {
+            "category": "converter",
+            "description": "USB to Serial converter"
+        }
+    },
     "W25Q16DV": {
         "manufacturer": {
             "name": "Winbond Electronics Corporation",

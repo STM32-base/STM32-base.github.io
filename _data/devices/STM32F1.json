@@ -114,5 +114,34 @@
             "hsi": 8,
             "lsi": 40
         }
+    },
+    "STM32F103ZET6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F103ZET6",
+            "marking": "STM32F103ZET6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f103ze.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 144
+        },
+        "core": {
+            "name": "Arm Cortex-M3",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m3",
+            "clock": 72
+        },
+        "memories": {
+            "flash": 512,
+            "sram": 64
+        },
+        "oscillators": {
+            "hsi": 8,
+            "lsi": 40
+        }
     }
 }
