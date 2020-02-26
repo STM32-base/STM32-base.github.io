@@ -1,0 +1,31 @@
+{
+    "STM32F030F4P6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32F030F4P6",
+            "marking": "32F030F4P6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f030f4.html"
+        },
+        "package": {
+            "abbreviation": "TSSOP",
+            "name": "Thin-Shrink Small-Outline Package",
+            "pins": 20
+        },
+        "core": {
+            "name": "Arm Cortex-M0",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m0",
+            "clock": 48
+        },
+        "memories": {
+            "flash": 16,
+            "sram": 4
+        },
+        "oscillators": {
+            "hsi": 8,
+            "lsi": 40
+        }
+    }
+}

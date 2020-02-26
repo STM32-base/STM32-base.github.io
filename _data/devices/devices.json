@@ -1,0 +1,177 @@
+{
+    "CH340": {
+        "manufacturer": {
+            "name": "WCH",
+            "url": "http://wch.cn/"
+        },
+        "part": {
+            "name": "CH340",
+            "marking": "CH340G",
+            "datasheet": "CH340.pdf",
+            "url": "http://www.wch.cn/products/CH340.html"
+        },
+        "package": {
+            "abbreviation": "SSOP",
+            "name": "Shrink Small-Outline Package",
+            "pins": 16
+        },
+        "type": {
+            "category": "converter",
+            "description": "USB to Serial converter"
+        }
+    },
+    "DS18B20": {
+        "manufacturer": {
+            "name": "Maxim Integrated Products, Inc.",
+            "url": "https://www.maximintegrated.com/"
+        },
+        "part": {
+            "name": "DS18B20",
+            "marking": null,
+            "datasheet": "DS18B20.pdf",
+            "url": "https://www.maximintegrated.com/en/products/sensors/healthcare-sensor-ics/electrochemical-sensor-afe-ics/DS18B20.html"
+        },
+        "package": {
+            "abbreviation": "TO-92",
+            "name": "Transistor Outline Package",
+            "pins": 3
+        },
+        "type": {
+            "category": "sensor",
+            "type": "Temperature",
+            "description": "1-wire temperature sensor"
+        }
+    },
+    "HK24C04": {
+        "manufacturer": {
+            "name": "HangShun",
+            "url": null
+        },
+        "part": {
+            "name": "HK24C04",
+            "marking": "HK24C04",
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOP",
+            "name": "Small-Outline Package",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "EEPROM",
+            "description": "4KiB I2C EEPROM"
+        }
+    },
+    "HS0038": {
+        "manufacturer": {
+            "name": "Vishay Intertechnology, Inc.",
+            "url": "http://www.vishay.com/"
+        },
+        "part": {
+            "name": "HS0038",
+            "marking": null,
+            "datasheet": "HS0038B.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": null,
+            "name": "Mold",
+            "pins": 3
+        },
+        "type": {
+            "category": "sensor",
+            "type": "IR",
+            "description": "Infrared receiver"
+        }
+    },
+    "IS42S16400J": {
+        "manufacturer": {
+            "name": "Integrated Silicon Solution, Inc.",
+            "url": "http://www.issi.com/US/Index.shtml"
+        },
+        "part": {
+            "name": "IS42S16400J",
+            "marking": "IS42S16400J-71L",
+            "datasheet": "IS42S16400J.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "TSOP - II",
+            "name": "Thin Small Outline Package - Type II",
+            "pins": 54
+        },
+        "type": {
+            "category": "memory",
+            "type": "DRAM",
+            "description": "8MiB SDRAM"
+        }
+    },
+    "MIC2075": {
+        "manufacturer": {
+            "name": "Microchip Technology Inc.",
+            "url": "https://www.microchip.com/"
+        },
+        "part": {
+            "name": "MIC2075",
+            "marking": "2075-28M",
+            "datasheet": "MIC2075.pdf",
+            "url": "https://www.microchip.com/wwwproducts/en/MIC2075"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "power",
+            "type": "switch",
+            "description": "USB High-Side 500mA Current Limiting Power Switch"
+        }
+    },
+    "W25Q16DV": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25Q16DV",
+            "marking": "W25Q16DVSIG",
+            "datasheet": "W25Q16DV.pdf",
+            "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q16DV"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "2MiB Dual/Quad SPI FLASH"
+        }
+    },
+    "W25Q128FV": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25Q128FV",
+            "marking": "W25Q128FVSG",
+            "datasheet": "W25Q128FV.pdf",
+            "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q128FV"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "16MiB Dual/Quad SPI FLASH"
+        }
+    }
+}
