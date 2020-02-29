@@ -19,7 +19,8 @@
         "storage": "fas fa-database",
         "converter": "fas fa-exchange-alt",
         "sensor": "fas fa-thermometer",
-        "power": "fas fa-plug"
+        "power": "fas fa-plug",
+        "bluetooth": "fab fa-bluetooth"
     },
     "resourceTypeToIcon": {
         "picture": "fas fa-image",

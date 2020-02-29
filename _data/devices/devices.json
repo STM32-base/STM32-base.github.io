@@ -42,6 +42,28 @@
             "description": "1-wire temperature sensor"
         }
     },
+    "HC06": {
+        "manufacturer": {
+            "name": "Guangzhou HC Information Technology Co., Ltd.",
+            "url": "http://www.wavesen.com/"
+        },
+        "part": {
+            "name": "HC06",
+            "marking": "HC06",
+            "datasheet": "HC06.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": null,
+            "name": "PCB module",
+            "pins": 34
+        },
+        "type": {
+            "category": "bluetooth",
+            "type": "Bluetooth transceiver",
+            "description": "Serial Bluetooth transceiver"
+        }
+    },
     "HK24C04": {
         "manufacturer": {
             "name": "HangShun",
