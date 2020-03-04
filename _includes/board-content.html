@@ -583,7 +583,7 @@
                     </tr>
                     <tr>
                         <td>Part</td>
-                        <td>{% if deviceData['part']['url'] %}<a href="{{ deviceData['part']['url'] }}">{% endif %}{{ deviceData['part']['name'] }}{% if deviceData['part']['url'] %}</a>{% endif %}</td>
+                        <td>{% if deviceData['part']['url'] %}<a href="{{ deviceData['part']['url'] }}">{% endif %}{{ deviceData['part']['name'] | default: "Unknown" }}{% if deviceData['part']['url'] %}</a>{% endif %}</td>
                     </tr>
                     <tr>
                         <td>Marking</td>

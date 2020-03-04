@@ -72,7 +72,7 @@
                 "reference": null
             },
             "function": "reset",
-            "type": "button",
+            "type": "Button",
             "to": "NRST",
             "mode": "Active low"
         },
@@ -83,7 +83,7 @@
                 "reference": null
             },
             "function": "user",
-            "type": "button",
+            "type": "Button",
             "to": "PA0",
             "mode": "Active high"
         },
@@ -94,7 +94,7 @@
                 "reference": "K0"
             },
             "function": "user",
-            "type": "button",
+            "type": "Button",
             "to": "PE4",
             "mode": "Active low"
         },
@@ -105,7 +105,7 @@
                 "reference": "K1"
             },
             "function": "user",
-            "type": "button",
+            "type": "Button",
             "to": "PE5",
             "mode": "Active low"
         },
@@ -118,7 +118,13 @@
             "function": "boot",
             "type": "2-way jumper",
             "to": "BOOT0",
-            "mode": null
+            "mode": null,
+            "remarks": [
+                {
+                    "type": "note",
+                    "content": "This jumper is part of Header 2."
+                }
+            ]
         },
         {
             "name": "BOOT1 jumper",
@@ -129,7 +135,13 @@
             "function": "boot",
             "type": "2-way jumper",
             "to": "BOOT1",
-            "mode": null
+            "mode": null,
+            "remarks": [
+                {
+                    "type": "note",
+                    "content": "This jumper is part of Header 2."
+                }
+            ]
         }
     ],
     "outputs": [
@@ -468,7 +480,7 @@
             "footprint": false,
             "type": {
                 "name": "Pin header",
-                "gender": "female",
+                "gender": "male",
                 "pitch": 2.54,
                 "size": { "length": 4, "width": 1 }
             },

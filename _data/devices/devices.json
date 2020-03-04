@@ -1,4 +1,32 @@
 {
+    "Generic EEPROM": {
+        "manufacturer": null,
+        "part": null,
+        "package": {
+            "abbreviation": "SOP",
+            "name": "Small-Outline Package",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "EEPROM",
+            "description": "Generic I2C EEPROM"
+        }
+    },
+    "Generic FLASH": {
+        "manufacturer": null,
+        "part": null,
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "Generic Dual/Quad SPI FLASH"
+        }
+    },
     "CH340": {
         "manufacturer": {
             "name": "WCH",

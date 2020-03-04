@@ -49,6 +49,31 @@
             "amperage": 1
         }
     },
+    "HT7833-SOT89-3": {
+        "manufacturer": {
+            "name": "Holtek Semiconductor Inc.",
+            "url": "https://www.holtek.com.tw/"
+        },
+        "part": {
+            "name": "HT7833",
+            "marking": "HT7833",
+            "datasheet": "HT78xx.pdf",
+            "url": "https://www.holtek.com/productdetail/-/vg/78xx"
+        },
+        "package": {
+            "abbreviation": "SOT89-3",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 4.3,
+            "max": 8.5
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.5
+        }
+    },
     "MIC5219-SOT23-5": {
         "manufacturer": {
             "name": "Microchip Technology Inc.",
