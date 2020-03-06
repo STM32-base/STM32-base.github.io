@@ -29,6 +29,36 @@
             "lsi": 32
         }
     },
+    "STM32F407ZGT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F407ZGT6",
+            "marking": "STM32F407ZGT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f407zg.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 144
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 168
+        },
+        "memories": {
+            "flash": 1024,
+            "sram": 192,
+            "backup": 4
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    },
     "STM32F429IGT6": {
         "manufacturer": {
             "name": "ST-Microelectronics",

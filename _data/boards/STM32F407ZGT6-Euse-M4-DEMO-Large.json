@@ -5,13 +5,13 @@
             "url": "https://euse.world.taobao.com/"
         },
         "part": {
-            "name": "Euse M3 DEMO",
+            "name": "Euse M4 DEMO",
             "marking": null,
             "url": null
         },
         "origin": "China"
     },
-    "microcontroller": "STM32F103ZET6",
+    "microcontroller": "STM32F407ZGT6",
     "oscillators": {
         "hse": 8,
         "lse": 32.768
@@ -39,7 +39,7 @@
     "regulator": "HT7833-SOT89-3",
     "pcb": {
         "color": "black",
-        "size": { "length": 103, "width": 65 },
+        "size": { "length": 103, "width": 75 },
         "mounting": "4x mounting hole (M2)"
     },
     "remarks": [
@@ -49,17 +49,17 @@
         {
             "name": "Perspective view",
             "type": "picture",
-            "file": "STM32F103ZET6_Euse_M3_DEMO-1.jpg"
+            "file": "STM32F407ZGT6_Euse_M4_DEMO_Large-1.jpg"
         },
         {
             "name": "Top view",
             "type": "picture",
-            "file": "STM32F103ZET6_Euse_M3_DEMO-2.jpg"
+            "file": "STM32F407ZGT6_Euse_M4_DEMO_Large-2.jpg"
         },
         {
             "name": "Bottom view",
             "type": "picture",
-            "file": "STM32F103ZET6_Euse_M3_DEMO-3.jpg"
+            "file": "STM32F407ZGT6_Euse_M4_DEMO_Large-3.jpg"
         }
     ],
     "inputs": [
