@@ -1,7 +1,12 @@
 {
     "Generic EEPROM": {
         "manufacturer": null,
-        "part": null,
+        "part": {
+            "name": "Generic EEPROM",
+            "marking": null,
+            "datasheet": null,
+            "url": null
+        },
         "package": {
             "abbreviation": "SOP",
             "name": "Small-Outline Package",
@@ -15,7 +20,12 @@
     },
     "Generic FLASH": {
         "manufacturer": null,
-        "part": null,
+        "part": {
+            "name": "Generic FLASH",
+            "marking": null,
+            "datasheet": null,
+            "url": null
+        },
         "package": {
             "abbreviation": "SOIC",
             "name": "Small-Outline Integrated Circuit",
