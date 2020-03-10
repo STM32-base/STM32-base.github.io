@@ -49,6 +49,31 @@
             "amperage": 1
         }
     },
+    "FS1117-SOT223": {
+        "manufacturer": {
+            "name": "Fortune Semiconductor Corp.",
+            "url": "https://www.ic-fortune.com/"
+        },
+        "part": {
+            "name": "FS1117",
+            "marking": "FS1117",
+            "datasheet": "FS1117.pdf",
+            "url": "https://www.ic-fortune.com/eng/new_product2_1_1.asp?pno=FS1117"
+        },
+        "package": {
+            "abbreviation": "SOT223",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 4.7,
+            "max": 23
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 1
+        }
+    },
     "HT7833-SOT89-3": {
         "manufacturer": {
             "name": "Holtek Semiconductor Inc.",
