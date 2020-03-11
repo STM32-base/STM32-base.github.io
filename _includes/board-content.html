@@ -518,6 +518,13 @@
                         <td>{{ connector['type']['name'] }}{% if connector['type']['gender'] and connector['type']['pitch'] and connector['type']['size'] %} ({{ connector['type']['pitch'] }}mm, {{ connector['type']['size']['length'] }}x{{ connector['type']['size']['width'] }}, {{ connector['type']['gender'] }}){% endif %}</td>
                     </tr>
                 </table>
+                {% if connector['remarks'] %}
+                <ul>
+                    {% for remark in connector['remarks'] %}
+                    <li><b>{{ remark['type'] | capitalize }}:</b> {{ remark['content'] }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
             </div>
         </div>
     </div>

@@ -67,7 +67,7 @@
             "function": "reset",
             "type": "Button",
             "to": "NRST",
-            "mode": "Active low",
+            "mode": "Active low"
         },
         {
             "name": "BOOT0 jumper",
