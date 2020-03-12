@@ -64,7 +64,7 @@
             },
             "function": "activity",
             "type": "LED",
-            "to": "PA9 via 1.8KΩ resistor",
+            "to": "PA9 via 1.8kΩ resistor",
             "mode": "Sink"
         },
         {
@@ -75,7 +75,7 @@
             },
             "function": "activity",
             "type": "LED",
-            "to": "PA9 via 1.8KΩ resistor",
+            "to": "PA9 via 1.8kΩ resistor",
             "mode": "Source"
         }
     ],
