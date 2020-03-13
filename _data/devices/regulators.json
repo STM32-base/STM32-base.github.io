@@ -173,5 +173,30 @@
             "voltage": 3.3,
             "amperage": 0.3
         }
+    },
+    "XC6204-SOT89-3": {
+        "manufacturer": {
+            "name": "Torex Semiconductor LTD.",
+            "url": "https://www.torexsemi.com/"
+        },
+        "part": {
+            "name": "XC6204",
+            "marking": "4A2D",
+            "datasheet": "XC6204-XC6205.pdf",
+            "url": "https://www.torexsemi.com/products/single-type-voltage-regulators/series/?name=xc6204"
+        },
+        "package": {
+            "abbreviation": "SOT89-3",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 3.6,
+            "max": 10
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.3
+        }
     }
 }
