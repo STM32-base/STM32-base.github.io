@@ -37,6 +37,28 @@
             "description": "Generic Dual/Quad SPI FLASH"
         }
     },
+    "AT24C02C": {
+        "manufacturer": {
+            "name": "Microchip Technology Inc.",
+            "url": "https://www.microchip.com/"
+        },
+        "part": {
+            "name": "AT24C02C",
+            "marking": "02C",
+            "datasheet": "AT24C01C-02C.pdf",
+            "url": "https://www.microchip.com/wwwproducts/en/AT24C02C"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "EEPROM",
+            "description": "256B I2C EEPROM"
+        }
+    },
     "CH340": {
         "manufacturer": {
             "name": "WCH",
@@ -253,6 +275,28 @@
             "category": "storage",
             "type": "FLASH",
             "description": "2MiB Dual/Quad SPI FLASH"
+        }
+    },
+    "W25Q64FV": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25Q64FV",
+            "marking": "W25Q64FVSI6",
+            "datasheet": "W25Q64FV.pdf",
+            "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q64FV"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "8MiB Dual/Quad SPI FLASH"
         }
     },
     "W25Q128FV": {
