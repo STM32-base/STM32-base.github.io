@@ -59,6 +59,28 @@
             "description": "256B I2C EEPROM"
         }
     },
+    "AT24C04": {
+        "manufacturer": {
+            "name": "Microchip Technology Inc.",
+            "url": "https://www.microchip.com/"
+        },
+        "part": {
+            "name": "AT24C04",
+            "marking": "AT24C04N",
+            "datasheet": "AT24C01-02-04-08-16.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "EEPROM",
+            "description": "512B I2C EEPROM"
+        }
+    },
     "CH340": {
         "manufacturer": {
             "name": "WCH",
