@@ -22,7 +22,7 @@
             "vrefPositive": false
         },
         "battery": {
-            "attachment": "pads",
+            "type": "pads",
             "size": null
         }
     },
@@ -316,7 +316,7 @@
             "remarks": [
                 {
                     "type": "note",
-                    "content": "This is one header together with the UART1 header."
+                    "content": "This is one header together with the SWD header."
                 }
             ]
         },

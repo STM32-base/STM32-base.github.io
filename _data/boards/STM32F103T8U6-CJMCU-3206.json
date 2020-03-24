@@ -28,7 +28,7 @@
             "vrefPositive": false
         },
         "battery": {
-            "attachment": "none",
+            "type": "none",
             "size": null
         }
     },

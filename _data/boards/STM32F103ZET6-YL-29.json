@@ -26,7 +26,7 @@
             "vrefPositive": false
         },
         "battery": {
-            "attachment": "footprint & pin",
+            "type": "footprint & pin",
             "size": {
                 "code": "12",
                 "diameter": 12.5

@@ -29,7 +29,7 @@
             "vrefPositive": true
         },
         "battery": {
-            "attachment": "holder",
+            "type": "holder",
             "size": {
                 "code": "12",
                 "diameter": 12.5

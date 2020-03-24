@@ -29,7 +29,7 @@
             "vrefPositive": false
         },
         "battery": {
-            "attachment": "pin",
+            "type": "pin",
             "size": null
         }
     },
