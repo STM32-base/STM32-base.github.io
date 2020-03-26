@@ -27,5 +27,34 @@
             "hsi": 8,
             "lsi": 40
         }
+    },
+    "STM32F051C8T6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32F051C8T6",
+            "marking": "STM32F051C8T6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f051c8.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M0",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m0",
+            "clock": 48
+        },
+        "memories": {
+            "flash": 64,
+            "sram": 8
+        },
+        "oscillators": {
+            "hsi": 8,
+            "lsi": 40
+        }
     }
 }
