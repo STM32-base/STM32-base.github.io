@@ -39,6 +39,9 @@ footerMenu:
   - name: "Privacy Policy"
     url: "general/privacy-policy"
     external: false
+  - name: "License"
+    url: "general/license"
+    external: false
   - name: "Blue Pill board"
     url: "boards/STM32F103C8T6-Blue-Pill"
     external: false
