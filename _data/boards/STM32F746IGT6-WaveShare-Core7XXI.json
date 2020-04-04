@@ -441,7 +441,7 @@
                 { "number": 19, "name": null, "function": "N.C.",         "to": null },
                 { "number": 20, "name": null, "function": "GND",          "to": "Ground plane" }
             ]
-        },
+        }
     ],
     "devices": [
         {
@@ -456,10 +456,10 @@
                 { "number": 2, "name": null, "function": "FLG", "to": "FLG jumper, pulled up by 10kΩ resistor" },
                 { "number": 3, "name": null, "function": "GND", "to": "Ground plane" },
                 { "number": 4, "name": null, "function": "NC",  "to": null },
-                { "number": 5, "name": null, "function": "OUT", "to": "USB 5V pin" },
-                { "number": 6, "name": null, "function": "IN",  "to": "+5V rail" },
-                { "number": 7, "name": null, "function": "OUT", "to": "USB 5V pin" },
-                { "number": 8, "name": null, "function": "NC",  "to": null }
+                { "number": 5, "name": null, "function": "NC",  "to": null },
+                { "number": 6, "name": null, "function": "OUT", "to": "USB 5V pin" },
+                { "number": 7, "name": null, "function": "IN",  "to": "+5V rail" },
+                { "number": 8, "name": null, "function": "OUT", "to": "USB 5V pin" }
             ]
         },
         {

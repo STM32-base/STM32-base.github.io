@@ -1,0 +1,31 @@
+{
+    "STM32F205RBT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F205RBT6",
+            "marking": "STM32F205RBT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f205rb.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 64
+        },
+        "core": {
+            "name": "Arm Cortex-M3",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m3",
+            "clock": 120
+        },
+        "memories": {
+            "flash": 128,
+            "sram": 64
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    }
+}
