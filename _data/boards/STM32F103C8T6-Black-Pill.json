@@ -11,7 +11,7 @@
     "microcontroller": "STM32F103C8T6",
     "oscillators": {
         "hse": 8,
-        "lse": 32.748
+        "lse": 32.768
     },
     "power": {
         "sources": [
@@ -65,9 +65,9 @@
                 "reference": null
             },
             "function": "reset",
-            "type": "button",
+            "type": "Button",
             "to": "NRST",
-            "mode": "active low"
+            "mode": "Active low"
         },
         {
             "name": "BOOT0 jumper",
@@ -88,7 +88,7 @@
             },
             "function": "boot",
             "type": "2-way jumper",
-            "to": "BOOT1",
+            "to": "PB2",
             "mode": null
         }
     ],

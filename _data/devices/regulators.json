@@ -156,7 +156,7 @@
         },
         "part": {
             "name": "ME6211",
-            "marking": "S2QK / S2QC / S2RD",
+            "marking": "S2QA / S2QC / S2QK / S2RD",
             "datasheet": "ME6211.pdf",
             "url": "http://www.microne.com.cn/en/ProductDetail.aspx?id=4"
         },
@@ -171,7 +171,7 @@
         },
         "output": {
             "voltage": 3.3,
-            "amperage": 0.5
+            "amperage": 0.18
         }
     },
     "TX6211B-SOT23-5": {
