@@ -1,0 +1,197 @@
+{
+    "board": {
+        "brand": null,
+        "part": {
+            "name": "Maple Mini Clone",
+            "marking": "BTE14-07",
+            "url": null
+        },
+        "origin": "China"
+    },
+    "microcontroller": "STM32F103C8T6",
+    "oscillators": {
+        "hse": 8,
+        "lse": null
+    },
+    "power": {
+        "sources": [
+            { "name": "Any +3.3V pin", "voltage": 3.3 },
+            { "name": "Any +5V pin", "voltage": 5 },
+            { "name": "USB connector", "voltage": 5 }
+        ],
+        "analog": {
+            "vdda": false,
+            "vssa": false,
+            "vrefNegative": false,
+            "vrefPositive": false
+        },
+        "battery": {
+            "type": "pin",
+            "size": null
+        }
+    },
+    "regulator": "AMS1117-SOT223",
+    "pcb": {
+        "color": "blue",
+        "size": { "length": 51, "width": 18 },
+        "mounting": "Breadboard"
+    },
+    "remarks": [
+        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." },
+        { "type": "note", "content": "The user button is also connected the the BOOT0 pin. This means that this button should be pressed when flashing the microcontroller." },
+        { "type": "trivia",  "content": "This board is a clone of the official <a href=\"https://www.leaflabs.com/maple/\">Maple Mini</a> originally made by <a href=\"https://www.leaflabs.com/\">Leaflabs</a>. The originial Maple Mini was designed to be used with the standard <a href=\"https://www.arduino.cc/en/Main/software\">Arduino IDE</a>. The official Maple products are no longer supported. The software has since been forked and is maintained under the STM32duino flag, supporting more boards than the original Maple project." }
+    ],
+    "resources": [
+        {
+            "name": "Perspective view",
+            "type": "picture",
+            "file": "STM32F103C8T6_Maple_Mini_Clone-1.jpg"
+        },
+        {
+            "name": "Top view",
+            "type": "picture",
+            "file": "STM32F103C8T6_Maple_Mini_Clone-2.jpg"
+        },
+        {
+            "name": "Bottom view",
+            "type": "picture",
+            "file": "STM32F103C8T6_Maple_Mini_Clone-3.jpg"
+        }
+    ],
+    "inputs": [
+        {
+            "name": "Reset button",
+            "identifiers": {
+                "name": "reset",
+                "reference": null
+            },
+            "function": "reset",
+            "type": "Button",
+            "to": "NRST",
+            "mode": "Active low"
+        },
+        {
+            "name": "User button",
+            "identifiers": {
+                "name": "but=32",
+                "reference": null
+            },
+            "function": "user",
+            "type": "Button",
+            "to": "BOOT0 and PB8",
+            "mode": "Active high"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "User LED",
+            "identifiers": {
+                "name": "d1=33",
+                "reference": null
+            },
+            "function": "user",
+            "type": "LED",
+            "to": "PB1",
+            "mode": "Source"
+        }
+    ],
+    "connectors": [
+        {
+            "name": "Header 1",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 20, "width": 1 }
+            },
+            "pins": [
+                { "number": 1,  "name": "Vcc",   "function": null, "to": "+3.3V rail" },
+                { "number": 2,  "name": "GND",   "function": null, "to": "Ground plane" },
+                { "number": 3,  "name": "Vbat",  "function": null, "to": "VBAT" },
+                { "number": 4,  "name": "14",    "function": null, "to": "PC13" },
+                { "number": 5,  "name": "13",    "function": null, "to": "PC14" },
+                { "number": 6,  "name": "12",    "function": null, "to": "PC15" },
+                { "number": 7,  "name": "reset", "function": null, "to": "NRST" },
+                { "number": 8,  "name": "11",    "function": null, "to": "PA0" },
+                { "number": 9,  "name": "10",    "function": null, "to": "PA1" },
+                { "number": 10, "name": "9",     "function": null, "to": "PA2" },
+                { "number": 11, "name": "8",     "function": null, "to": "PA3" },
+                { "number": 12, "name": "7",     "function": null, "to": "PA4" },
+                { "number": 13, "name": "6",     "function": null, "to": "PA5" },
+                { "number": 14, "name": "5",     "function": null, "to": "PA6" },
+                { "number": 15, "name": "4",     "function": null, "to": "PA7" },
+                { "number": 16, "name": "3",     "function": null, "to": "PB0" },
+                { "number": 17, "name": "2",     "function": null, "to": "PB2" },
+                { "number": 18, "name": "1",     "function": null, "to": "PB10" },
+                { "number": 19, "name": "0",     "function": null, "to": "PB11" },
+                { "number": 20, "name": "vin",   "function": null, "to": "+5V input rail" }
+            ]
+        },
+        {
+            "name": "Header 2",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 20, "width": 1 }
+            },
+            "pins": [
+                { "number": 1,  "name": "Vcc", "function": null, "to": "+3.3V rail" },
+                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 3,  "name": "but", "function": null, "to": "PB8" },
+                { "number": 4,  "name": "15",  "function": null, "to": "PB7" },
+                { "number": 5,  "name": "16",  "function": null, "to": "PB6" },
+                { "number": 6,  "name": "17",  "function": null, "to": "PB5" },
+                { "number": 7,  "name": "18",  "function": null, "to": "PB4" },
+                { "number": 8,  "name": "19",  "function": null, "to": "PB3" },
+                { "number": 9,  "name": "20",  "function": null, "to": "PA15" },
+                { "number": 10, "name": "21",  "function": null, "to": "PA14" },
+                { "number": 11, "name": "22",  "function": null, "to": "PA13" },
+                { "number": 12, "name": "23",  "function": null, "to": "PA12" },
+                { "number": 13, "name": "24",  "function": null, "to": "PA11" },
+                { "number": 14, "name": "25",  "function": null, "to": "PA10" },
+                { "number": 15, "name": "26",  "function": null, "to": "PA9" },
+                { "number": 16, "name": "27",  "function": null, "to": "PA8" },
+                { "number": 17, "name": "28",  "function": null, "to": "PB15" },
+                { "number": 18, "name": "29",  "function": null, "to": "PB14" },
+                { "number": 19, "name": "30",  "function": null, "to": "PB13" },
+                { "number": 20, "name": "31",  "function": null, "to": "PB12" }
+            ]
+        },
+        {
+            "name": "USB connector",
+            "identifiers": {
+                "name": "USB",
+                "reference": null
+            },
+            "function": "usb",
+            "footprint": false,
+            "type": {
+                "name": "USB Micro",
+                "gender": null,
+                "pitch": null,
+                "size": null
+            },
+            "pins": [
+                { "number": 1, "name": "", "function": "VCC", "to": "+5V input rail" },
+                { "number": 2, "name": "", "function": "D-",  "to": "PA11" },
+                { "number": 3, "name": "", "function": "D+",  "to": "PA12" },
+                { "number": 4, "name": "", "function": "ID",  "to": null },
+                { "number": 5, "name": "", "function": "GND", "to": "Ground plane" }
+            ]
+        }
+    ],
+    "devices": []
+}
