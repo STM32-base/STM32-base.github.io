@@ -37,6 +37,44 @@
             "description": "Generic Dual/Quad SPI FLASH"
         }
     },
+    "Generic NAND FLASH": {
+        "manufacturer": null,
+        "part": {
+            "name": "Generic NAND FLASH",
+            "marking": null,
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "TSOP - I",
+            "name": "Thin Small Outline Package - Type I",
+            "pins": 48
+        },
+        "type": {
+            "category": "storage",
+            "type": "NAND FLASH",
+            "description": "Generic NAND FLASH"
+        }
+    },
+    "Generic SRAM": {
+        "manufacturer": null,
+        "part": {
+            "name": "Generic SRAM",
+            "marking": null,
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "TSOP - II",
+            "name": "Thin Small Outline Package - Type II",
+            "pins": 44
+        },
+        "type": {
+            "category": "memory",
+            "type": "SRAM",
+            "description": "Generic SRAM"
+        }
+    },
     "AT24C02C": {
         "manufacturer": {
             "name": "Microchip Technology Inc.",
@@ -79,6 +117,28 @@
             "category": "storage",
             "type": "EEPROM",
             "description": "512B I2C EEPROM"
+        }
+    },
+    "AT24C08": {
+        "manufacturer": {
+            "name": "Microchip Technology Inc.",
+            "url": "https://www.microchip.com/"
+        },
+        "part": {
+            "name": "AT24C04",
+            "marking": "24C08N",
+            "datasheet": "AT24C01-02-04-08-16.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "EEPROM",
+            "description": "1kB I2C EEPROM"
         }
     },
     "CH340": {
@@ -341,6 +401,28 @@
             "category": "storage",
             "type": "FLASH",
             "description": "16MiB Dual/Quad SPI FLASH"
+        }
+    },
+    "W25X40CL": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25X40CL",
+            "marking": "25X40CL",
+            "datasheet": "W25X40CL.pdf",
+            "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25X40CL"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "512kiB Dual SPI FLASH"
         }
     }
 }
