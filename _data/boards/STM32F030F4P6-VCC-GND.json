@@ -57,6 +57,16 @@
             "name": "Bottom view",
             "type": "picture",
             "file": "STM32F030F4P6_vcc-gnd.com-3.jpg"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32F030F4P6_vcc-gnd.com.pdf"
+        },
+        {
+            "name": "Original dimensions drawing",
+            "type": "pdf",
+            "file": "original-dimensions-STM32F030F4P6_vcc-gnd.com.pdf"
         }
     ],
     "inputs": [
