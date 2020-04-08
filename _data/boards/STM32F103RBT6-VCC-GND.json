@@ -1,0 +1,322 @@
+{
+    "board": {
+        "brand": {
+            "name": "vcc-gnd.com",
+            "url": "http://www.vcc-gnd.com/"
+        },
+        "part": {
+            "name": "vcc-gnd.com STM32F103RBT6",
+            "marking": null,
+            "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32f1"
+        },
+        "origin": "China"
+    },
+    "microcontroller": "STM32F103RBT6",
+    "oscillators": {
+        "hse": 8,
+        "lse": 32.768
+    },
+    "power": {
+        "sources": [
+            { "name": "Any +3.3V pin", "voltage": 3.3 },
+            { "name": "Any +5V pin", "voltage": 5 },
+            { "name": "USB connector", "voltage": 5 }
+        ],
+        "analog": {
+            "vdda": false,
+            "vssa": false,
+            "vrefNegative": false,
+            "vrefPositive": false
+        },
+        "battery": {
+            "type": "pin",
+            "size": null
+        }
+    },
+    "regulator": "AMS1117-SOT223",
+    "pcb": {
+        "color": "blue",
+        "size": { "length": 49, "width": 49 },
+        "mounting": "None"
+    },
+    "remarks": [
+        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." }
+    ],
+    "resources": [
+        {
+            "name": "Perspective view",
+            "type": "picture",
+            "file": "STM32F103RBT6_vcc-gnd.com-1.jpg"
+        },
+        {
+            "name": "Top view",
+            "type": "picture",
+            "file": "STM32F103RBT6_vcc-gnd.com-2.jpg"
+        },
+        {
+            "name": "Bottom view",
+            "type": "picture",
+            "file": "STM32F103RBT6_vcc-gnd.com-3.jpg"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32F103ZET6_vcc-gnd.com.pdf"
+        },
+        {
+            "name": "Original dimensions drawing",
+            "type": "pdf",
+            "file": "original-dimensions-STM32F103ZET6_vcc-gnd.com.pdf"
+        }
+    ],
+    "inputs": [
+        {
+            "name": "Reset button",
+            "identifiers": {
+                "name": "RESET",
+                "reference": null
+            },
+            "function": "reset",
+            "type": "button",
+            "to": "NRST",
+            "mode": "Active low"
+        },
+        {
+            "name": "BOOT0 jumper",
+            "identifiers": {
+                "name": "BOOT0",
+                "reference": null
+            },
+            "function": "boot",
+            "type": "2-way jumper",
+            "to": "BOOT0",
+            "mode": null
+        },
+        {
+            "name": "BOOT1 jumper",
+            "identifiers": {
+                "name": "BOOT1",
+                "reference": null
+            },
+            "function": "boot",
+            "type": "2-way jumper",
+            "to": "PB2",
+            "mode": null
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Power LED",
+            "identifiers": {
+                "name": "PWR",
+                "reference": null
+            },
+            "function": "power",
+            "type": "LED",
+            "to": "+3.3V rail",
+            "mode": null
+        },
+        {
+            "name": "User LED",
+            "identifiers": {
+                "name": "PC13",
+                "reference": null
+            },
+            "function": "user",
+            "type": "LED",
+            "to": "PC13",
+            "mode": "Sink"
+        }
+    ],
+    "connectors": [
+        {
+            "name": "Header 1",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 13, "width": 2 }
+            },
+            "pins": [
+                { "number": 1,  "name": "3.3", "function": null, "to": "+3.3V rail" },
+                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 3,  "name": "VB",  "function": null, "to": "VBAT" },
+                { "number": 4,  "name": "B9",  "function": null, "to": "PB9" },
+                { "number": 5,  "name": "B8",  "function": null, "to": "PB8" },
+                { "number": 6,  "name": "B7",  "function": null, "to": "PB7" },
+                { "number": 7,  "name": "B6",  "function": null, "to": "PB6" },
+                { "number": 8,  "name": "B5",  "function": null, "to": "PB5" },
+                { "number": 9,  "name": "B4",  "function": null, "to": "PB4" },
+                { "number": 10, "name": "B3",  "function": null, "to": "PB3" },
+                { "number": 11, "name": "D2",  "function": null, "to": "PD2" },
+                { "number": 12, "name": "C12", "function": null, "to": "PC12" },
+                { "number": 13, "name": "C11", "function": null, "to": "PC11" },
+                { "number": 14, "name": "C10", "function": null, "to": "PC10" },
+                { "number": 15, "name": "A15", "function": null, "to": "PA15" },
+                { "number": 16, "name": "A14", "function": null, "to": "PA14" },
+                { "number": 17, "name": "A13", "function": null, "to": "PA13" },
+                { "number": 18, "name": "A12", "function": null, "to": "PA12" },
+                { "number": 19, "name": "A11", "function": null, "to": "PA11" },
+                { "number": 20, "name": "A10", "function": null, "to": "PA10" },
+                { "number": 21, "name": "A9",  "function": null, "to": "PA9" },
+                { "number": 22, "name": "A8",  "function": null, "to": "PA8" },
+                { "number": 23, "name": "C9",  "function": null, "to": "PC9" },
+                { "number": 24, "name": "C8",  "function": null, "to": "PC8" },
+                { "number": 25, "name": "C7",  "function": null, "to": "PC7" },
+                { "number": 26, "name": "C6",  "function": null, "to": "PC6" }
+            ]
+        },
+        {
+            "name": "Header 2",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 13, "width": 2 }
+            },
+            "pins": [
+                { "number": 1,  "name": "5v",  "function": null, "to": "+5V rail" },
+                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 3,  "name": "C13", "function": null, "to": "PC13" },
+                { "number": 4,  "name": "C0",  "function": null, "to": "PC0" },
+                { "number": 5,  "name": "C1",  "function": null, "to": "PC1" },
+                { "number": 6,  "name": "C2",  "function": null, "to": "PC2" },
+                { "number": 7,  "name": "C3",  "function": null, "to": "PC3" },
+                { "number": 8,  "name": "A0",  "function": null, "to": "PA0" },
+                { "number": 9,  "name": "A1",  "function": null, "to": "PA1" },
+                { "number": 10, "name": "A2",  "function": null, "to": "PA2" },
+                { "number": 11, "name": "A3",  "function": null, "to": "PA3" },
+                { "number": 12, "name": "A4",  "function": null, "to": "PA4" },
+                { "number": 13, "name": "A5",  "function": null, "to": "PA5" },
+                { "number": 14, "name": "A6",  "function": null, "to": "PA6" },
+                { "number": 15, "name": "A7",  "function": null, "to": "PA7" },
+                { "number": 16, "name": "C4",  "function": null, "to": "PC4" },
+                { "number": 17, "name": "C5",  "function": null, "to": "PC5" },
+                { "number": 18, "name": "B0",  "function": null, "to": "PB0" },
+                { "number": 19, "name": "B1",  "function": null, "to": "PB1" },
+                { "number": 20, "name": "B2",  "function": null, "to": "PB2" },
+                { "number": 21, "name": "B11", "function": null, "to": "PB11" },
+                { "number": 22, "name": "B10", "function": null, "to": "PB10" },
+                { "number": 23, "name": "B13", "function": null, "to": "PB13" },
+                { "number": 24, "name": "B12", "function": null, "to": "PB12" },
+                { "number": 25, "name": "B15", "function": null, "to": "PB15" },
+                { "number": 26, "name": "B14", "function": null, "to": "PB14" }
+            ]
+        },
+        {
+            "name": "USB connector",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "usb",
+            "footprint": false,
+            "type": {
+                "name": "USB Micro",
+                "gender": null,
+                "pitch": null,
+                "size": null
+            },
+            "pins": [
+                { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 2, "name": null, "function": "D-",  "to": "PA11 via 22Ω resistor (R9)" },
+                { "number": 3, "name": null, "function": "D+",  "to": "PA12 via 22Ω resistor (R8), pulled up by 1.5kΩ resistor (R10)" },
+                { "number": 4, "name": null, "function": "ID",  "to": "Ground plane" },
+                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+            ]
+        },
+        {
+            "name": "SWD header",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "debug",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "female",
+                "pitch": 2.54,
+                "size": { "length": 4, "width": 1 }
+            },
+            "pins": [
+                { "number": 1, "name": "3.3V",  "function": "VCC",   "to": "+3.3V rail" },
+                { "number": 2, "name": "SWDIO", "function": "SWDIO", "to": "PA13" },
+                { "number": 3, "name": "SWCLK", "function": "SWCLK", "to": "PA14" },
+                { "number": 4, "name": "GND",   "function": "GND",   "to": "Ground plane" }
+            ]
+        },
+        {
+            "name": "Power Header 1",
+            "identifiers": {
+                "name": "GND",
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 3, "width": 1 }
+            },
+            "pins": [
+                { "number": 1, "name": null, "function": null, "to": "Ground plane" },
+                { "number": 2, "name": null, "function": null, "to": "Ground plane" },
+                { "number": 3, "name": null, "function": null, "to": "Ground plane" }
+            ]
+        },
+        {
+            "name": "Power Header 2",
+            "identifiers": {
+                "name": "3.3V",
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 3, "width": 1 }
+            },
+            "pins": [
+                { "number": 1, "name": null, "function": null, "to": "+3.3V rail" },
+                { "number": 2, "name": null, "function": null, "to": "+3.3V rail" },
+                { "number": 3, "name": null, "function": null, "to": "+3.3V rail" }
+            ]
+        }
+    ],
+    "devices": [
+        {
+            "name": "AT24C08",
+            "identifiers": {
+                "name": null,
+                "reference": "U1"
+            },
+            "footprint": false,
+            "pins": [
+                { "number": 1, "name": null, "function": "A0",  "to": "Ground plane" },
+                { "number": 2, "name": null, "function": "A1",  "to": "Ground plane" },
+                { "number": 3, "name": null, "function": "A2",  "to": "Ground plane" },
+                { "number": 4, "name": null, "function": "GND", "to": "Ground plane" },
+                { "number": 5, "name": null, "function": "SDA", "to": "PB7, pulled up by 4.7kΩ (R3)" },
+                { "number": 6, "name": null, "function": "SCL", "to": "PB6, pulled up by 4.7kΩ (R2)" },
+                { "number": 7, "name": null, "function": "WP",  "to": "Ground plane" },
+                { "number": 8, "name": null, "function": "VCC", "to": "+3.3V rail" }
+            ]
+        },
+    ]
+}
