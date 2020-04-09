@@ -61,12 +61,12 @@
         {
             "name": "Original schematic",
             "type": "pdf",
-            "file": "original-schematic-STM32F103ZET6_vcc-gnd.com.pdf"
+            "file": "original-schematic-STM32F103VCT6_vcc-gnd.com.pdf"
         },
         {
             "name": "Original dimensions drawing",
             "type": "pdf",
-            "file": "original-dimensions-STM32F103ZET6_vcc-gnd.com.pdf"
+            "file": "original-dimensions-STM32F103VCT6_vcc-gnd.com.pdf"
         }
     ],
     "inputs": [
