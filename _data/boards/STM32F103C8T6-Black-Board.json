@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Black Board",
         "brand": null,
-        "part": {
-            "name": "Black Board",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

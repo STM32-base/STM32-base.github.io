@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "LC Technology STM32F429IGT6",
         "brand": {
             "name": "Shenzhen LC Technology Co., Ltd.",
             "url": "http://www.chinalctech.com/"
         },
-        "part": {
-            "name": "LC Technology STM32F429IGT6",
-            "marking": "STM32F429_F7",
-            "url": "http://www.chinalctech.com/cpzx/STM32_Study_Board/354.html"
-        },
+        "marking": "STM32F429_F7",
+        "url": "http://www.chinalctech.com/cpzx/STM32_Study_Board/354.html",
         "origin": "China"
     },
     "microcontroller": "STM32F429IGT6",

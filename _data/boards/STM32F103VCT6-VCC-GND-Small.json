@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "vcc-gnd.com STM32F103VCT6 mini",
         "brand": {
             "name": "vcc-gnd.com",
             "url": "http://www.vcc-gnd.com/"
         },
-        "part": {
-            "name": "vcc-gnd.com STM32F103VCT6 mini",
-            "marking": null,
-            "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32f1"
-        },
+        "marking": null,
+        "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32f1",
         "origin": "China"
     },
     "microcontroller": "STM32F103VCT6",

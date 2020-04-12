@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "SR Board",
         "brand": null,
-        "part": {
-            "name": "SR Board",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F407VGT6",

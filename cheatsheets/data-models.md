@@ -64,13 +64,12 @@ type               : String        = The type of this IC.
 
 ```
 board              : Object        = Board metadata.
+  - name           : String        = Part name.
   - brand          : Object        = Brand information.
     - name         : String | null = Brand name.
     - url          : String | null = Brand website.
-  - part           : Object        = Part information.
-    - name         : String        = Part name.
-    - marking      : String | null = Part number printed on the board.
-    - url          : String | null = Part page on brand website.
+  - marking        : String | null = Part number printed on the board.
+  - url            : String | null = Part page on brand website.
   - origin         : String        = Country of origin.
 microcontroller    : String        = Microcontroller part number.
 oscillators        : Object

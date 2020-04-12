@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "Diymore STM32F4",
         "brand": {
             "name": "Diymore",
             "url": "https://www.diymore.cc/"
         },
-        "part": {
-            "name": "Diymore STM32F4",
-            "marking": "STM32-407",
-            "url": "https://www.diymore.cc/products/stm32f4-discovery-stm32f407vgt6-microcontroller-32bit-flash-mcu-arm-cortex-m4-core-development-board"
-        },
+        "marking": "STM32-407",
+        "url": "https://www.diymore.cc/products/stm32f4-discovery-stm32f407vgt6-microcontroller-32bit-flash-mcu-arm-cortex-m4-core-development-board",
         "origin": "China"
     },
     "microcontroller": "STM32F407VGT6",

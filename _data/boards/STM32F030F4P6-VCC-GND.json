@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "vcc-gnd.com STM32F030F4P6",
         "brand": {
             "name": "vcc-gnd",
             "url": "http://www.vcc-gnd.com/"
         },
-        "part": {
-            "name": "vcc-gnd.com",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32f0",
         "origin": "China"
     },
     "microcontroller": "STM32F030F4P6",

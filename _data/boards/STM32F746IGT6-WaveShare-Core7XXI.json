@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "WaveShare Core746I board",
         "brand": {
             "name": "WaveShare",
             "url": "https://www.waveshare.com/"
         },
-        "part": {
-            "name": "WaveShare Core746I board",
-            "marking": "Core7XXI",
-            "url": "https://www.waveshare.com/product/mcu-tools-2/core-boards-compact-boards/stm32-core/core746i.htm"
-        },
+        "marking": "Core7XXI",
+        "url": "https://www.waveshare.com/product/mcu-tools-2/core-boards-compact-boards/stm32-core/core746i.htm",
         "origin": "China"
     },
     "microcontroller": "STM32F746IGT6",

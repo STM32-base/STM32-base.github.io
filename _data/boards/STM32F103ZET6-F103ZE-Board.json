@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "F103ZE board",
         "brand": null,
-        "part": {
-            "name": "F103ZE board",
-            "marking": "F103ZE_board",
-            "url": null
-        },
+        "marking": "F103ZE_board",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103ZET6",

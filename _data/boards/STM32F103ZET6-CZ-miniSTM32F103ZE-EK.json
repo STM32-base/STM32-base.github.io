@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "CZ miniSTM32F103ZE-EK",
         "brand": null,
-        "part": {
-            "name": "CZ miniSTM32F103ZE-EK",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103ZET6",

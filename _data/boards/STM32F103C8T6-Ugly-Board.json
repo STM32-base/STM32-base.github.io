@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Ugly Board",
         "brand": null,
-        "part": {
-            "name": "Ugly Board",
-            "marking": "STM32F103C8",
-            "url": null
-        },
+        "marking": "STM32F103C8",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

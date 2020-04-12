@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Black Pill",
         "brand": null,
-        "part": {
-            "name": "Black Pill",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

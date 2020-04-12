@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Maple Mini Clone",
         "brand": null,
-        "part": {
-            "name": "Maple Mini Clone",
-            "marking": "BTE14-07",
-            "url": null
-        },
+        "marking": "BTE14-07",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

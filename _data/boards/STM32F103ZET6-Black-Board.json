@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Black Board",
         "brand": null,
-        "part": {
-            "name": "Black Board",
-            "marking": "STM32F103ZET6开发板",
-            "url": null
-        },
+        "marking": "STM32F103ZET6开发板",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103ZET6",

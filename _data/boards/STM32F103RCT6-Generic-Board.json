@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Generic Board",
         "brand": null,
-        "part": {
-            "name": "Generic Board",
-            "marking": "STM32",
-            "url": null
-        },
+        "marking": "STM32",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103RCT6",

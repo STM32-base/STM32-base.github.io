@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32 Mini V2.0",
         "brand": null,
-        "part": {
-            "name": "STM32 Mini V2.0",
-            "marking": "STM32_Mini",
-            "url": null
-        },
+        "marking": "STM32_Mini",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103RCT6",

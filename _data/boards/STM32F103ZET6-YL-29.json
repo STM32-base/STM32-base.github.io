@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32F103Zx最小系统 (minimal system)",
         "brand": null,
-        "part": {
-            "name": "STM32F103Zx最小系统 (minimal system)",
-            "marking": "YL-29",
-            "url": null
-        },
+        "marking": "YL-29",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103ZET6",

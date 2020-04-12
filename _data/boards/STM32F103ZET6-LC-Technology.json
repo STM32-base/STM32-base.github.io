@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "LC Technology STM32F103ZET6",
         "brand": {
             "name": "Shenzhen LC Technology Co., Ltd.",
             "url": "http://www.chinalctech.com/"
         },
-        "part": {
-            "name": "LC Technology STM32F103ZET6",
-            "marking": null,
-            "url": "http://www.chinalctech.com/cpzx/STM32_Study_Board/368.html"
-        },
+        "marking": null,
+        "url": "http://www.chinalctech.com/cpzx/STM32_Study_Board/368.html",
         "origin": "China"
     },
     "microcontroller": "STM32F103ZET6",

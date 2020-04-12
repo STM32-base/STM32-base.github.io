@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32 Smart V2.0",
         "brand": null,
-        "part": {
-            "name": "STM32 Smart V2.0",
-            "marking": "STM32_Smart",
-            "url": null
-        },
+        "marking": "STM32_Smart",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

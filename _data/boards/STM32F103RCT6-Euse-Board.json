@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "Euse Board",
         "brand": {
             "name": "Euse",
             "url": "https://euse.world.taobao.com/"
         },
-        "part": {
-            "name": "Euse Board",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103RCT6",

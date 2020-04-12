@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32F030 DEMO BOARD V1.1",
         "brand": null,
-        "part": {
-            "name": "STM32F030 DEMO BOARD V1.1",
-            "marking": "HW-538",
-            "url": null
-        },
+        "marking": "HW-538",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F030F4P6",

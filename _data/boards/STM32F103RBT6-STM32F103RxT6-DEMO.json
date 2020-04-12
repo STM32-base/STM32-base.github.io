@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32F103RxT6 DEMO",
         "brand": null,
-        "part": {
-            "name": "STM32F103RxT6 DEMO",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103RBT6",

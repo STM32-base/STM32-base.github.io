@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "CJMCU-3206",
         "brand": {
             "name": "CJMCU",
             "url": "http://www.cjmcu.com/"
         },
-        "part": {
-            "name": "CJMCU-3206",
-            "marking": "CJMCU-3206",
-            "url": null
-        },
+        "marking": "CJMCU-3206",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103T8U6",

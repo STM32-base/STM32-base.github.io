@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "Blue Pill",
         "brand": null,
-        "part": {
-            "name": "Blue Pill",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F051C8T6",

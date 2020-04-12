@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "WaveShare Core205R board",
         "brand": {
             "name": "WaveShare",
             "url": "https://www.waveshare.com/"
         },
-        "part": {
-            "name": "WaveShare Core205R board",
-            "marking": "CorexxxR",
-            "url": "https://www.waveshare.com/product/mcu-tools-2/core-boards-compact-boards/stm32-core/core205r.htm"
-        },
+        "marking": "CorexxxR",
+        "url": "https://www.waveshare.com/product/mcu-tools-2/core-boards-compact-boards/stm32-core/core205r.htm",
         "origin": "China"
     },
     "microcontroller": "STM32F205RBT6",

@@ -4,13 +4,13 @@
 
 {% assign board = data['board'] %}
 {% capture boardName %}
-    {% if board['part']['url'] %}
-    <a href="{{ board['part']['url'] }}">{{ board['part']['name'] }}</a>
+    {% if board['url'] %}
+    <a href="{{ board['url'] }}">{{ board['name'] }}</a>
     {% else %}
-    {{ board['part']['name'] }}
+    {{ board['name'] }}
     {% endif %}
 {% endcapture %}
-{% assign boardPart = board['part']['marking'] | default: 'Unknown' %}
+{% assign boardPart = board['marking'] | default: 'Unknown' %}
 {% capture boardBrand %}
     {% if board['brand'] %}
         {% if board['brand']['url'] %}
@@ -156,7 +156,7 @@
 {% assign devices = data['devices'] %}
 
 <div class="board-header">
-    <h1>{{ board['part']['name'] }}</h1>
+    <h1>{{ board['name'] }}</h1>
     <p>{{ microcontroller['part']['name'] }}</p>
     <hr>
 </div>

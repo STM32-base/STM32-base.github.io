@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "Euse M4 DEMO",
         "brand": {
             "name": "Euse",
             "url": "https://euse.world.taobao.com/"
         },
-        "part": {
-            "name": "Euse M4 DEMO",
-            "marking": "EU-STM32F407VET6-DEMO",
-            "url": null
-        },
+        "marking": "EU-STM32F407VET6-DEMO",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F407VET6",

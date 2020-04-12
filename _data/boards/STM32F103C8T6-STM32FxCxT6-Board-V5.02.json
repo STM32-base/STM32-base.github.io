@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32FxCxT6 Board V5.02",
         "brand": null,
-        "part": {
-            "name": "STM32FxCxT6 Board V5.02",
-            "marking": null,
-            "url": null
-        },
+        "marking": null,
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

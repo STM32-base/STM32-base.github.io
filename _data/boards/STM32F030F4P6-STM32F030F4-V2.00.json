@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32F030F4 V2.00",
         "brand": null,
-        "part": {
-            "name": "STM32F030F4 V2.00",
-            "marking": "STM32F030F4-V2.00",
-            "url": null
-        },
+        "marking": "STM32F030F4-V2.00",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F030F4P6",

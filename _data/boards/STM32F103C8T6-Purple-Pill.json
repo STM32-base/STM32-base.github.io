@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "Purple pill",
         "brand": {
             "name": "CJMCU",
             "url": "http://www.cjmcu.com/"
         },
-        "part": {
-            "name": "Purple pill",
-            "marking": "CJMCU-1038",
-            "url": null
-        },
+        "marking": "CJMCU-1038",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

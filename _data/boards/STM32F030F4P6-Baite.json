@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "Baite STM32F030F4 Module",
         "brand": {
             "name": "Baite",
             "url": "https://aliexpress.com/store/812021"
         },
-        "part": {
-            "name": "Baite STM32F030F4 Module",
-            "marking": "BTE17-08",
-            "url": null
-        },
+        "marking": "BTE17-08",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F030F4P6",

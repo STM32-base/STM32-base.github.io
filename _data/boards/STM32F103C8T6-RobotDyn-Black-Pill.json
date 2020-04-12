@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "RobotDyn Black Pill",
         "brand": {
             "name": "RobotDyn",
             "url": "https://robotdyn.com/"
         },
-        "part": {
-            "name": "RobotDyn Black Pill",
-            "marking": "STM32 MINI",
-            "url": "https://robotdyn.com/stm32-arm-arduino-mini-system-dev-board-blue-pill-with-arduino-bootloader.html"
-        },
+        "marking": "STM32 MINI",
+        "url": "https://robotdyn.com/stm32-arm-arduino-mini-system-dev-board-blue-pill-with-arduino-bootloader.html",
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",

@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "LC Technology STM32F051C8T6",
         "brand": {
             "name": "Shenzhen LC Technology Co., Ltd.",
             "url": "http://www.chinalctech.com/"
         },
-        "part": {
-            "name": "LC Technology STM32F051C8T6",
-            "marking": null,
-            "url": "http://www.chinalctech.com/cpzx/STM32_Study_Board/356.html"
-        },
+        "marking": null,
+        "url": "http://www.chinalctech.com/cpzx/STM32_Study_Board/356.html",
         "origin": "China"
     },
     "microcontroller": "STM32F051C8T6",

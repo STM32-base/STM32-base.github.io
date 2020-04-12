@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32 F4VE",
         "brand": null,
-        "part": {
-            "name": "STM32 F4VE",
-            "marking": "STM32_F4VE",
-            "url": null
-        },
+        "marking": "STM32_F4VE",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F407VET6",

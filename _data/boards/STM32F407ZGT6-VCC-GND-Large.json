@@ -1,14 +1,12 @@
 {
     "board": {
+        "name": "vcc-gnd.com STM32F407ZGT6 mini",
         "brand": {
             "name": "vcc-gnd.com",
             "url": "http://www.vcc-gnd.com/"
         },
-        "part": {
-            "name": "vcc-gnd.com STM32F407ZGT6 mini",
-            "marking": null,
-            "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32f4"
-        },
+        "marking": null,
+        "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32f4",
         "origin": "China"
     },
     "microcontroller": "STM32F407ZGT6",

@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "STM32F103RCT6 V1.0",
         "brand": null,
-        "part": {
-            "name": "STM32F103RCT6 V1.0",
-            "marking": "STM32开发板 (STM32 development board)",
-            "url": null
-        },
+        "marking": "STM32开发板 (STM32 development board)",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103RCT6",

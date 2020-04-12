@@ -1,11 +1,9 @@
 {
     "board": {
+        "name": "ST-LINK V2 Debugger",
         "brand": null,
-        "part": {
-            "name": "ST-LINK V2 Debugger",
-            "marking": "MX-LINK V2",
-            "url": null
-        },
+        "marking": "MX-LINK V2",
+        "url": null,
         "origin": "China"
     },
     "microcontroller": "STM32F103C8U6",
