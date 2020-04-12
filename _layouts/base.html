@@ -53,24 +53,11 @@
             <div class="wrapper">
                 <div class="footer-columns">
                     <div class="footer-column">
-                        <nav>
-                            <menu class="footer-menu">
-                                {%- for item in footer -%}
-                                <li><a href="{% if item.external == false %}{{ site.url }}/{% endif %}{{ item.url }}">{{ item.name }}</a></li>
-                                {%- endfor -%}
-                            </menu>
-                        </nav>
+                        <p>This is the <a href="https://stm32-base.org">STM32-base project website</a>. Learn more <a href="https://stm32-base.org/general/about">about</a> the STM32-base project or check out this project on <a href="https://github.com/STM32-base">Github</a>. The STM32-base project is <i>in no way</i> affiliated with <a href="https://www.st.com">STMicroelectronics</a>.</p>
                     </div>
                     <div class="footer-column">
-                        {{ site.footer }}
+                        <p>This website is hosted on <a href="https://pages.github.com/">Github Pages</a>. This page is <a href="https://jeffhuang.com/designed_to_last/">designed to last</a>. Check out which <a href="https://stm32-base.org/general/license">licenses</a> apply to this website and its contents. Check out the <a href="https://stm32-base.org/general/privacy-policy">Privacy policy</a>.</p>
                     </div>
-                </div>
-                <div class="social-icons">
-                    <ul>
-                        {%- for item in socials -%}
-                        <li><a href="{{ item.url }}"><i class="{{ item.icon }}"></i></a></li>
-                        {%- endfor -%}
-                    </ul>
                 </div>
             </div>
         </footer>
