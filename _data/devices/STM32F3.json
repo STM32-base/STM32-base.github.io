@@ -1,0 +1,32 @@
+{
+    "STM32F303CCT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F303CCT6",
+            "marking": "STM32F303CCT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f303cc.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 72
+        },
+        "memories": {
+            "flash": 256,
+            "sram": 40,
+            "ccm": 8
+        },
+        "oscillators": {
+            "hsi": 8,
+            "lsi": 40
+        }
+    }
+}

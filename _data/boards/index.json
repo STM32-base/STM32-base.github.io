@@ -50,6 +50,9 @@
     "STM32F2": [
         "STM32F205RBT6-WaveShare-CorexxxR"
     ],
+    "STM32F3": [
+        "STM32F303CCT6-RobotDyn-Black-Pill"
+    ],
     "STM32F4": [
         "STM32F405RGT6-WaveShare-CorexxxR",
         "STM32F407VET6-Euse-M4-DEMO-Medium",

@@ -6,10 +6,10 @@
             "url": "https://robotdyn.com/"
         },
         "marking": "STM32 MINI",
-        "url": "https://robotdyn.com/stm32-arm-arduino-mini-system-dev-board-blue-pill-with-arduino-bootloader.html",
+        "url": "https://robotdyn.com/default/stm32f303cct6-256-kb-flash-stm32-arm-cortexr-m4-mini-system-dev-board-3326a9dd-3c19-11e9-910a-901b0ebb3621.html",
         "origin": "China"
     },
-    "microcontroller": "STM32F103C8T6",
+    "microcontroller": "STM32F303CCT6",
     "oscillators": {
         "hse": 8,
         "lse": 32.768
@@ -39,38 +39,37 @@
     },
     "remarks": [
         { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." },
-        { "type": "trivia", "content": "This board is an improved version of the <a href=\"https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill\">Blue Pill</a>. The name of this board is derived from it." }
     ],
     "resources": [
         {
             "name": "Perspective view",
             "type": "picture",
-            "file": "STM32F103C8T6_RobotDyn_Black_Pill-1.jpg"
+            "file": "STM32F303CCT6_RobotDyn_Black_Pill-1.jpg"
         },
         {
             "name": "Top view",
             "type": "picture",
-            "file": "STM32F103C8T6_RobotDyn_Black_Pill-2.jpg"
+            "file": "STM32F303CCT6_RobotDyn_Black_Pill-2.jpg"
         },
         {
             "name": "Bottom view",
             "type": "picture",
-            "file": "STM32F103C8T6_RobotDyn_Black_Pill-3.jpg"
+            "file": "STM32F303CCT6_RobotDyn_Black_Pill-3.jpg"
         },
         {
             "name": "Original schematic",
             "type": "pdf",
-            "file": "original-schematic-STM32F103C8T6-RobotDyn_Black_Pill.pdf"
+            "file": "original-schematic-STM32F303CCT6-RobotDyn_Black_Pill.pdf"
         },
         {
             "name": "Original pinout",
             "type": "pdf",
-            "file": "original-pinout-STM32F103C8T6-RobotDyn_Black_Pill.pdf"
+            "file": "original-pinout-STM32F303CCT6-RobotDyn_Black_Pill.pdf"
         },
         {
             "name": "Original dimensions drawing",
             "type": "pdf",
-            "file": "original-dimensions-STM32F103C8T6-RobotDyn_Black_Pill.pdf"
+            "file": "original-dimensions-STM32F303CCT6-RobotDyn_Black_Pill.pdf"
         }
     ],
     "inputs": [
