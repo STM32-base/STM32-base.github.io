@@ -66,9 +66,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "BOOT0",
-            "mode": "Active high"
+            "mode": "high"
         },
         {
             "name": "User button",
@@ -77,9 +77,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PB2",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "Power source switch",
@@ -88,7 +88,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "Switch",
+            "type": "switch",
             "to": "+5V USB and 5V IN connector",
             "mode": null
         }
@@ -101,7 +101,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+5V rail",
             "mode": null
         },
@@ -112,9 +112,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PB0",
-            "mode": "Source"
+            "mode": "source"
         },
         {
             "name": "User LED 2",
@@ -123,9 +123,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PB1",
-            "mode": "Source"
+            "mode": "source"
         }
     ],
     "connectors": [

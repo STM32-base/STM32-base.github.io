@@ -1,11 +1,25 @@
 {
-    "inputAndOutputFunctionToIcon": {
-        "reset": "fas fa-redo-alt",
+    "ioFunctionToIcon": {
+        "activity": "fas fa-signal",
         "boot": "fas fa-asterisk",
-        "user": "fas fa-user",
         "enable": "fas fa-lightbulb",
         "power": "fas fa-power-off",
-        "activity": "fas fa-signal"
+        "reset": "fas fa-redo-alt",
+        "user": "fas fa-user"
+    },
+    "ioMode": {
+        "high": "Active high",
+        "low": "Active low",
+        "sink": "Sink",
+        "source": "Source"
+    },
+    "ioType": {
+        "bridge": "Solder bridge",
+        "button": "Button",
+        "jumper-1": "1-way jumper",
+        "jumper-2": "2-way jumper",
+        "led": "LED",
+        "switch": "Switch"
     },
     "connectorFunctionToIcon": {
         "header": "fas fa-exchange-alt",

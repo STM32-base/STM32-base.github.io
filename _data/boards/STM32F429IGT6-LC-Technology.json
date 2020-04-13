@@ -67,7 +67,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "User button",
@@ -78,7 +78,7 @@
             "function": "user",
             "type": "button",
             "to": "PA0",
-            "mode": "Active high"
+            "mode": "high"
         }
     ],
     "outputs": [
@@ -89,7 +89,7 @@
                 "reference": "D2"
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -100,9 +100,9 @@
                 "reference": "D1"
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PD12",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

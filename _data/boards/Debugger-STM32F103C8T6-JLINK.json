@@ -61,9 +61,9 @@
                 "reference": null
             },
             "function": "activity",
-            "type": "LED",
+            "type": "led",
             "to": "PB12",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

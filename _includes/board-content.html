@@ -1,5 +1,4 @@
-{% assign startSize = 30000 %}
-
+{% assign map = site['data']['mappings'] %}
 {% assign data = include['data'] %}
 
 {% assign board = data['board'] %}
@@ -302,8 +301,8 @@
             <div class="board-item-content">
                 {% for picture in pictures %}
                 <figure>
-                    <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['part']['name'] }}: {{ picture['name'] }}">
-                    <figcaption>{{ board['part']['name'] }}: {{ picture['name'] }}</figcaption>
+                    <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['name'] }}: {{ picture['name'] }}">
+                    <figcaption>{{ board['name'] }}: {{ picture['name'] }}</figcaption>
                 </figure>
                 {% endfor %}
             </div>
@@ -317,7 +316,7 @@
             <div class="board-item-content">
                 <ul class="icon-list">
                     {% for resource in resources %}
-                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['resourceTypeToIcon'][resource['type']] }}"></i></span><a href="{% if resource['type'] == 'link' %}{{ resources['file'] }}{% else %}{{ site.url }}/assets/{{ site['data']['mappings']['resourceTypeToDirectory'][resource['type']] }}/boards/{{ resource['file'] }}{% endif %}">{{ resource['name'] }}</a></li>
+                    <li><span class="icon-list-icon"><i class="{{ map['resourceTypeToIcon'][resource['type']] }}"></i></span><a href="{% if resource['type'] == 'link' %}{{ resources['file'] }}{% else %}{{ site.url }}/assets/{{ map['resourceTypeToDirectory'][resource['type']] }}/boards/{{ resource['file'] }}{% endif %}">{{ resource['name'] }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -336,7 +335,7 @@
                 {% if inputs.size != 0 %}
                 <ul class="icon-list">
                     {% for input in inputs %}
-                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['inputAndOutputFunctionToIcon'][input['function']] }}"></i></span><a href="#{{ input['name'] | replace: ' ', '-' }}">{{ input['name'] }}</a></li>
+                    <li><span class="icon-list-icon"><i class="{{ map['ioFunctionToIcon'][input['function']] }}"></i></span><a href="#{{ input['name'] | replace: ' ', '-' }}">{{ input['name'] }}</a></li>
                     {% endfor %}
                 </ul>
                 {% else %}
@@ -355,7 +354,7 @@
                 {% if outputs.size != 0 %}
                 <ul class="icon-list">
                     {% for output in outputs %}
-                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['inputAndOutputFunctionToIcon'][output['function']] }}"></i></span><a href="#{{ output['name'] | replace: ' ', '-' }}">{{ output['name'] }}</a></li>
+                    <li><span class="icon-list-icon"><i class="{{ map['ioFunctionToIcon'][output['function']] }}"></i></span><a href="#{{ output['name'] | replace: ' ', '-' }}">{{ output['name'] }}</a></li>
                     {% endfor %}
                 </ul>
                 {% else %}
@@ -373,7 +372,7 @@
             <div class="board-item-content">
                 <ul class="icon-list">
                     {% for connector in connectors %}
-                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['connectorFunctionToIcon'][connector['function']] }}"></i></span><a href="#{{ connector['name'] | replace: ' ', '-' }}">{{ connector['name'] }}</a></li>
+                    <li><span class="icon-list-icon"><i class="{{ map['connectorFunctionToIcon'][connector['function']] }}"></i></span><a href="#{{ connector['name'] | replace: ' ', '-' }}">{{ connector['name'] }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
@@ -391,7 +390,7 @@
                     {% for device in devices %}
                     {% assign deviceData = site.data['devices']['devices'][device['name']] %}
                     {% assign category = deviceData['type']['category'] %}
-                    <li><span class="icon-list-icon"><i class="{{ site['data']['mappings']['deviceCategoryToIcon'][category] }}"></i></span><a href="#{{ device['name'] | replace: ' ', '-' }}">{{ device['name'] }}</a></li>
+                    <li><span class="icon-list-icon"><i class="{{ map['deviceCategoryToIcon'][category] }}"></i></span><a href="#{{ device['name'] | replace: ' ', '-' }}">{{ device['name'] }}</a></li>
                     {% endfor %}
                 </ul>
                 {% else %}
@@ -411,7 +410,7 @@
     {% for input in inputs %}
         <div class="board-item">
             <div class="board-item-header">
-                <div class="board-item-icon"><i class="{{ site.data['mappings']['inputAndOutputFunctionToIcon'][input['function']] }}"></i></div>
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['ioFunctionToIcon'][input['function']] }}"></i></div>
                 <h2 id="{{ input['name'] | replace: ' ', '-' }}">{{ input['name'] }}</h2>
             </div>
             <div class="board-item-content">
@@ -426,7 +425,7 @@
                     </tr>
                     <tr>
                         <td>Type</td>
-                        <td>{{ input['type'] }}</td>
+                        <td>{{ map['ioType'][input['type']] }}</td>
                     </tr>
                     <tr>
                         <td>Connected to</td>
@@ -434,7 +433,7 @@
                     </tr>
                     <tr>
                         <td>Mode</td>
-                        <td>{{ input['mode'] | default: 'N.A.' }}</td>
+                        <td>{{ map['ioMode'][input['mode']] | default: 'N.A.' }}</td>
                     </tr>
                 </table>
                 {% if input['remarks'] %}
@@ -452,7 +451,7 @@
     {% for output in outputs %}
         <div class="board-item">
             <div class="board-item-header">
-                <div class="board-item-icon"><i class="{{ site.data['mappings']['inputAndOutputFunctionToIcon'][output['function']] }}"></i></div>
+                <div class="board-item-icon"><i class="{{ site.data['mappings']['ioFunctionToIcon'][output['function']] }}"></i></div>
                 <h2 id="{{ output['name'] | replace: ' ', '-' }}">{{ output['name'] }}</h2>
             </div>
             <div class="board-item-content">
@@ -467,7 +466,7 @@
                     </tr>
                     <tr>
                         <td>Type</td>
-                        <td>{{ output['type'] }}</td>
+                        <td>{{ map['ioType'][output['type']] }}</td>
                     </tr>
                     <tr>
                         <td>Connected to</td>
@@ -475,7 +474,7 @@
                     </tr>
                     <tr>
                         <td>Mode</td>
-                        <td>{{ output['mode'] | default: 'N.A.' }}</td>
+                        <td>{{ map['ioMode'][output['mode']] | default: 'N.A.' }}</td>
                     </tr>
                 </table>
                 {% if output['remarks'] %}

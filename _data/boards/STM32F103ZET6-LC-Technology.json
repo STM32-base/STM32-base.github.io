@@ -67,7 +67,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -76,7 +76,7 @@
                 "reference": "J3"
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "BOOT0 via 10kΩ resistor (R14)",
             "mode": null
         },
@@ -87,7 +87,7 @@
                 "reference": "J2"
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "PB2 via 10kΩ resistor (R13)",
             "mode": null
         },
@@ -98,7 +98,7 @@
                 "reference": "J1"
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PB15",
             "mode": null
         }
@@ -111,7 +111,7 @@
                 "reference": "D1"
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         }

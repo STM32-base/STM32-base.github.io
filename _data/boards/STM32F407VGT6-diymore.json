@@ -67,7 +67,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -76,9 +76,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "BOOT0",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT1 jumper",
@@ -87,9 +87,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PB2",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "User button",
@@ -100,7 +100,7 @@
             "function": "user",
             "type": "button",
             "to": "PD15",
-            "mode": "Active low"
+            "mode": "low"
         }
     ],
     "outputs": [
@@ -111,7 +111,7 @@
                 "reference": "LED1"
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -122,9 +122,9 @@
                 "reference": "LED2"
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PE0",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

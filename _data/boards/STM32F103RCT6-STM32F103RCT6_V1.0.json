@@ -65,29 +65,29 @@
                 "reference": null
             },
             "function": "reset",
-            "type": "Button",
+            "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
-            "name": "BOOT0 DIP switch",
+            "name": "BOOT0 switch",
             "identifiers": {
                 "name": "BOOT0",
                 "reference": null
             },
             "function": "boot",
-            "type": "DIP switch",
+            "type": "switch",
             "to": "BOOT0",
             "mode": null
         },
         {
-            "name": "BOOT1 DIP switch",
+            "name": "BOOT1 switch",
             "identifiers": {
                 "name": "BOOT1",
                 "reference": null
             },
             "function": "boot",
-            "type": "DIP switch",
+            "type": "switch",
             "to": "PB2",
             "mode": null
         },
@@ -98,9 +98,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PC0",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "Power source switch",
@@ -109,7 +109,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "Switch",
+            "type": "switch",
             "to": "+5V USB",
             "mode": null
         },
@@ -120,7 +120,7 @@
                 "reference": "DJ1"
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "USB D-",
             "mode": null
         },
@@ -131,7 +131,7 @@
                 "reference": "DJ1"
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "USB D+",
             "mode": null
         },
@@ -142,7 +142,7 @@
                 "reference": "DJ1"
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "User LED",
             "mode": null
         }
@@ -155,7 +155,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -166,9 +166,9 @@
                 "reference": "D1"
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PA8",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

@@ -68,7 +68,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -77,7 +77,7 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "BOOT0",
             "mode": null
         },
@@ -88,7 +88,7 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "PB2",
             "mode": null
         },
@@ -99,7 +99,7 @@
                 "reference": "SW2"
             },
             "function": "power",
-            "type": "Switch",
+            "type": "switch",
             "to": "+5V USB",
             "mode": null
         }
@@ -112,7 +112,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -123,9 +123,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PB11",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

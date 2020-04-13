@@ -62,9 +62,9 @@
                 "reference": "D1"
             },
             "function": "activity",
-            "type": "LED",
+            "type": "led",
             "to": "PA9",
-            "mode": "Source"
+            "mode": "source"
         }
     ],
     "connectors": [

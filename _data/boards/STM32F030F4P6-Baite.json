@@ -64,9 +64,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "BOOT0",
-            "mode": "Active high"
+            "mode": "high"
         }
     ],
     "outputs": [
@@ -77,7 +77,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -88,9 +88,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PA1",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

@@ -68,9 +68,9 @@
                 "reference": null
             },
             "function": "reset",
-            "type": "Button",
+            "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -79,7 +79,7 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "BOOT0",
             "mode": null
         },
@@ -90,7 +90,7 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "PB2",
             "mode": null
         },
@@ -101,9 +101,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "Button",
+            "type": "button",
             "to": "BOOT0",
-            "mode": "Active high"
+            "mode": "high"
         },
         {
             "name": "User button 1",
@@ -112,9 +112,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PA0",
-            "mode": "Active high"
+            "mode": "high"
         },
         {
             "name": "User button 2",
@@ -123,9 +123,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PC1",
-            "mode": "Active high"
+            "mode": "high"
         },
         {
             "name": "DIS NC solder bridges",
@@ -134,7 +134,7 @@
                 "reference": null
             },
             "function": "enable",
-            "type": "Solder bridge",
+            "type": "bridge",
             "to": "Display header NC pin",
             "mode": null,
             "remarks": [
@@ -150,7 +150,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -161,9 +161,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PC0",
-            "mode": "Sink"
+            "mode": "sink"
         },
         {
             "name": "User LED 2",
@@ -172,9 +172,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PD3",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

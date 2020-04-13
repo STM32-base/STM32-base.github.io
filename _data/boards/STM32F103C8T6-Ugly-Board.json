@@ -65,7 +65,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -74,9 +74,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "BOOT0",
-            "mode": "Active high",
+            "mode": "high",
             "remarks": [
                 {
                     "type": "note",
@@ -93,7 +93,7 @@
             "function": "user",
             "type": "button",
             "to": "PC13",
-            "mode": "Active low"
+            "mode": "low"
         }
     ],
     "outputs": [
@@ -104,7 +104,7 @@
                 "reference": "D2"
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -115,9 +115,9 @@
                 "reference": "D1"
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PE8",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

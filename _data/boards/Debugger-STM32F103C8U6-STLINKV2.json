@@ -61,9 +61,9 @@
                 "reference": null
             },
             "function": "activity",
-            "type": "LED",
+            "type": "led",
             "to": "PA9 via 1.8kΩ resistor",
-            "mode": "Sink"
+            "mode": "sink"
         },
         {
             "name": "B LED",
@@ -72,9 +72,9 @@
                 "reference": null
             },
             "function": "activity",
-            "type": "LED",
+            "type": "led",
             "to": "PA9 via 1.8kΩ resistor",
-            "mode": "Source"
+            "mode": "source"
         }
     ],
     "connectors": [

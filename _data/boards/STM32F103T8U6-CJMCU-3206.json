@@ -62,9 +62,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PB7",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "User button 2",
@@ -73,9 +73,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PB6",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "User button 3",
@@ -84,9 +84,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PB5",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "User button 4",
@@ -95,9 +95,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PB4",
-            "mode": "Active low"
+            "mode": "low"
         }
     ],
     "outputs": [
@@ -108,7 +108,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -119,9 +119,9 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "PIO2 pin on HC06",
-            "mode": "Source"
+            "mode": "source"
         }
     ],
     "connectors": [

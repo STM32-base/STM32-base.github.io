@@ -65,9 +65,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "Solder bridge",
+            "type": "bridge",
             "to": "BOOT0",
-            "mode": "Active high"
+            "mode": "high"
         }
     ],
     "outputs": [
@@ -78,7 +78,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -89,9 +89,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PB11",
-            "mode": "Source"
+            "mode": "source"
         },
         {
             "name": "User LED",
@@ -100,9 +100,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PB12",
-            "mode": "Source"
+            "mode": "source"
         }
     ],
     "connectors": [

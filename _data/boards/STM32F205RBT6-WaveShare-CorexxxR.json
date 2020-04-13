@@ -78,7 +78,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 switch",
@@ -114,9 +114,9 @@
                 "reference": null
             },
             "function": "power",
-            "type": "jumper",
-            "to": "VBAT",
-            "mode": "Connects to +3.3V rail"
+            "type": "jumper-1",
+            "to": "VBAT to +3.3V rail",
+            "mode": null
         },
         {
             "name": "USB OTG FLG jumper",
@@ -125,7 +125,7 @@
                 "reference": null
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PC2",
             "mode": null
         },
@@ -136,7 +136,7 @@
                 "reference": null
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PC1",
             "mode": null
         },
@@ -147,7 +147,7 @@
                 "reference": null
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PA9",
             "mode": null
         }
@@ -160,7 +160,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -171,7 +171,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+5V rail",
             "mode": null
         }

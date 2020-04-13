@@ -70,9 +70,9 @@
                 "reference": "K1"
             },
             "function": "reset",
-            "type": "Button",
+            "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -81,7 +81,7 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "BOOT0",
             "mode": null,
             "remarks": [
@@ -98,7 +98,7 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "2-way jumper",
+            "type": "jumper-2",
             "to": "BOOT1",
             "mode": null,
             "remarks": [
@@ -115,9 +115,9 @@
                 "reference": "K2"
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PE3",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "User button 2",
@@ -126,9 +126,9 @@
                 "reference": "K3"
             },
             "function": "user",
-            "type": "Button",
+            "type": "button",
             "to": "PC5",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "Serial to USB Rx jumper",
@@ -137,7 +137,7 @@
                 "reference": "J7"
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PA10",
             "mode": null,
             "remarks": [
@@ -154,7 +154,7 @@
                 "reference": "J7"
             },
             "function": "enable",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "PA9",
             "mode": null,
             "remarks": [
@@ -171,7 +171,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "Switch",
+            "type": "switch",
             "to": "+5V USB",
             "mode": null
         }
@@ -184,7 +184,7 @@
                 "reference": "DS3"
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -195,9 +195,9 @@
                 "reference": "DS1"
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PE5",
-            "mode": "Sink"
+            "mode": "sink"
         },
         {
             "name": "User LED 2",
@@ -206,9 +206,9 @@
                 "reference": "DS2"
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PE6",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [

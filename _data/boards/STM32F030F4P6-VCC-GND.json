@@ -77,7 +77,7 @@
             "function": "reset",
             "type": "button",
             "to": "NRST",
-            "mode": "Active low"
+            "mode": "low"
         },
         {
             "name": "BOOT0 jumper",
@@ -86,9 +86,9 @@
                 "reference": null
             },
             "function": "boot",
-            "type": "1-way jumper",
+            "type": "jumper-1",
             "to": "BOOT0",
-            "mode": "Active low"
+            "mode": "low"
         }
     ],
     "outputs": [
@@ -99,7 +99,7 @@
                 "reference": null
             },
             "function": "power",
-            "type": "LED",
+            "type": "led",
             "to": "+3.3V rail",
             "mode": null
         },
@@ -110,9 +110,9 @@
                 "reference": null
             },
             "function": "user",
-            "type": "LED",
+            "type": "led",
             "to": "PB1",
-            "mode": "Sink"
+            "mode": "sink"
         }
     ],
     "connectors": [
