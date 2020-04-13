@@ -13,6 +13,7 @@
         "STM32F051C8T6-LC-Technology"
     ],
     "STM32F1": [
+        "STM32F103C8T6-Baite-Maple-Mini-Clone",
         "STM32F103C8T6-Black-Board",
         "STM32F103C8T6-Black-Pill",
         "STM32F103C8T6-Blue-Header",

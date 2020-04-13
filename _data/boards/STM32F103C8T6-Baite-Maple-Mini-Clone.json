@@ -1,8 +1,11 @@
 {
     "board": {
-        "name": "Maple Mini Clone",
-        "brand": null,
-        "marking": "BTE14-07",
+        "name": "Baite Maple Mini Clone",
+        "brand": {
+            "name": "Baite",
+            "url": "https://aliexpress.com/store/812021"
+        },
+        "marking": "BTE14-07A",
         "url": null,
         "origin": "China"
     },
@@ -30,8 +33,8 @@
     },
     "regulator": "AMS1117-SOT223",
     "pcb": {
-        "color": "blue",
-        "size": { "length": 51, "width": 18 },
+        "color": "green",
+        "size": { "length": 50, "width": 18 },
         "mounting": "Breadboard"
     },
     "remarks": [
@@ -43,17 +46,17 @@
         {
             "name": "Perspective view",
             "type": "picture",
-            "file": "STM32F103C8T6_Maple_Mini_Clone-1.jpg"
+            "file": "STM32F103C8T6_Baite_Maple_Mini_Clone-1.jpg"
         },
         {
             "name": "Top view",
             "type": "picture",
-            "file": "STM32F103C8T6_Maple_Mini_Clone-2.jpg"
+            "file": "STM32F103C8T6_Baite_Maple_Mini_Clone-2.jpg"
         },
         {
             "name": "Bottom view",
             "type": "picture",
-            "file": "STM32F103C8T6_Maple_Mini_Clone-3.jpg"
+            "file": "STM32F103C8T6_Baite_Maple_Mini_Clone-3.jpg"
         }
     ],
     "inputs": [
@@ -177,7 +180,7 @@
             "function": "usb",
             "footprint": false,
             "type": {
-                "name": "USB Mini",
+                "name": "USB Micro",
                 "gender": null,
                 "pitch": null,
                 "size": null
