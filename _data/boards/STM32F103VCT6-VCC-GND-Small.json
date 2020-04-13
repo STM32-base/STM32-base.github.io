@@ -44,17 +44,17 @@
         {
             "name": "Perspective view",
             "type": "picture",
-            "file": "STM32F103VCT6_vcc-gnd.com_Small-1.jpg"
+            "file": "STM32F103VCT6_vcc-gnd.com_mini-1.jpg"
         },
         {
             "name": "Top view",
             "type": "picture",
-            "file": "STM32F103VCT6_vcc-gnd.com_Small-2.jpg"
+            "file": "STM32F103VCT6_vcc-gnd.com_mini-2.jpg"
         },
         {
             "name": "Bottom view",
             "type": "picture",
-            "file": "STM32F103VCT6_vcc-gnd.com_Small-3.jpg"
+            "file": "STM32F103VCT6_vcc-gnd.com_mini-3.jpg"
         },
         {
             "name": "Original schematic",

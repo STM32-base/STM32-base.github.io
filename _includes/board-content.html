@@ -301,7 +301,7 @@
             <div class="board-item-content">
                 {% for picture in pictures %}
                 <figure>
-                    <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['name'] }}: {{ picture['name'] }}">
+                    <img src="{{ site.url }}/assets/img/boards/{{ picture['file'] }}" alt="{{ board['name'] }}: {{ picture['name'] }}" loading="lazy">
                     <figcaption>{{ board['name'] }}: {{ picture['name'] }}</figcaption>
                 </figure>
                 {% endfor %}

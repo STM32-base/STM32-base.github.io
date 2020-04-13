@@ -1,0 +1,66 @@
+{
+    "debuggers": [
+        "Debugger-STM32F101C8T6-STLINKV2",
+        "Debugger-STM32F103C8T6-JLINK",
+        "Debugger-STM32F103C8U6-STLINKV2"
+    ],
+    "STM32F0": [
+        "STM32F030F4P6-Baite",
+        "STM32F030F4P6-STM32F030-DEMO-BOARD-V11",
+        "STM32F030F4P6-STM32F030F4-V2.00",
+        "STM32F030F4P6-VCC-GND",
+        "STM32F051C8T6-Blue-Pill",
+        "STM32F051C8T6-LC-Technology"
+    ],
+    "STM32F1": [
+        "STM32F103C8T6-Black-Board",
+        "STM32F103C8T6-Black-Pill",
+        "STM32F103C8T6-Blue-Header",
+        "STM32F103C8T6-Blue-Pill",
+        "STM32F103C8T6-Green-Board",
+        "STM32F103C8T6-Maple-Mini-Clone",
+        "STM32F103C8T6-Purple-Pill",
+        "STM32F103C8T6-RobotDyn-Black-Pill",
+        "STM32F103C8T6-STM32-Smart-V2.0",
+        "STM32F103C8T6-STM32FxCxT6-Board-V5.02",
+        "STM32F103C8T6-Strange-Thing",
+        "STM32F103C8T6-Ugly-Board",
+        "STM32F103RBT6-Generic-Board",
+        "STM32F103RBT6-STM32F103RxT6-DEMO",
+        "STM32F103RBT6-VCC-GND",
+        "STM32F103RCT6-Euse-Board",
+        "STM32F103RCT6-Generic-Board",
+        "STM32F103RCT6-iShare",
+        "STM32F103RCT6-STM32-Mini-V2.0",
+        "STM32F103RCT6-STM32F103RCT6_V1.0",
+        "STM32F103RET6-Generic-Board",
+        "STM32F103T8U6-CJMCU-3206",
+        "STM32F103VCT6-VCC-GND-Medium",
+        "STM32F103VCT6-VCC-GND-Small",
+        "STM32F103VET6-CZ-miniSTM32F103VE-EK",
+        "STM32F103ZET6-Black-Board",
+        "STM32F103ZET6-CZ-miniSTM32F103ZE-EK",
+        "STM32F103ZET6-Euse-M3-DEMO",
+        "STM32F103ZET6-F103ZE-Board",
+        "STM32F103ZET6-LC-Technology",
+        "STM32F103ZET6-VCC-GND-XLarge",
+        "STM32F103ZET6-YL-29"
+    ],
+    "STM32F2": [
+        "STM32F205RBT6-WaveShare-CorexxxR"
+    ],
+    "STM32F4": [
+        "STM32F405RGT6-WaveShare-CorexxxR",
+        "STM32F407VET6-Euse-M4-DEMO-Medium",
+        "STM32F407VET6-STM32-F4VE-V2.0",
+        "STM32F407VET6-VCC-GND-Small",
+        "STM32F407VGT6-diymore",
+        "STM32F407VGT6-SR-Board",
+        "STM32F407ZGT6-Euse-M4-DEMO-Large",
+        "STM32F407ZGT6-VCC-GND-Large",
+        "STM32F429IGT6-LC-Technology"
+    ],
+    "STM32F7": [
+        "STM32F746IGT6-WaveShare-Core7XXI"
+    ]
+}

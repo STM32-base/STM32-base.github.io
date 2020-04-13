@@ -1,0 +1,21 @@
+{% assign boards = site.data.boards %}
+{% assign list = include['list'] %}
+
+<div class="board-list-container">
+{% for item in list %}
+{% assign propertyName = item | remove: '.' %}
+{% assign data = boards[propertyName] %}
+
+{% assign name = data['board']['name'] %}
+{% assign microcontroller = data['microcontroller'] %}
+{% assign images = data['resources'] | where: 'type', 'picture' %}
+    <div class="board-list-item">
+        <a href="{{ site.url }}/boards/{{ item }}">
+            <img src="{{ site.url }}/assets/img/boards/{{ images.first.file }}" alt="Picture of the {{ name }}" loading="lazy">
+            <p class="board-list-name">{{ name }}</p>
+            <hr>
+            <p class="board-list-microcontroller">{{ microcontroller }}</p>
+        </a>
+    </div>
+{% endfor %}
+</div>

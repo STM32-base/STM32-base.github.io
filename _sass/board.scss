@@ -89,3 +89,48 @@
 .with-column-dividers .board-content-column:first-child {
     border-left: none;
 }
+
+.board-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 1.5rem 0;
+}
+
+.board-list-item {
+    width: 33%;
+    padding: .25rem .25rem 1rem .25rem;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $screen-width-threshold) {
+        width: 50%;
+    }
+
+    @media screen and (max-width: 30rem) {
+        width: 100%;
+    }
+}
+
+.board-list-item a {
+    color: $color-text-primary;
+    display: block;
+}
+
+.board-list-item a:hover, .board-list-item a:active {
+    color: $color-text-anchor;
+}
+
+.board-list-item hr {
+    margin: .25rem 0;
+}
+
+.board-list-name {
+    font-size: 1.125rem;
+    margin: 0;
+    padding: 0 .25rem;
+}
+
+.board-list-microcontroller {
+    font-size: .75rem;
+    margin: 0;
+    padding: 0 .25rem;
+}
