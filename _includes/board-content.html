@@ -316,7 +316,7 @@
             <div class="board-item-content">
                 <ul class="icon-list">
                     {% for resource in resources %}
-                    <li><span class="icon-list-icon"><i class="{{ map['resourceTypeToIcon'][resource['type']] }}"></i></span><a href="{% if resource['type'] == 'link' %}{{ resources['file'] }}{% else %}{{ site.url }}/assets/{{ map['resourceTypeToDirectory'][resource['type']] }}/boards/{{ resource['file'] }}{% endif %}">{{ resource['name'] }}</a></li>
+                    <li><span class="icon-list-icon"><i class="{{ map['resourceTypeToIcon'][resource['type']] }}"></i></span><a href="{% if resource['type'] == 'link' %}{{ resource['file'] }}{% else %}{{ site.url }}/assets/{{ map['resourceTypeToDirectory'][resource['type']] }}/boards/{{ resource['file'] }}{% endif %}">{{ resource['name'] }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

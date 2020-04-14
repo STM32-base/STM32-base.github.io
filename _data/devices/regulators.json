@@ -49,6 +49,31 @@
             "amperage": 1
         }
     },
+    "AP7343-X2-DFN1010-4": {
+        "manufacturer": {
+            "name": "Diodes Incorporated",
+            "url": "https://www.diodes.com/"
+        },
+        "part": {
+            "name": "AP7343",
+            "marking": "6T",
+            "datasheet": "AP7343.pdf",
+            "url": "https://www.diodes.com/part/view/AP7343"
+        },
+        "package": {
+            "abbreviation": "X2-DFN1010-4",
+            "name": "Dual Flat No-leads",
+            "pins": 4
+        },
+        "input": {
+            "min": 3.52,
+            "max": 5.25
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.3
+        }
+    },
     "FS1117-SOT223": {
         "manufacturer": {
             "name": "Fortune Semiconductor Corp.",

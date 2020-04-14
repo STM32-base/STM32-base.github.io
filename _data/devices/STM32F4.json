@@ -1,4 +1,33 @@
 {
+    "STM32F401CCU6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F401CCU6",
+            "marking": "STM32F401CCU6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f401cc.html"
+        },
+        "package": {
+            "abbreviation": "UFQFPN",
+            "name": "Ultra Flat Quad Flat Pack No-lead",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 84
+        },
+        "memories": {
+            "flash": 256,
+            "sram": 64
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    },
     "STM32F405RGT6": {
         "manufacturer": {
             "name": "ST-Microelectronics",
