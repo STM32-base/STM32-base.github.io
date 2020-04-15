@@ -1,5 +1,5 @@
 ---
-title: "STM32F401CCU6 - WeAct Black Pill V1.2"
+title: "STM32F411CEU6 - WeAct Black Pill V2.0"
 ---
 
 {% assign filename = page.name | remove: '.md' | remove: '.' %}

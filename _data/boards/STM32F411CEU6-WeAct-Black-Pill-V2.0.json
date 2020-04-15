@@ -1,6 +1,6 @@
 {
     "board": {
-        "name": "WeAct Black Pill V1.2",
+        "name": "WeAct Black Pill V2.0",
         "brand": {
             "name": "WeAct Studio",
             "url": "https://www.weact-tc.cn/"
@@ -9,7 +9,7 @@
         "url": null,
         "origin": "China"
     },
-    "microcontroller": "STM32F401CCU6",
+    "microcontroller": "STM32F411CEU6",
     "oscillators": {
         "hse": 25,
         "lse": 32.768
@@ -44,27 +44,27 @@
         {
             "name": "Perspective view",
             "type": "picture",
-            "file": "STM32F401CCU6_WeAct_Black_Pill_V1.2-1.jpg"
+            "file": "STM32F411CEU6_WeAct_Black_Pill_V2.0-1.jpg"
         },
         {
             "name": "Top view",
             "type": "picture",
-            "file": "STM32F401CCU6_WeAct_Black_Pill_V1.2-2.jpg"
+            "file": "STM32F411CEU6_WeAct_Black_Pill_V2.0-2.jpg"
         },
         {
             "name": "Bottom view",
             "type": "picture",
-            "file": "STM32F401CCU6_WeAct_Black_Pill_V1.2-3.jpg"
+            "file": "STM32F411CEU6_WeAct_Black_Pill_V2.0-3.jpg"
         },
         {
             "name": "Original schematic",
             "type": "pdf",
-            "file": "original-schematic-STM32F401CCU6_WeAct_Black_Pill_V1.2.pdf"
+            "file": "original-schematic-STM32F411CEU6_WeAct_Black_Pill_V2.0.pdf"
         },
         {
             "name": "Original dimensions drawing",
-            "type": "image",
-            "file": "original-dimensions-STM32F401CCU6_WeAct_Black_Pill_V1.2.png"
+            "type": "pdf",
+            "file": "original-dimensions-STM32F411CEU6_WeAct_Black_Pill_V2.0.pdf"
         },
         {
             "name": "Source files on Github",
@@ -94,6 +94,17 @@
             "type": "button",
             "to": "BOOT0",
             "mode": "high"
+        },
+        {
+            "name": "User button",
+            "identifiers": {
+                "name": "KEY",
+                "reference": null
+            },
+            "function": "user",
+            "type": "button",
+            "to": "PA0",
+            "mode": "low"
         }
     ],
     "outputs": [
@@ -256,7 +267,7 @@
             "footprint": true,
             "pins": [
                 { "number": 1, "name": null, "function": "/CS",   "to": "PA4" },
-                { "number": 2, "name": null, "function": "DO",    "to": "PA6" },
+                { "number": 2, "name": null, "function": "DO",    "to": "PB4" },
                 { "number": 3, "name": null, "function": "/WP",   "to": "+3.3V rail" },
                 { "number": 4, "name": null, "function": "GND",   "to": "Ground plane" },
                 { "number": 5, "name": null, "function": "DI",    "to": "PA7" },

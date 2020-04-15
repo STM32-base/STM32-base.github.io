@@ -148,6 +148,35 @@
             "lsi": 32
         }
     },
+    "STM32F411CEU6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F411CEU6",
+            "marking": "STM32F411CEU6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f411ce.html"
+        },
+        "package": {
+            "abbreviation": "UFQFPN",
+            "name": "Ultra Flat Quad Flat Pack No-lead",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 100
+        },
+        "memories": {
+            "flash": 512,
+            "sram": 128
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    },
     "STM32F429IGT6": {
         "manufacturer": {
             "name": "ST-Microelectronics",
