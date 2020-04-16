@@ -141,6 +141,27 @@
             "description": "1kB I2C EEPROM"
         }
     },
+    "CH330": {
+        "manufacturer": {
+            "name": "WCH",
+            "url": "http://wch.cn/"
+        },
+        "part": {
+            "name": "CH330",
+            "marking": "CH330N",
+            "datasheet": "CH330_cn.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOP",
+            "name": "Small-Outline Package",
+            "pins": 4
+        },
+        "type": {
+            "category": "converter",
+            "description": "USB to Serial converter"
+        }
+    },
     "CH340": {
         "manufacturer": {
             "name": "WCH",

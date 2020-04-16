@@ -1,0 +1,8 @@
+---
+title: "STM32F030F4P6 - STM32F030F4 最小系统板 V2.0"
+---
+
+{% assign filename = page.name | remove: '.md' | remove: '.' %}
+{% assign board = site.data.boards[filename] %}
+
+{% include board-content.html data=board %}
