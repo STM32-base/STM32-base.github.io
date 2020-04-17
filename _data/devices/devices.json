@@ -424,6 +424,28 @@
             "description": "16MiB Dual/Quad SPI FLASH"
         }
     },
+    "W25X16AV": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25X16AV",
+            "marking": "25X16AV",
+            "datasheet": "W25X16AV.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "2MiB Dual SPI FLASH"
+        }
+    },
     "W25X40CL": {
         "manufacturer": {
             "name": "Winbond Electronics Corporation",
