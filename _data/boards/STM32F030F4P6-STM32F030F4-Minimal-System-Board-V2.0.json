@@ -221,13 +221,13 @@
             },
             "footprint": false,
             "pins": [
-                { "number": 1, "name": null, "function": "UD+",   "to": "USB connector pin 2 via 220Ω (R1)" },
-                { "number": 2, "name": null, "function": "UD-",   "to": "USB connector pin 3 via 220Ω (R2)" },
+                { "number": 1, "name": null, "function": "UD+",   "to": "USB connector pin 2 via 22Ω (R1)" },
+                { "number": 2, "name": null, "function": "UD-",   "to": "USB connector pin 3 via 22Ω (R2)" },
                 { "number": 3, "name": null, "function": "GND",   "to": "Ground plane" },
                 { "number": 4, "name": null, "function": "RTS#",  "to": null },
                 { "number": 5, "name": null, "function": "VCC",   "to": "+3.3V rail" },
-                { "number": 6, "name": null, "function": "TXD",   "to": "PA10 via 220Ω (R9)" },
-                { "number": 7, "name": null, "function": "RXD",   "to": "PA9 via 220Ω (R8)" },
+                { "number": 6, "name": null, "function": "TXD",   "to": "PA10 via 22Ω (R9)" },
+                { "number": 7, "name": null, "function": "RXD",   "to": "PA9 via 22Ω (R8)" },
                 { "number": 8, "name": null, "function": "V3",    "to": "+3.3V rail" }
             ]
         }
