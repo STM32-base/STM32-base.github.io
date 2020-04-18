@@ -82,9 +82,9 @@ The `OBJ_FILE_NAME` variable can be set to specify another name for the startup 
 
 ## Compiler flags
 
-### GCC_FLAGS
+### CPPFLAGS and CXXFLAGS
 
-The `GCC_FLAGS` variable can be used to pass arguments to the `arm-none-eabi-gcc` call. For more information on the default value of this variable, see the [`common.mk` file](https://github.com/STM32-base/STM32-base/blob/master/make/common.mk).
+The `CPPFLAGS` and `CXXFLAGS` variables can be used to pass arguments to the `arm-none-eabi-gcc` call. For more information on the default value of this variable, see the [`common.mk` file](https://github.com/STM32-base/STM32-base/blob/master/make/common.mk).
 
 ### SRC
 
