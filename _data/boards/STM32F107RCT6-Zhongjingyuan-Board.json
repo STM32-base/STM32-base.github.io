@@ -261,8 +261,8 @@
             },
             "pins": [
                 { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
-                { "number": 2, "name": null, "function": "D-",  "to": null },
-                { "number": 3, "name": null, "function": "D+",  "to": null },
+                { "number": 2, "name": null, "function": "D-",  "to": "PA11" },
+                { "number": 3, "name": null, "function": "D+",  "to": "PA12" },
                 { "number": 4, "name": null, "function": "ID",  "to": null },
                 { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
             ]
@@ -283,7 +283,7 @@
             },
             "pins": [
                 { "number": 1, "name": "SWCLK", "function": "SWCLK", "to": "PA14" },
-                { "number": 2, "name": "SwDIO", "function": "SWDIO", "to": "PA13" },
+                { "number": 2, "name": "SWDIO", "function": "SWDIO", "to": "PA13" },
                 { "number": 3, "name": "GND",   "function": "GND",   "to": "Ground plane" },
                 { "number": 4, "name": "VDD",   "function": "VCC",   "to": "+3.3V rail" }
             ]
