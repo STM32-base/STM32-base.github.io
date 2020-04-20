@@ -1,0 +1,388 @@
+{
+    "board": {
+        "name": "Mini STM32 V2",
+        "brand": null,
+        "marking": "MINISTM32V2",
+        "url": null,
+        "origin": "China"
+    },
+    "microcontroller": "STM32F103ZET6",
+    "oscillators": {
+        "hse": 8,
+        "lse": 32.768
+    },
+    "power": {
+        "sources": [
+            { "name": "Any +3.3V pin", "voltage": 3.3 },
+            { "name": "Any +5V pin", "voltage": 5 },
+            { "name": "USB connector", "voltage": 5 }
+        ],
+        "analog": {
+            "vdda": true,
+            "vssa": true,
+            "vrefNegative": true,
+            "vrefPositive": true
+        },
+        "battery": {
+            "type": "pin",
+            "size": null
+        }
+    },
+    "regulator": "AMS1117-SOT223",
+    "pcb": {
+        "color": "blue",
+        "size": { "length": 72, "width": 43 },
+        "mounting": "4x mounting hole (M2)"
+    },
+    "remarks": [
+        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." },
+        { "type": "warning", "content": "This board has an USB port called RS232. The data pins of this connector are directly connected to the USART1 pins of the microcontroller. This will not work unless you pit an USB to Serial converter chip in between the microcontroller and your computer." }
+    ],
+    "resources": [
+        {
+            "name": "Perspective view",
+            "type": "picture",
+            "file": "STM32F103ZET6_Mini_STM32_V2-1.jpg"
+        },
+        {
+            "name": "Top view",
+            "type": "picture",
+            "file": "STM32F103ZET6_Mini_STM32_V2-2.jpg"
+        },
+        {
+            "name": "Bottom view",
+            "type": "picture",
+            "file": "STM32F103ZET6_Mini_STM32_V2-3.jpg"
+        }
+    ],
+    "inputs": [
+        {
+            "name": "Reset button",
+            "identifiers": {
+                "name": "RESET",
+                "reference": null
+            },
+            "function": "reset",
+            "type": "button",
+            "to": "NRST",
+            "mode": "low"
+        },
+        {
+            "name": "BOOT0 jumper",
+            "identifiers": {
+                "name": "BOOT0",
+                "reference": null
+            },
+            "function": "boot",
+            "type": "jumper-2",
+            "to": "BOOT0",
+            "mode": null
+        },
+        {
+            "name": "BOOT1 jumper",
+            "identifiers": {
+                "name": "BOOT1",
+                "reference": null
+            },
+            "function": "boot",
+            "type": "jumper-2",
+            "to": "PB2",
+            "mode": null
+        },
+        {
+            "name": "User button 1",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "user",
+            "type": "button",
+            "to": "PA0",
+            "mode": "low"
+        },
+        {
+            "name": "User button 2",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "user",
+            "type": "button",
+            "to": "PA1",
+            "mode": "low"
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Power LED",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "power",
+            "type": "led",
+            "to": "+3.3V rail",
+            "mode": null
+        },
+        {
+            "name": "User LED 1",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "user",
+            "type": "led",
+            "to": "PF9",
+            "mode": "sink"
+        },
+        {
+            "name": "User LED 2",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "user",
+            "type": "led",
+            "to": "PF8",
+            "mode": "sink"
+        }
+    ],
+    "connectors": [
+        {
+            "name": "Header 1",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2,
+                "size": { "length": 30, "width": 2 }
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": null, "to": "PE3" },
+                { "number": 2,  "name": null, "function": null, "to": "PE2" },
+                { "number": 3,  "name": null, "function": null, "to": "PE5" },
+                { "number": 4,  "name": null, "function": null, "to": "PE4" },
+                { "number": 5,  "name": null, "function": null, "to": "VBAT" },
+                { "number": 6,  "name": null, "function": null, "to": "PE6" },
+                { "number": 7,  "name": null, "function": null, "to": "PC14" },
+                { "number": 8,  "name": null, "function": null, "to": "PC13" },
+                { "number": 9,  "name": null, "function": null, "to": "PF0" },
+                { "number": 10, "name": null, "function": null, "to": "PC15" },
+                { "number": 11, "name": null, "function": null, "to": "PF2" },
+                { "number": 12, "name": null, "function": null, "to": "PF1" },
+                { "number": 13, "name": null, "function": null, "to": "PF4" },
+                { "number": 14, "name": null, "function": null, "to": "PF3" },
+                { "number": 15, "name": null, "function": null, "to": "PF6" },
+                { "number": 16, "name": null, "function": null, "to": "PF5" },
+                { "number": 17, "name": null, "function": null, "to": "PF8" },
+                { "number": 18, "name": null, "function": null, "to": "PF7" },
+                { "number": 19, "name": null, "function": null, "to": "PF10" },
+                { "number": 20, "name": null, "function": null, "to": "PF9" },
+                { "number": 21, "name": null, "function": null, "to": "PC1" },
+                { "number": 22, "name": null, "function": null, "to": "PC0" },
+                { "number": 23, "name": null, "function": null, "to": "PC3" },
+                { "number": 24, "name": null, "function": null, "to": "PC2" },
+                { "number": 25, "name": null, "function": null, "to": "VREF-" },
+                { "number": 26, "name": null, "function": null, "to": "VSSA" },
+                { "number": 27, "name": null, "function": null, "to": "VDDA" },
+                { "number": 28, "name": null, "function": null, "to": "VREF+" },
+                { "number": 29, "name": null, "function": null, "to": "PA1" },
+                { "number": 30, "name": null, "function": null, "to": "PA0" },
+                { "number": 31, "name": null, "function": null, "to": "PA3" },
+                { "number": 32, "name": null, "function": null, "to": "PA2" },
+                { "number": 33, "name": null, "function": null, "to": "PA5" },
+                { "number": 34, "name": null, "function": null, "to": "PA4" },
+                { "number": 35, "name": null, "function": null, "to": "PA7" },
+                { "number": 36, "name": null, "function": null, "to": "PA6" },
+                { "number": 37, "name": null, "function": null, "to": "PC5" },
+                { "number": 38, "name": null, "function": null, "to": "PC4" },
+                { "number": 39, "name": null, "function": null, "to": "PB1" },
+                { "number": 40, "name": null, "function": null, "to": "PB0" },
+                { "number": 41, "name": null, "function": null, "to": "PF11" },
+                { "number": 42, "name": null, "function": null, "to": "PB2" },
+                { "number": 43, "name": null, "function": null, "to": "PF13" },
+                { "number": 44, "name": null, "function": null, "to": "PF12" },
+                { "number": 45, "name": null, "function": null, "to": "PF15" },
+                { "number": 46, "name": null, "function": null, "to": "PF14" },
+                { "number": 47, "name": null, "function": null, "to": "PG1" },
+                { "number": 48, "name": null, "function": null, "to": "PG0" },
+                { "number": 49, "name": null, "function": null, "to": "PE8" },
+                { "number": 50, "name": null, "function": null, "to": "PE7" },
+                { "number": 51, "name": null, "function": null, "to": "PE10" },
+                { "number": 52, "name": null, "function": null, "to": "PE9" },
+                { "number": 53, "name": null, "function": null, "to": "PE12" },
+                { "number": 54, "name": null, "function": null, "to": "PE11" },
+                { "number": 55, "name": null, "function": null, "to": "PE14" },
+                { "number": 56, "name": null, "function": null, "to": "PE13" },
+                { "number": 57, "name": null, "function": null, "to": "PB10" },
+                { "number": 58, "name": null, "function": null, "to": "PE15" },
+                { "number": 59, "name": null, "function": null, "to": "PB11" },
+                { "number": 60, "name": null, "function": null, "to": "+5V rail" }
+            ]
+        },
+        {
+            "name": "Header 2",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2,
+                "size": { "length": 30, "width": 2 }
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": null, "to": "PE1" },
+                { "number": 2,  "name": null, "function": null, "to": "PE0" },
+                { "number": 3,  "name": null, "function": null, "to": "PB9" },
+                { "number": 4,  "name": null, "function": null, "to": "PB8" },
+                { "number": 5,  "name": null, "function": null, "to": "PB7" },
+                { "number": 6,  "name": null, "function": null, "to": "PB6" },
+                { "number": 7,  "name": null, "function": null, "to": "PB5" },
+                { "number": 8,  "name": null, "function": null, "to": "PB4" },
+                { "number": 9,  "name": null, "function": null, "to": "PB3" },
+                { "number": 10, "name": null, "function": null, "to": "PG15" },
+                { "number": 11, "name": null, "function": null, "to": "PG14" },
+                { "number": 12, "name": null, "function": null, "to": "PG13" },
+                { "number": 13, "name": null, "function": null, "to": "PG12" },
+                { "number": 14, "name": null, "function": null, "to": "PG11" },
+                { "number": 15, "name": null, "function": null, "to": "PG10" },
+                { "number": 16, "name": null, "function": null, "to": "PG9" },
+                { "number": 17, "name": null, "function": null, "to": "PD7" },
+                { "number": 18, "name": null, "function": null, "to": "PD6" },
+                { "number": 19, "name": null, "function": null, "to": "PD5" },
+                { "number": 20, "name": null, "function": null, "to": "PD4" },
+                { "number": 21, "name": null, "function": null, "to": "PD3" },
+                { "number": 22, "name": null, "function": null, "to": "PD2" },
+                { "number": 23, "name": null, "function": null, "to": "PD1" },
+                { "number": 24, "name": null, "function": null, "to": "PD0" },
+                { "number": 25, "name": null, "function": null, "to": "PC12" },
+                { "number": 26, "name": null, "function": null, "to": "PC11" },
+                { "number": 27, "name": null, "function": null, "to": "PC10" },
+                { "number": 28, "name": null, "function": null, "to": "PC15" },
+                { "number": 29, "name": null, "function": null, "to": "PC14" },
+                { "number": 30, "name": null, "function": null, "to": "PA13" },
+                { "number": 31, "name": null, "function": null, "to": "PA12" },
+                { "number": 32, "name": null, "function": null, "to": "PA11" },
+                { "number": 33, "name": null, "function": null, "to": "PA10" },
+                { "number": 34, "name": null, "function": null, "to": "PA9" },
+                { "number": 35, "name": null, "function": null, "to": "PA8" },
+                { "number": 36, "name": null, "function": null, "to": "PC9" },
+                { "number": 37, "name": null, "function": null, "to": "PC8" },
+                { "number": 38, "name": null, "function": null, "to": "PC7" },
+                { "number": 39, "name": null, "function": null, "to": "PC6" },
+                { "number": 40, "name": null, "function": null, "to": "PG8" },
+                { "number": 41, "name": null, "function": null, "to": "PG7" },
+                { "number": 42, "name": null, "function": null, "to": "PG6" },
+                { "number": 43, "name": null, "function": null, "to": "PG5" },
+                { "number": 44, "name": null, "function": null, "to": "PG4" },
+                { "number": 45, "name": null, "function": null, "to": "PG3" },
+                { "number": 46, "name": null, "function": null, "to": "PG2" },
+                { "number": 47, "name": null, "function": null, "to": "PD15" },
+                { "number": 48, "name": null, "function": null, "to": "PD14" },
+                { "number": 49, "name": null, "function": null, "to": "PD13" },
+                { "number": 50, "name": null, "function": null, "to": "PD12" },
+                { "number": 51, "name": null, "function": null, "to": "PD11" },
+                { "number": 52, "name": null, "function": null, "to": "PD10" },
+                { "number": 53, "name": null, "function": null, "to": "PD9" },
+                { "number": 54, "name": null, "function": null, "to": "PD8" },
+                { "number": 55, "name": null, "function": null, "to": "PB15" },
+                { "number": 56, "name": null, "function": null, "to": "PB14" },
+                { "number": 57, "name": null, "function": null, "to": "PB13" },
+                { "number": 58, "name": null, "function": null, "to": "PB12" },
+                { "number": 59, "name": null, "function": null, "to": "Ground plane" },
+                { "number": 60, "name": null, "function": null, "to": "+5V rail" }
+            ]
+        },
+        {
+            "name": "Main USB connector",
+            "identifiers": {
+                "name": "USB",
+                "reference": null
+            },
+            "function": "usb",
+            "footprint": false,
+            "type": {
+                "name": "USB Mini",
+                "gender": null,
+                "pitch": null,
+                "size": null
+            },
+            "pins": [
+                { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 2, "name": null, "function": "D-",  "to": "PA11" },
+                { "number": 3, "name": null, "function": "D+",  "to": "PA12" },
+                { "number": 4, "name": null, "function": "ID",  "to": null },
+                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+            ]
+        },
+        {
+            "name": "JTAG header",
+            "identifiers": {
+                "name": "JTAG",
+                "reference": null
+            },
+            "function": "debug",
+            "footprint": false,
+            "type": {
+                "name": "IDC",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 10, "width": 2 }
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": "VCC",          "to": "+3.3V rail" },
+                { "number": 2,  "name": null, "function": "VCC",          "to": "+3.3V rail" },
+                { "number": 3,  "name": null, "function": "TRST",         "to": "PB4" },
+                { "number": 4,  "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 5,  "name": null, "function": "TDI",          "to": "PA15" },
+                { "number": 6,  "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 7,  "name": null, "function": "TMS / SWDIO",  "to": "PA13" },
+                { "number": 8,  "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 9,  "name": null, "function": "TCLK / SWCLK", "to": "PA14" },
+                { "number": 10, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 11, "name": null, "function": "RTCK",         "to": null },
+                { "number": 12, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 13, "name": null, "function": "TDO / SWO",    "to": "PB3" },
+                { "number": 14, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 15, "name": null, "function": "RESET",        "to": "NRST" },
+                { "number": 16, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 17, "name": null, "function": "N.C.",         "to": null },
+                { "number": 18, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 19, "name": null, "function": "N.C.",         "to": null },
+                { "number": 20, "name": null, "function": "GND",          "to": "Ground plane" }
+            ]
+        },
+        {
+            "name": "Serial USB connector",
+            "identifiers": {
+                "name": "RS232",
+                "reference": null
+            },
+            "function": "usb",
+            "footprint": false,
+            "type": {
+                "name": "USB Mini",
+                "gender": null,
+                "pitch": null,
+                "size": null
+            },
+            "pins": [
+                { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 2, "name": null, "function": "D-",  "to": "PA10" },
+                { "number": 3, "name": null, "function": "D+",  "to": "PA9" },
+                { "number": 4, "name": null, "function": "ID",  "to": null },
+                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+            ]
+        }
+    ],
+    "devices": []
+}

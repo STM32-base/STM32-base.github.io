@@ -320,8 +320,8 @@
             },
             "pins": [
                 { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
-                { "number": 2, "name": null, "function": "D-",  "to": "PB14" },
-                { "number": 3, "name": null, "function": "D+",  "to": "PB15 via jumper J1" },
+                { "number": 2, "name": null, "function": "D-",  "to": "PB11" },
+                { "number": 3, "name": null, "function": "D+",  "to": "PB12 via jumper J1" },
                 { "number": 4, "name": null, "function": "ID",  "to": null },
                 { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
             ]
