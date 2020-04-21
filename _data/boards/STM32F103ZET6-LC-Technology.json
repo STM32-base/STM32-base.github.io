@@ -378,10 +378,10 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "3V3", "function": null, "to": "+3.3V rail" },
-                { "number": 2,  "name": "TX",  "function": null, "to": "PA9" },
-                { "number": 3,  "name": "RX",  "function": null, "to": "PA10" },
-                { "number": 4,  "name": "GND", "function": null, "to": "Ground plane" }
+                { "number": 1, "name": "3V3", "function": null, "to": "+3.3V rail" },
+                { "number": 2, "name": "TX",  "function": null, "to": "PA9" },
+                { "number": 3, "name": "RX",  "function": null, "to": "PA10" },
+                { "number": 4, "name": "GND", "function": null, "to": "Ground plane" }
             ]
         },
         {
@@ -399,10 +399,10 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "VCC", "function": null, "to": "+5V rail" },
-                { "number": 2,  "name": "VCC", "function": null, "to": "+5V rail" },
-                { "number": 3,  "name": "GND", "function": null, "to": "Ground plane" },
-                { "number": 4,  "name": "GND", "function": null, "to": "Ground plane" }
+                { "number": 1, "name": "VCC", "function": null, "to": "+5V rail" },
+                { "number": 2, "name": "VCC", "function": null, "to": "+5V rail" },
+                { "number": 3, "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 4, "name": "GND", "function": null, "to": "Ground plane" }
             ]
         }
     ],

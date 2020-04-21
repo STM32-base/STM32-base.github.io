@@ -293,6 +293,28 @@
             "description": "8MiB SDRAM"
         }
     },
+    "MAX3485": {
+        "manufacturer": {
+            "name": "Maxim Integrated",
+            "url": "https://www.maximintegrated.com/"
+        },
+        "part": {
+            "name": "MAX3485",
+            "marking": "MAX3485",
+            "datasheet": "MAX3483-MAX3491.pdf",
+            "url": "https://www.maximintegrated.com/en/products/interface/transceivers/MAX3485.html"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "transceiver",
+            "type": "RS485",
+            "description": "RS-485/RS-422 transceiver"
+        }
+    },
     "MIC2075": {
         "manufacturer": {
             "name": "Microchip Technology Inc.",
@@ -334,6 +356,28 @@
         "type": {
             "category": "converter",
             "description": "USB to Serial converter"
+        }
+    },
+    "TJA1050": {
+        "manufacturer": {
+            "name": "NXP",
+            "url": "https://www.nxp.com/"
+        },
+        "part": {
+            "name": "TJA1050",
+            "marking": "A1050/0",
+            "datasheet": "TJA1050.pdf",
+            "url": "https://www.nxp.com/products/interfaces/can-transceivers/legacy-can/high-speed-can-transceiver:TJA1050"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "transceiver",
+            "type": "CAN",
+            "description": "CAN transceiver"
         }
     },
     "W25Q16DV": {

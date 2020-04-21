@@ -34,7 +34,8 @@
         "converter": "fas fa-exchange-alt",
         "sensor": "fas fa-thermometer",
         "power": "fas fa-plug",
-        "bluetooth": "fab fa-bluetooth"
+        "bluetooth": "fab fa-bluetooth",
+        "transceiver": "fas fa-exchange-alt"
     },
     "resourceTypeToIcon": {
         "picture": "fas fa-image",
