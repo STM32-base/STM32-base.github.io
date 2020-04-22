@@ -1,6 +1,7 @@
 {
     "debuggers": [
         "Debugger-STM32F101C8T6-STLINKV2",
+        "Debugger-STM32F103C8T6-Bare-STLINK-V2",
         "Debugger-STM32F103C8T6-JLINK",
         "Debugger-STM32F103C8U6-STLINKV2"
     ],

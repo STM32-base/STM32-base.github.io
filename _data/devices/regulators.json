@@ -273,5 +273,30 @@
             "voltage": 3.3,
             "amperage": 0.3
         }
+    },
+    "XC6204-SOT23": {
+        "manufacturer": {
+            "name": "Torex Semiconductor LTD.",
+            "url": "https://www.torexsemi.com/"
+        },
+        "part": {
+            "name": "XC6206",
+            "marking": "662K",
+            "datasheet": "XC6206.pdf",
+            "url": "https://www.torexsemi.com/products/single-type-voltage-regulators/series/?name=xc6206"
+        },
+        "package": {
+            "abbreviation": "SOT23",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 3.6,
+            "max": 6
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.2
+        }
     }
 }

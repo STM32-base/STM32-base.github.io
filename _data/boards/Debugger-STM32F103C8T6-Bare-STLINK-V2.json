@@ -1,0 +1,139 @@
+{
+    "board": {
+        "name": "Bare ST-LINK V2 Debugger",
+        "brand": null,
+        "marking": null,
+        "url": null,
+        "origin": "China"
+    },
+    "microcontroller": "STM32F103C8T6",
+    "oscillators": {
+        "hse": 8,
+        "lse": null
+    },
+    "power": {
+        "sources": [
+            { "name": "USB connector", "voltage": 5 }
+        ],
+        "analog": {
+            "vdda": false,
+            "vssa": false,
+            "vrefNegative": false,
+            "vrefPositive": false
+        },
+        "battery": {
+            "type": "none",
+            "size": null
+        }
+    },
+    "regulator": "XC6204-SOT23",
+    "pcb": {
+        "color": "blakc",
+        "size": { "length": 28, "width": 16 },
+        "mounting": "None"
+    },
+    "remarks": [
+        { "type": "note", "content": "This board is intended to use as ST-Link device to program and debug other STM32 and STM8 devices." }
+    ],
+    "resources": [
+        {
+            "name": "Case",
+            "type": "picture",
+            "file": "STM32F103C8T6_Bare_ST-LINK_V2-1.jpg"
+        },
+        {
+            "name": "Top view",
+            "type": "picture",
+            "file": "STM32F103C8T6_Bare_ST-LINK_V2-2.jpg"
+        },
+        {
+            "name": "Bottom view",
+            "type": "picture",
+            "file": "STM32F103C8T6_Bare_ST-LINK_V2-3.jpg"
+        }
+    ],
+    "inputs": [],
+    "outputs": [
+        {
+            "name": "Activity LED",
+            "identifiers": {
+                "name": null,
+                "reference": "D1"
+            },
+            "function": "activity",
+            "type": "led",
+            "to": "PA10",
+            "mode": "source"
+        }
+    ],
+    "connectors": [
+        {
+            "name": "SWD out",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 4, "width": 2 }
+            },
+            "pins": [
+                { "number": 1, "name": "SCK", "function": null, "to": "PA5" },
+                { "number": 2, "name": "TXD", "function": null, "to": "PA9" },
+                { "number": 3, "name": "SWD", "function": null, "to": "PB12" },
+                { "number": 4, "name": "RXD", "function": null, "to": "PA10" },
+                { "number": 5, "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 6, "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 7, "name": "5V",  "function": null, "to": "+5V rail" },
+                { "number": 8, "name": "5V",  "function": null, "to": "+5V rail" }
+            ]
+        },
+        {
+            "name": "SWD in",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "debug",
+            "footprint": true,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 1,
+                "size": { "length": 4, "width": 1 }
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": "VCC",   "to": "+3.3V rail" },
+                { "number": 2,  "name": null, "function": "GND",   "to": "Ground plane" },
+                { "number": 3,  "name": null, "function": "SWCLK", "to": "PA14" },
+                { "number": 4,  "name": null, "function": "SWDIO", "to": "PA13" }
+            ]
+        },
+        {
+            "name": "USB A connector",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "usb",
+            "footprint": false,
+            "type": {
+                "name": "USB A",
+                "gender": "male",
+                "pitch": null,
+                "size": null
+            },
+            "pins": [
+                { "number": 1,  "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 2,  "name": null, "function": "D-",  "to": "PA11" },
+                { "number": 3,  "name": null, "function": "D+",  "to": "PA12" },
+                { "number": 4,  "name": null, "function": "GND", "to": "Ground plane" }
+            ]
+        }
+    ],
+    "devices": []
+}
