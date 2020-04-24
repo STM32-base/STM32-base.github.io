@@ -28,6 +28,35 @@
             "lsi": 32
         }
     },
+    "STM32F401RCT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32F401RCT6",
+            "marking": "STM32F401RCT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32f401rc.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 64
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 84
+        },
+        "memories": {
+            "flash": 256,
+            "sram": 64
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    },
     "STM32F405RGT6": {
         "manufacturer": {
             "name": "ST-Microelectronics",
