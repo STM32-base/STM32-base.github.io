@@ -38,7 +38,8 @@
         "mounting": "None"
     },
     "remarks": [
-        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." }
+        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." },
+        { "type": "warning", "content": "The microcontroller on this board features internal pull-up resistors for the USB data lines. However, this board has an additional switchable pull-up resistor on D+ (R14, controlled by PA8), which is disabled by default. This resistor is not needed and violates the USB specification when used at the same time as the internal pull-up resistors. This may cause errors while using USB on this board." }
     ],
     "resources": [
         {
