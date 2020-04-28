@@ -56,6 +56,16 @@
             "name": "Bottom view",
             "type": "picture",
             "file": "STM32F401RCT6_STM32F_Core_Board-3.jpg"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32F401RCT6-STM32F-Core-Board.pdf"
+        },
+        {
+            "name": "Original dimensions drawing",
+            "type": "pdf",
+            "file": "original-dimensions-STM32F401RCT6-STM32F-Core-Board.pdf"
         }
     ],
     "inputs": [
