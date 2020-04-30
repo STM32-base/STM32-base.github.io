@@ -74,6 +74,31 @@
             "amperage": 0.3
         }
     },
+    "CJA1117B-SOT89": {
+        "manufacturer": {
+            "name": "JCET Group Co., Ltd.",
+            "url": "https://www.jcetglobal.com/"
+        },
+        "part": {
+            "name": "CJA1117B",
+            "marking": "A1117B",
+            "datasheet": "CJA1117B.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOT89",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 4.6,
+            "max": 15
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 1
+        }
+    },
     "FS1117-SOT223": {
         "manufacturer": {
             "name": "Fortune Semiconductor Corp.",
