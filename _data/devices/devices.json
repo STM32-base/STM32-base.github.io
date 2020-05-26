@@ -380,6 +380,28 @@
             "description": "CAN transceiver"
         }
     },
+    "W25Q16BV": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25Q16BV",
+            "marking": "W25Q16BVSIG",
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "2MiB Dual/Quad SPI FLASH"
+        }
+    },
     "W25Q16DV": {
         "manufacturer": {
             "name": "Winbond Electronics Corporation",
