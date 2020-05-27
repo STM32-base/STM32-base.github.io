@@ -21,7 +21,7 @@
             "vdda": false,
             "vssa": false,
             "vrefNegative": false,
-            "vrefPositive": true
+            "vrefPositive": false
         },
         "battery": {
             "type": "pin",
