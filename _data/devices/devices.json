@@ -75,6 +75,25 @@
             "description": "Generic SRAM"
         }
     },
+    "24C02N": {
+        "manufacturer": null,
+        "part": {
+            "name": "24C02N",
+            "marking": "24C02N",
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "EEPROM",
+            "description": "256B I2C EEPROM"
+        }
+    },
     "AT24C02C": {
         "manufacturer": {
             "name": "Microchip Technology Inc.",

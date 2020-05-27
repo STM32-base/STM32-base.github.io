@@ -1,0 +1,32 @@
+{
+    "STM32L053C8T6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32L053C8T6",
+            "marking": "STM32L053C8T6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l053c8.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M0+",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m0-plus",
+            "clock": 32
+        },
+        "memories": {
+            "flash": 64,
+            "eeprom": 2,
+            "sram": 8
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 38
+        }
+    }
+}

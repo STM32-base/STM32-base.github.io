@@ -81,5 +81,11 @@
     ],
     "STM32F7": [
         "STM32F746IGT6-WaveShare-Core7XXI"
+    ],
+    "STM32L0": [
+        "STM32L053C8T6-Green-Pill"
+    ],
+    "STM32L4": [
+        "STM32L431C8T6-Green-Pill"
     ]
 }
