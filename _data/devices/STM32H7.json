@@ -1,0 +1,60 @@
+{
+    "STM32H743VIT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32H743VIT6",
+            "marking": "STM32H743VIT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32h743vi.html"
+        },
+        "package": {
+            "abbreviation": "UFQFPN",
+            "name": "Ultra Flat Quad Flat Pack No-lead",
+            "pins": 100
+        },
+        "core": {
+            "name": "Arm Cortex-M7",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m7",
+            "clock": 400
+        },
+        "memories": {
+            "flash": 2048,
+            "sram": 1024
+        },
+        "oscillators": {
+            "hsi": 64,
+            "lsi": 32
+        }
+    },
+    "STM32H750VBT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/content/st_com/en.html"
+        },
+        "part": {
+            "name": "STM32H750VBT6",
+            "marking": "STM32H750VBT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32h750vb.html"
+        },
+        "package": {
+            "abbreviation": "UFQFPN",
+            "name": "Ultra Flat Quad Flat Pack No-lead",
+            "pins": 100
+        },
+        "core": {
+            "name": "Arm Cortex-M7",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m7",
+            "clock": 400
+        },
+        "memories": {
+            "flash": 128,
+            "sram": 1024
+        },
+        "oscillators": {
+            "hsi": 64,
+            "lsi": 32
+        }
+    }
+}

@@ -28,6 +28,7 @@ Also, the listed power output for the used power regulators is based on their da
 {% assign stm32f3 = lists['STM32F3'] %}
 {% assign stm32f4 = lists['STM32F4'] %}
 {% assign stm32f7 = lists['STM32F7'] %}
+{% assign stm32h7 = lists['STM32H7'] %}
 {% assign stm32l0 = lists['STM32L0'] %}
 {% assign stm32l4 = lists['STM32L4'] %}
 
@@ -58,6 +59,10 @@ Also, the listed power output for the used power regulators is based on their da
 ## STM32F7 boards
 
 {% include board-list.html list=stm32f7 %}
+
+## STM32H7 boards
+
+{% include board-list.html list=stm32h7 %}
 
 ## STM32L0 boards
 

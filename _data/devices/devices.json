@@ -487,6 +487,28 @@
             "description": "8MiB Dual/Quad SPI FLASH"
         }
     },
+    "W25Q64JV": {
+        "manufacturer": {
+            "name": "Winbond Electronics Corporation",
+            "url": "https://www.winbond.com/"
+        },
+        "part": {
+            "name": "W25Q64JV",
+            "marking": "W25Q64JVSIQ",
+            "datasheet": "W25Q64JV.pdf",
+            "url": "https://www.winbond.com/hq/product/code-storage-flash-memory/serial-nor-flash/?__locale=en&partNo=W25Q64jV"
+        },
+        "package": {
+            "abbreviation": "SOIC",
+            "name": "Small-Outline Integrated Circuit",
+            "pins": 8
+        },
+        "type": {
+            "category": "storage",
+            "type": "FLASH",
+            "description": "8MiB Dual/Quad SPI FLASH"
+        }
+    },
     "W25Q128FV": {
         "manufacturer": {
             "name": "Winbond Electronics Corporation",
