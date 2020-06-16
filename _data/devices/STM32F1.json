@@ -55,6 +55,40 @@
         "oscillators": {
             "hsi": 8,
             "lsi": 40
+        },
+        "pins": {
+            "PA0": {
+                "alternate": ["WKUP", "USART2_CTS", "ADC12_IN0", "TIM2_CH1_ETR"],
+                "remap": []
+            },
+            "PA1": {
+                "alternate": ["USART2_RTS", "ADC12_IN1", "TIM2_CH2"],
+                "remap": []
+            },
+            "PA2": {
+                "alternate": ["USART2_TX", "ADC12_IN2", "TIM2_CH3"],
+                "remap": []
+            },
+            "PA3": {
+                "alternate": ["USART2_RX", "ADC12_IN3", "TIM2_CH4"],
+                "remap": []
+            },
+            "PA4": {
+                "alternate": ["SPI1_NSS", "USART2_CK", "ADC12_IN4"],
+                "remap": []
+            },
+            "PA5": {
+                "alternate": ["SPI1_SCK", "ADC12_IN5"],
+                "remap": []
+            },
+            "PA6": {
+                "alternate": ["SPI1_MISO", "ADC12_IN6", "TIM3_CH1"],
+                "remap": ["TIM1_BKIN"]
+            },
+            "PA7": {
+                "alternate": ["SPI1_MOSI", "ADC12_IN7", "TIM3_CH2"],
+                "remap": ["TIM1_CH1N"]
+            }
         }
     },
     "STM32F103C8U6": {

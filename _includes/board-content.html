@@ -154,6 +154,8 @@
 
 {% assign devices = data['devices'] %}
 
+{% assign microcontrollerPins = microcontroller['pins'] %}
+
 <div class="board-header">
     <h1>{{ board['name'] }}</h1>
     <p>{{ microcontroller['part']['name'] }}</p>
@@ -542,10 +544,12 @@
                         <th>Connected to</th>
                     </tr>
                     {% for pin in connector["pins"] %}
+                    {% assign pinTo = pin['to'] %}
+                    {% assign altFuncs = microcontrollerPins[pinTo]['alternate'] | join: '<br>' %}
                     <tr>
                         <td>{{ pin['number'] }}</td>
                         <td>{{ pin['name'] | default: '-' }}</td>
-                        <td>{{ pin['function'] | default: '-' }}</td>
+                        <td>{{ pin['function'] | default: altFuncs | default: '-' }}</td>
                         <td>{{ pin['to'] | default: 'N.C.' }}</td>
                     </tr>
                     {% endfor %}
