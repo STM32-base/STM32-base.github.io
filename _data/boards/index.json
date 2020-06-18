@@ -87,6 +87,8 @@
         "STM32H750VBT6-STM32H7XX-M"
     ],
     "STM32L0": [
+        "STM32L011D4P6-VCC-GND-Green-Pill",
+        "STM32L031K6T6-VCC-GND-Green-Pill",
         "STM32L053C8T6-Green-Pill"
     ],
     "STM32L4": [

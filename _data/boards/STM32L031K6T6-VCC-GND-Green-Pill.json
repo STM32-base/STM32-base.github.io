@@ -1,0 +1,289 @@
+{
+    "board": {
+        "name": "vcc-gnd.com Green Pill",
+        "brand": {
+            "name": "vcc-gnd",
+            "url": "http://www.vcc-gnd.com/"
+        },
+        "marking": null,
+        "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32lx",
+        "origin": "China"
+    },
+    "microcontroller": "STM32L031K6P6",
+    "oscillators": {
+        "hse": null,
+        "lse": 32.768
+    },
+    "power": {
+        "sources": [
+            { "name": "Any +3.3V pin", "voltage": 3.3 },
+            { "name": "Any +5V pin", "voltage": 5 }
+        ],
+        "analog": {
+            "vdda": true,
+            "vssa": false,
+            "vrefNegative": false,
+            "vrefPositive": false
+        },
+        "battery": {
+            "type": "pin",
+            "size": null
+        }
+    },
+    "regulator": "TX6211B-SOT23-5",
+    "pcb": {
+        "color": "green",
+        "size": { "length": 55, "width": 18 },
+        "mounting": "Breadboard"
+    },
+    "remarks": [
+        { "type": "note", "content": "This board has two bits that can be broken off the main board. These bits can be connected to the board via the white connectors. When not separated from the board, the pin headers on these bits are electrically connected." }
+    ],
+    "resources": [
+        {
+            "name": "Perspective view",
+            "type": "picture",
+            "file": "STM32L031K6T6_Green_Pill-1.jpg"
+        },
+        {
+            "name": "Top view",
+            "type": "picture",
+            "file": "STM32L031K6T6_Green_Pill-2.jpg"
+        },
+        {
+            "name": "Bottom view",
+            "type": "picture",
+            "file": "STM32L031K6T6_Green_Pill-3.jpg"
+        },
+        {
+            "name": "Original dimensions drawing",
+            "type": "pdf",
+            "file": "original-dimensions-STM32L031K6T6_vcc-gnd.com.pdf"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32L031K6T6_vcc-gnd.com.pdf"
+        }
+    ],
+    "inputs": [
+        {
+            "name": "Reset button",
+            "identifiers": {
+                "name": "RST",
+                "reference": null
+            },
+            "function": "reset",
+            "type": "button",
+            "to": "NRST",
+            "mode": "low"
+        },
+        {
+            "name": "Power source switch",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "power",
+            "type": "switch",
+            "to": "+3.3V rail or battery",
+            "mode": null
+        },
+        {
+            "name": "VDDA solder bridge",
+            "identifiers": {
+                "name": null,
+                "reference": "SB1"
+            },
+            "function": "power",
+            "type": "bridge",
+            "to": "VDD to VDDA"
+        },
+        {
+            "name": "User LED solder bridge",
+            "identifiers": {
+                "name": null,
+                "reference": "SB2"
+            },
+            "function": "user",
+            "type": "bridge",
+            "to": "PB3 to User LED",
+            "mode": null
+        },
+        {
+            "name": "VDD solder bridge",
+            "identifiers": {
+                "name": null,
+                "reference": "SB3"
+            },
+            "function": "power",
+            "type": "bridge",
+            "to": "VDD to +3.3V rail",
+            "mode": null
+        },
+        {
+            "name": "VDD jumper",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "power",
+            "type": "jumper-1",
+            "to": "VDD to +3.3V rail",
+            "mode": null
+        },
+        {
+            "name": "VBAT to VIN solder bridge",
+            "identifiers": {
+                "name": null,
+                "reference": "SB4"
+            },
+            "function": "power",
+            "type": "bridge",
+            "to": "VBAT to VIN",
+            "mode": null
+        },
+        {
+            "name": "VIN to regulator solder bridge",
+            "identifiers": {
+                "name": null,
+                "reference": "SB5"
+            },
+            "function": "power",
+            "type": "bridge",
+            "to": "VIN to regulator",
+            "mode": null
+        }
+    ],
+    "outputs": [
+        {
+            "name": "Power LED",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "power",
+            "type": "led",
+            "to": "+5V rail",
+            "mode": null
+        },
+        {
+            "name": "User LED",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "user",
+            "type": "led",
+            "to": "PB3",
+            "mode": "source"
+        }
+    ],
+    "connectors": [
+        {
+            "name": "Header 1",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 15, "width": 1 }
+            },
+            "pins": [
+                { "number": 1,  "name": "VIN", "function": null, "to": "VIN" },
+                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 3,  "name": "RST", "function": null, "to": "NRST" },
+                { "number": 4,  "name": "5V",  "function": null, "to": "+5V rail" },
+                { "number": 5,  "name": "A2",  "function": null, "to": "PA2" },
+                { "number": 6,  "name": "A7",  "function": null, "to": "PA7" },
+                { "number": 7,  "name": "A6",  "function": null, "to": "PA6" },
+                { "number": 8,  "name": "A5",  "function": null, "to": "PA5" },
+                { "number": 9,  "name": "A4",  "function": null, "to": "PA4" },
+                { "number": 10, "name": "A3",  "function": null, "to": "PA3" },
+                { "number": 11, "name": "A1",  "function": null, "to": "PA1" },
+                { "number": 12, "name": "A0",  "function": null, "to": "PA0" },
+                { "number": 13, "name": "RE",  "function": null, "to": "AREF" },
+                { "number": 14, "name": "3V3", "function": null, "to": "+3.3V rail" },
+                { "number": 15, "name": "B3",  "function": null, "to": "PB3" }
+            ]
+        },
+        {
+            "name": "Header 2",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "header",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 15, "width": 1 }
+            },
+            "pins": [
+                { "number": 1,  "name": "A9",  "function": null, "to": "PA9" },
+                { "number": 2,  "name": "A10", "function": null, "to": "PA10" },
+                { "number": 3,  "name": "RST", "function": null, "to": "NRST" },
+                { "number": 4,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 5,  "name": "A12", "function": null, "to": "PA12" },
+                { "number": 6,  "name": "B0",  "function": null, "to": "PB0" },
+                { "number": 7,  "name": "B7",  "function": null, "to": "PB7" },
+                { "number": 8,  "name": "B6",  "function": null, "to": "PB6" },
+                { "number": 9,  "name": "B1",  "function": null, "to": "PB1" },
+                { "number": 10, "name": "C14", "function": null, "to": "PC14" },
+                { "number": 11, "name": "C15", "function": null, "to": "PC15" },
+                { "number": 12, "name": "A6",  "function": null, "to": "PA6" },
+                { "number": 13, "name": "A11", "function": null, "to": "PA11" },
+                { "number": 14, "name": "B5",  "function": null, "to": "PB5" },
+                { "number": 15, "name": "B4",  "function": null, "to": "PB4" }
+            ]
+        },
+        {
+            "name": "Battery header",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "power",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 4, "width": 1 }
+            },
+            "pins": [
+                { "number": 1, "name": "GND-",  "function": null, "to": "GND" },
+                { "number": 2, "name": "VBAT+", "function": null, "to": "Power selection switch" }
+            ]
+        },
+        {
+            "name": "SWD header",
+            "identifiers": {
+                "name": null,
+                "reference": null
+            },
+            "function": "debug",
+            "footprint": false,
+            "type": {
+                "name": "Pin header",
+                "gender": "male",
+                "pitch": 2.54,
+                "size": { "length": 4, "width": 1 }
+            },
+            "pins": [
+                { "number": 1, "name": "VDD(MCU)", "function": "VCC",   "to": "VDD" },
+                { "number": 2, "name": "SWDIO",    "function": "SWDIO", "to": "PA13" },
+                { "number": 3, "name": "SWCLK",    "function": "SWCLK", "to": "PA14" },
+                { "number": 4, "name": "GND",      "function": "GND",   "to": "Ground rail" }
+            ]
+        }
+    ],
+    "devices": []
+}
