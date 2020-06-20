@@ -84,6 +84,7 @@
     ],
     "STM32H7": [
         "STM32H743VIT6-STM32H7XX-M",
+        "STM32H750VBT6-Generic-Development-Board",
         "STM32H750VBT6-STM32H7XX-M"
     ],
     "STM32L0": [
