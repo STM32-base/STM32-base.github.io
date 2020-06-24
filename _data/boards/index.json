@@ -12,7 +12,8 @@
         "STM32F030F4P6-STM32F030F4-V2.00",
         "STM32F030F4P6-VCC-GND",
         "STM32F051C8T6-Blue-Pill",
-        "STM32F051C8T6-LC-Technology"
+        "STM32F051C8T6-LC-Technology",
+        "STM32F051C8T6-STM32xxxC8T6-Board"
     ],
     "STM32F1": [
         "STM32F103C8T6-Baite-Maple-Mini-Clone",
@@ -58,6 +59,7 @@
         "STM32F205RBT6-WaveShare-CorexxxR"
     ],
     "STM32F3": [
+        "STM32F303CBT6-STM32xxxC8T6-Board",
         "STM32F303CCT6-RobotDyn-Black-Pill"
     ],
     "STM32F4": [
@@ -92,6 +94,9 @@
         "STM32L011D4P6-VCC-GND-Green-Pill",
         "STM32L031K6T6-VCC-GND-Green-Pill",
         "STM32L053C8T6-Green-Pill"
+    ],
+    "STM32L1": [
+        "STM32L151C8T6-STM32xxxC8T6-Board"
     ],
     "STM32L4": [
         "STM32L431C8T6-Green-Pill"

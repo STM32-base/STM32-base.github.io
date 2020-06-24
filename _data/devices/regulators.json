@@ -1,4 +1,48 @@
 {
+    "Generic-SOT23": {
+        "manufacturer": null,
+        "part": {
+            "name": "Unknown",
+            "marking": null,
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOT23",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 3.6,
+            "max": 5.5
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.15
+        }
+    },
+    "Generic-1117-SOT223": {
+        "manufacturer": null,
+        "part": {
+            "name": "Unknown",
+            "marking": "1117",
+            "datasheet": null,
+            "url": null
+        },
+        "package": {
+            "abbreviation": "SOT223",
+            "name": "Small Outline Transistor",
+            "pins": 3
+        },
+        "input": {
+            "min": 4.6,
+            "max": 12
+        },
+        "output": {
+            "voltage": 3.3,
+            "amperage": 0.5
+        }
+    },
     "AMS1117-SOT223": {
         "manufacturer": {
             "name": "Advanced Monolithic Systems Inc.",

@@ -1,0 +1,32 @@
+{
+    "STM32L151C8T6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32L151C8T6",
+            "marking": "STM32L151C8T6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l151c8.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M3",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m3",
+            "clock": 32
+        },
+        "memories": {
+            "flash": 32,
+            "eeprom": 4,
+            "sram": 10
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 38
+        }
+    }
+}
