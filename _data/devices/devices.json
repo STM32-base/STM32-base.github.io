@@ -312,6 +312,28 @@
             "description": "8MiB SDRAM"
         }
     },
+    "IS62WV51216": {
+        "manufacturer": {
+            "name": "Integrated Silicon Solution, Inc.",
+            "url": "http://www.issi.com/US/Index.shtml"
+        },
+        "part": {
+            "name": "IS62WV51216",
+            "marking": "IS62WV51216",
+            "datasheet": "IS62WV51216.pdf",
+            "url": null
+        },
+        "package": {
+            "abbreviation": "TSOP - II",
+            "name": "Thin Small Outline Package - Type II",
+            "pins": 44
+        },
+        "type": {
+            "category": "memory",
+            "type": "DRAM",
+            "description": "8MiB SRAM"
+        }
+    },
     "MAX3485": {
         "manufacturer": {
             "name": "Maxim Integrated",
