@@ -1,13 +1,13 @@
 {
-    "STM32L431C8T6": {
+    "STM32L431CBT6": {
         "manufacturer": {
             "name": "ST-Microelectronics",
             "url": "https://www.st.com/"
         },
         "part": {
-            "name": "STM32L431C8T6",
-            "marking": "STM32L431C8T6",
-            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l431c8.html"
+            "name": "STM32L431CBT6",
+            "marking": "STM32L431CBT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l431cb.html"
         },
         "package": {
             "abbreviation": "LQFP",

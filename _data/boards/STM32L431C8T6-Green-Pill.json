@@ -6,7 +6,7 @@
         "url": null,
         "origin": "China"
     },
-    "microcontroller": "STM32L431C8T6",
+    "microcontroller": "STM32L431CBT6",
     "oscillators": {
         "hse": 8,
         "lse": 32.768
