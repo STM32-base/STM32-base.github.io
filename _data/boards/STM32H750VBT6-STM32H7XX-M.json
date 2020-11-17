@@ -55,6 +55,11 @@
             "name": "Bottom view",
             "type": "picture",
             "file": "STM32H750VBT6_STM32H7XX_M-3.jpg"
+        },
+        {
+            "name": "Schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32H7XX-M.pdf"
         }
     ],
     "inputs": [
