@@ -1,17 +1,14 @@
 {
     "board": {
-        "name": "WeAct Black Pill V2.0",
-        "brand": {
-            "name": "WeAct Studio",
-            "url": "https://www.weact-tc.cn/"
-        },
-        "marking": null,
+        "name": "WeAct Blue Pill Plus Clone",
+        "brand": null,
+        "marking": "Blue Pill+",
         "url": null,
         "origin": "China"
     },
-    "microcontroller": "STM32F411CEU6",
+    "microcontroller": "STM32F103C8T6",
     "oscillators": {
-        "hse": 25,
+        "hse": 8,
         "lse": 32.768
     },
     "power": {
@@ -27,49 +24,39 @@
             "vrefPositive": false
         },
         "battery": {
-            "type": "pin",
+            "type": "none",
             "size": null
         }
     },
-    "regulator": "AP7343-X2-DFN1010-4",
+    "regulator": "Generic-SOT23",
     "pcb": {
-        "color": "black",
-        "size": { "length": 52.81, "width": 20.78 },
+        "color": "blue",
+        "size": { "length": 52, "width": 20 },
         "mounting": "Breadboard"
     },
     "remarks": [
-        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." }
+        { "type": "warning", "content": "This board is a clone of the official WeAct Blue Pill Plus board. For this reason, no schematics are included on this page. Please refer to the official <a href=\"https://github.com/WeActTC/BluePill-Plus\">WeAct Github page</a> for more information." }
     ],
     "resources": [
         {
             "name": "Perspective view",
             "type": "picture",
-            "file": "STM32F411CEU6_WeAct_Black_Pill_V2.0-1.jpg"
+            "file": "STM32F103C8T6_WeAct_Blue_Pill_Plus_Clone-1.jpg"
         },
         {
             "name": "Top view",
             "type": "picture",
-            "file": "STM32F411CEU6_WeAct_Black_Pill_V2.0-2.jpg"
+            "file": "STM32F103C8T6_WeAct_Blue_Pill_Plus_Clone-2.jpg"
         },
         {
             "name": "Bottom view",
             "type": "picture",
-            "file": "STM32F411CEU6_WeAct_Black_Pill_V2.0-3.jpg"
-        },
-        {
-            "name": "Original schematic",
-            "type": "pdf",
-            "file": "original-schematic-STM32F411CEU6_WeAct_Black_Pill_V2.0.pdf"
-        },
-        {
-            "name": "Original dimensions drawing",
-            "type": "pdf",
-            "file": "original-dimensions-STM32F411CEU6_WeAct_Black_Pill_V2.0.pdf"
+            "file": "STM32F103C8T6_WeAct_Blue_Pill_Plus_Clone-3.jpg"
         },
         {
             "name": "Source files on Github",
             "type": "link",
-            "file": "https://github.com/WeActTC/MiniF4-STM32F4x1"
+            "file": "https://github.com/WeActTC/BluePill-Plus"
         }
     ],
     "inputs": [
@@ -104,7 +91,7 @@
             "function": "user",
             "type": "button",
             "to": "PA0",
-            "mode": "low"
+            "mode": "high"
         }
     ],
     "outputs": [
@@ -122,12 +109,12 @@
         {
             "name": "User LED",
             "identifiers": {
-                "name": "PC13",
+                "name": "PB2",
                 "reference": null
             },
             "function": "user",
             "type": "led",
-            "to": "PC13",
+            "to": "PB2",
             "mode": "sink"
         }
     ],
@@ -150,19 +137,19 @@
                 { "number": 1,  "name": "5V",  "function": null, "to": "+5V rail" },
                 { "number": 2,  "name": "G",   "function": null, "to": "Ground plane" },
                 { "number": 3,  "name": "3.3", "function": null, "to": "+3.3V rail" },
-                { "number": 4,  "name": "B10", "function": null, "to": "PB10" },
-                { "number": 5,  "name": "B2",  "function": null, "to": "PB2" },
-                { "number": 6,  "name": "B1",  "function": null, "to": "PB1" },
-                { "number": 7,  "name": "B0",  "function": null, "to": "PB0" },
-                { "number": 8,  "name": "A7",  "function": null, "to": "PA7" },
-                { "number": 9,  "name": "A6",  "function": null, "to": "PA6" },
-                { "number": 10, "name": "A5",  "function": null, "to": "PA5" },
-                { "number": 11, "name": "A4",  "function": null, "to": "PA4" },
-                { "number": 12, "name": "A3",  "function": null, "to": "PA3" },
-                { "number": 13, "name": "A2",  "function": null, "to": "PA2" },
-                { "number": 14, "name": "A1",  "function": null, "to": "PA1" },
-                { "number": 15, "name": "A0",  "function": null, "to": "PA0" },
-                { "number": 16, "name": "R",   "function": null, "to": "NRST" },
+                { "number": 4,  "name": "R",   "function": null, "to": "NRST" },
+                { "number": 5,  "name": "B11", "function": null, "to": "PB11" },
+                { "number": 6,  "name": "B10", "function": null, "to": "PB10" },
+                { "number": 7,  "name": "B1",  "function": null, "to": "PB1" },
+                { "number": 8,  "name": "B0",  "function": null, "to": "PB0" },
+                { "number": 9,  "name": "A7",  "function": null, "to": "PA7" },
+                { "number": 10, "name": "A6",  "function": null, "to": "PA6" },
+                { "number": 11, "name": "A5",  "function": null, "to": "PA5" },
+                { "number": 12, "name": "A4",  "function": null, "to": "PA4" },
+                { "number": 13, "name": "A3",  "function": null, "to": "PA3" },
+                { "number": 14, "name": "A2",  "function": null, "to": "PA2" },
+                { "number": 15, "name": "A1",  "function": null, "to": "PA1" },
+                { "number": 16, "name": "A0",  "function": null, "to": "PA0" },
                 { "number": 17, "name": "C15", "function": null, "to": "PC15" },
                 { "number": 18, "name": "C14", "function": null, "to": "PC14" },
                 { "number": 19, "name": "C13", "function": null, "to": "PC13" },
@@ -223,14 +210,14 @@
             "pins": [
                 { "number": "A1/B12", "name": null, "function": "GND",  "to": "Ground plane" },
                 { "number": "A4/B9",  "name": null, "function": "VBUS", "to": "+5V rail" },
-                { "number": "B8",     "name": null, "function": "SBU2", "to": "Ground plane via 5.1kΩ (R8)" },
-                { "number": "A5",     "name": null, "function": "CC1",  "to": "Ground plane via 5.1kΩ (R8)" },
-                { "number": "B7",     "name": null, "function": "D-",   "to": "PA11 via 10Ω (R9)" },
-                { "number": "A6",     "name": null, "function": "D+",   "to": "PA12 via 10Ω (R7)" },
-                { "number": "A7",     "name": null, "function": "D-",   "to": "PA11 via 10Ω (R9)" },
-                { "number": "B6",     "name": null, "function": "D+",   "to": "PA12 via 10Ω (R7)" },
-                { "number": "A8",     "name": null, "function": "SBU1", "to": "Ground plane via 5.1kΩ (R8)" },
-                { "number": "B5",     "name": null, "function": "CC2",  "to": "Ground plane via 5.1kΩ (R8)" },
+                { "number": "B8",     "name": null, "function": "SBU2", "to": "Ground plane via 5.1kΩ" },
+                { "number": "A5",     "name": null, "function": "CC1",  "to": null },
+                { "number": "B7",     "name": null, "function": "D-",   "to": "PA11" },
+                { "number": "A6",     "name": null, "function": "D+",   "to": "PA12" },
+                { "number": "A7",     "name": null, "function": "D-",   "to": "PA11" },
+                { "number": "B6",     "name": null, "function": "D+",   "to": "PA12" },
+                { "number": "A8",     "name": null, "function": "SBU1", "to": "Ground plane via 5.1kΩ" },
+                { "number": "B5",     "name": null, "function": "CC2",  "to": null },
                 { "number": "B4/A9",  "name": null, "function": "VBUS", "to": "+5V rail" },
                 { "number": "B1/A12", "name": null, "function": "GND",  "to": "Ground plane" }
             ]
@@ -267,7 +254,7 @@
             "footprint": true,
             "pins": [
                 { "number": 1, "name": null, "function": "/CS",   "to": "PA4" },
-                { "number": 2, "name": null, "function": "DO",    "to": "PB4" },
+                { "number": 2, "name": null, "function": "DO",    "to": "PA6" },
                 { "number": 3, "name": null, "function": "/WP",   "to": "+3.3V rail" },
                 { "number": 4, "name": null, "function": "GND",   "to": "Ground plane" },
                 { "number": 5, "name": null, "function": "DI",    "to": "PA7" },
