@@ -102,6 +102,9 @@
         "STM32L151C8T6-STM32xxxC8T6-Board"
     ],
     "STM32L4": [
-        "STM32L431C8T6-Green-Pill"
+        "STM32L431C8T6-Green-Pill",
+        "STM32L431CCT6-Boring_TECH-Black-Pill",
+        "STM32L433CCT6-Boring_TECH-Black-Pill",
+        "STM32L476RCT6-Generic-Development-Board"
     ]
 }

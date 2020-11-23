@@ -27,5 +27,92 @@
             "hsi": 16,
             "lsi": 40
         }
+    },
+    "STM32L431CCT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32L431CCT6",
+            "marking": "STM32L431CCT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l431cc.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 80
+        },
+        "memories": {
+            "flash": 256,
+            "sram": 64
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    },
+    "STM32L433CCT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32L433CCT6",
+            "marking": "STM32L433CCT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l433cc.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 48
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 80
+        },
+        "memories": {
+            "flash": 256,
+            "sram": 64
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
+    },
+    "STM32L476RCT6": {
+        "manufacturer": {
+            "name": "ST-Microelectronics",
+            "url": "https://www.st.com/"
+        },
+        "part": {
+            "name": "STM32L476RCT6",
+            "marking": "STM32L476RCT6",
+            "url": "https://www.st.com/en/microcontrollers-microprocessors/stm32l476rc.html"
+        },
+        "package": {
+            "abbreviation": "LQFP",
+            "name": "Low profile Quad Flat Package",
+            "pins": 64
+        },
+        "core": {
+            "name": "Arm Cortex-M4",
+            "url": "https://developer.arm.com/ip-products/processors/cortex-m/cortex-m4",
+            "clock": 80
+        },
+        "memories": {
+            "flash": 256,
+            "sram": 128
+        },
+        "oscillators": {
+            "hsi": 16,
+            "lsi": 32
+        }
     }
 }
