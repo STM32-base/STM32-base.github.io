@@ -105,7 +105,7 @@
             },
             "function": "user",
             "type": "button",
-            "to": "PE5",
+            "to": "PE3",
             "mode": "low"
         },
         {
