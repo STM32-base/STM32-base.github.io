@@ -7,6 +7,10 @@
         "origin": "China"
     },
     "microcontroller": "STM32F103C8T6",
+    "oscillators": {
+        "hse": 8,
+        "lse": 32.768
+    },
     "power": {
         "sources": [
             { "name": "Any +3.3V pin", "voltage": 3.3 },
@@ -52,7 +56,7 @@
         {
             "name": "Original schematic",
             "type": "pdf",
-            "file": "original-schematic-STM32F103C8T6_Black_Board.pdf"
+            "file": "original-schematic-STM32F103C8T6-Black_Board.pdf"
         },
         {
             "name": "PCB",
@@ -62,7 +66,7 @@
         {
             "name": "Original schematic",
             "type": "image",
-            "file": "original-schematic_STM32F103C8T6_Black_Board.png"
+            "file": "original_schematic_STM32F103C8T6_Black_Board.png"
         },
         {
             "name": "Blog post by Lup Yuen Lee",
