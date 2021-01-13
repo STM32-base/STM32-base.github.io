@@ -54,6 +54,11 @@
             "name": "Bottom view",
             "type": "picture",
             "file": "STM32F030F4P6_Baite-3.jpg"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32F030F4P6_Baite.pdf"
         }
     ],
     "inputs": [
@@ -89,7 +94,7 @@
             },
             "function": "user",
             "type": "led",
-            "to": "PA1",
+            "to": "PA4",
             "mode": "sink"
         }
     ],
