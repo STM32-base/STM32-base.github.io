@@ -52,6 +52,11 @@
             "name": "Bottom view",
             "type": "picture",
             "file": "STM32F030F4P6_STM32F030F4_Minimal_System_Board_V2.0-3.jpg"
+        },
+        {
+            "name": "Original schematic",
+            "type": "pdf",
+            "file": "original-schematic-STM32F030F4P6_STM32F030F4_Minimal_System_Board_V2.0.pdf"
         }
     ],
     "inputs": [
