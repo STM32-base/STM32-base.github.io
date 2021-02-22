@@ -56,7 +56,22 @@
             "name": "Original schematic",
             "type": "image",
             "file": "original_schematics_STM32F030F4P6_STM32_F030.png"
-        }
+        },
+        {
+            "name": "Perspective view (additional)",
+            "type": "image",
+            "file": "STM32F030F4P6_STM32_F030-1-additional.jpg"
+        },
+        {
+            "name": "Top view (additional)",
+            "type": "image",
+            "file": "STM32F030F4P6_STM32_F030-2-additional.jpg"
+        },
+        {
+            "name": "Bottom view (additional)",
+            "type": "image",
+            "file": "STM32F030F4P6_STM32_F030-3-additional.jpg"
+        },
     ],
     "inputs": [
         {
