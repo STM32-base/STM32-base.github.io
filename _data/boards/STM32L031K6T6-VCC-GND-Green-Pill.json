@@ -9,7 +9,7 @@
         "url": "http://www.vcc-gnd.com/rtd/html/STM32/quickref.html#stm32lx",
         "origin": "China"
     },
-    "microcontroller": "STM32L031K6P6",
+    "microcontroller": "STM32L031K6T6",
     "oscillators": {
         "hse": null,
         "lse": 32.768
