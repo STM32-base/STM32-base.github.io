@@ -26,4 +26,4 @@ The STM32-base project is divided over multiple Github repositories. See the [pr
 
 ## Contributing
 
-Refer to the [`CONTRIBUTING.md`](https://github.com/STM32-base/STM32-base/blob/master/CONTRIBUTING.md) file to learn more about contributing to the STM32-base project. Take a look at the [roadmap]({{ site.url }}/general/roadmap) if you are looking for things to work on.
+Refer to the [`CONTRIBUTING.md`](https://github.com/STM32-base/STM32-base/blob/master/CONTRIBUTING.md) file of the STM32-base repository to learn more about contributing to the STM32-base project. Refer to the [`CONTRIBUTING.md`](https://github.com/STM32-base/STM32-base.github.io/blob/master/CONTRIBUTING.md) file of the STM32-base project documentation repository to learn more about contributing to this documentation website.
