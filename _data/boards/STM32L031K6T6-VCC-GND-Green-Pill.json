@@ -164,7 +164,7 @@
             },
             "function": "power",
             "type": "led",
-            "to": "+5V rail",
+            "to": "5V",
             "mode": null
         },
         {
@@ -196,9 +196,9 @@
             },
             "pins": [
                 { "number": 1,  "name": "VIN", "function": null, "to": "VIN" },
-                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 2,  "name": "GND", "function": null, "to": "GND" },
                 { "number": 3,  "name": "RST", "function": null, "to": "NRST" },
-                { "number": 4,  "name": "5V",  "function": null, "to": "+5V rail" },
+                { "number": 4,  "name": "5V",  "function": null, "to": "5V" },
                 { "number": 5,  "name": "A2",  "function": null, "to": "PA2" },
                 { "number": 6,  "name": "A7",  "function": null, "to": "PA7" },
                 { "number": 7,  "name": "A6",  "function": null, "to": "PA6" },
@@ -208,7 +208,7 @@
                 { "number": 11, "name": "A1",  "function": null, "to": "PA1" },
                 { "number": 12, "name": "A0",  "function": null, "to": "PA0" },
                 { "number": 13, "name": "RE",  "function": null, "to": "AREF" },
-                { "number": 14, "name": "3V3", "function": null, "to": "+3.3V rail" },
+                { "number": 14, "name": "3V3", "function": null, "to": "3V3" },
                 { "number": 15, "name": "B3",  "function": null, "to": "PB3" }
             ]
         },
@@ -230,7 +230,7 @@
                 { "number": 1,  "name": "A9",  "function": null, "to": "PA9" },
                 { "number": 2,  "name": "A10", "function": null, "to": "PA10" },
                 { "number": 3,  "name": "RST", "function": null, "to": "NRST" },
-                { "number": 4,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 4,  "name": "GND", "function": null, "to": "GND" },
                 { "number": 5,  "name": "A12", "function": null, "to": "PA12" },
                 { "number": 6,  "name": "B0",  "function": null, "to": "PB0" },
                 { "number": 7,  "name": "B7",  "function": null, "to": "PB7" },

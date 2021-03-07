@@ -109,8 +109,8 @@
                 "size": { "length": 20, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "Vcc",   "function": null, "to": "+3.3V rail" },
-                { "number": 2,  "name": "GND",   "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "Vcc",   "function": null, "to": "3V3" },
+                { "number": 2,  "name": "GND",   "function": null, "to": "GND" },
                 { "number": 3,  "name": "Vbat",  "function": null, "to": "VBAT" },
                 { "number": 4,  "name": "14",    "function": null, "to": "PC13" },
                 { "number": 5,  "name": "13",    "function": null, "to": "PC14" },
@@ -128,7 +128,7 @@
                 { "number": 17, "name": "2",     "function": null, "to": "PB2" },
                 { "number": 18, "name": "1",     "function": null, "to": "PB10" },
                 { "number": 19, "name": "0",     "function": null, "to": "PB11" },
-                { "number": 20, "name": "vin",   "function": null, "to": "+5V input rail" }
+                { "number": 20, "name": "vin",   "function": null, "to": "VIN" }
             ]
         },
         {
@@ -146,8 +146,8 @@
                 "size": { "length": 20, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "Vcc", "function": null, "to": "+3.3V rail" },
-                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "Vcc", "function": null, "to": "3V3" },
+                { "number": 2,  "name": "GND", "function": null, "to": "GND" },
                 { "number": 3,  "name": "but", "function": null, "to": "PB8" },
                 { "number": 4,  "name": "15",  "function": null, "to": "PB7" },
                 { "number": 5,  "name": "16",  "function": null, "to": "PB6" },
@@ -183,11 +183,11 @@
                 "size": null
             },
             "pins": [
-                { "number": 1, "name": "", "function": "VCC", "to": "+5V input rail" },
+                { "number": 1, "name": "", "function": "VCC", "to": "VIN" },
                 { "number": 2, "name": "", "function": "D-",  "to": "PA11" },
                 { "number": 3, "name": "", "function": "D+",  "to": "PA12" },
                 { "number": 4, "name": "", "function": "ID",  "to": null },
-                { "number": 5, "name": "", "function": "GND", "to": "Ground plane" }
+                { "number": 5, "name": "", "function": "GND", "to": "GND" }
             ]
         }
     ],

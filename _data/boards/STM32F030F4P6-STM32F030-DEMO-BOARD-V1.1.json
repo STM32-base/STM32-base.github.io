@@ -97,7 +97,7 @@
             },
             "function": "power",
             "type": "led",
-            "to": "+3.3V rail",
+            "to": "3V3",
             "mode": null
         },
         {
@@ -128,8 +128,8 @@
                 "size": { "length": 12, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "5V",   "function": null, "to": "+5V rail" },
-                { "number": 2,  "name": "5V",   "function": null, "to": "+5V rail" },
+                { "number": 1,  "name": "5V",   "function": null, "to": "5V" },
+                { "number": 2,  "name": "5V",   "function": null, "to": "5V" },
                 { "number": 3,  "name": "PA14", "function": null, "to": "PA14" },
                 { "number": 4,  "name": "PA13", "function": null, "to": "PA13" },
                 { "number": 5,  "name": "PA10", "function": null, "to": "PA10" },
@@ -138,8 +138,8 @@
                 { "number": 8,  "name": "PA7",  "function": null, "to": "PA7" },
                 { "number": 9,  "name": "PA6",  "function": null, "to": "PA6" },
                 { "number": 10, "name": "PA5",  "function": null, "to": "PA5" },
-                { "number": 11, "name": "3V3",  "function": null, "to": "+3.3V rail" },
-                { "number": 12, "name": "3V3",  "function": null, "to": "+3.3V rail" }
+                { "number": 11, "name": "3V3",  "function": null, "to": "3V3" },
+                { "number": 12, "name": "3V3",  "function": null, "to": "3V3" }
             ]
         },
         {
@@ -167,8 +167,8 @@
                 { "number": 8,  "name": "PA2",   "function": null, "to": "PA2" },
                 { "number": 9,  "name": "PA3",   "function": null, "to": "PA3" },
                 { "number": 10, "name": "PA4",   "function": null, "to": "PA4" },
-                { "number": 11, "name": "GND",   "function": null, "to": "Ground plane" },
-                { "number": 12, "name": "GND",   "function": null, "to": "Ground plane" }
+                { "number": 11, "name": "GND",   "function": null, "to": "GND" },
+                { "number": 12, "name": "GND",   "function": null, "to": "GND" }
             ]
         },
         {
@@ -186,11 +186,11 @@
                 "size": null
             },
             "pins": [
-                { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 1, "name": null, "function": "VCC", "to": "5V" },
                 { "number": 2, "name": null, "function": "D-",  "to": null },
                 { "number": 3, "name": null, "function": "D+",  "to": null },
                 { "number": 4, "name": null, "function": "ID",  "to": null },
-                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+                { "number": 5, "name": null, "function": "GND", "to": "GND" }
             ]
         },
         {
@@ -208,10 +208,10 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1, "name": "3V3", "function": "VCC",   "to": "+3.3V rail" },
+                { "number": 1, "name": "3V3", "function": "VCC",   "to": "3V3" },
                 { "number": 2, "name": "DIO", "function": "SWDIO", "to": "PA13" },
                 { "number": 3, "name": "CLK", "function": "SWCLK", "to": "PA14" },
-                { "number": 4, "name": "GND", "function": "GND",   "to": "Ground plane" }
+                { "number": 4, "name": "GND", "function": "GND",   "to": "GND" }
             ]
         },
         {
@@ -229,8 +229,8 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1, "name": "3V3", "function": null, "to": "+3.3V rail" },
-                { "number": 2, "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 1, "name": "3V3", "function": null, "to": "3V3" },
+                { "number": 2, "name": "GND", "function": null, "to": "GND" },
                 { "number": 3, "name": "TXD", "function": null, "to": "PA9" },
                 { "number": 4, "name": "RXD", "function": null, "to": "PA10" }
             ]

@@ -104,7 +104,7 @@
             },
             "function": "power",
             "type": "led",
-            "to": "+3.3V rail",
+            "to": "3V3",
             "mode": null
         },
         {
@@ -135,8 +135,8 @@
                 "size": { "length": 12, "width": 2 }
             },
             "pins": [
-                { "number": 1,  "name": "3.3V", "function": null, "to": "+3.3V rail" },
-                { "number": 2,  "name": "GND",  "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "3.3V", "function": null, "to": "3V3" },
+                { "number": 2,  "name": "GND",  "function": null, "to": "GND" },
                 { "number": 3,  "name": "PB05", "function": null, "to": "PB5" },
                 { "number": 4,  "name": "PB06", "function": null, "to": "PB6" },
                 { "number": 5,  "name": "PB07", "function": null, "to": "PB7" },
@@ -154,11 +154,11 @@
                 { "number": 17, "name": "PA06", "function": null, "to": "PA6" },
                 { "number": 18, "name": "PA07", "function": null, "to": "PA7" },
                 { "number": 19, "name": "PB00", "function": null, "to": "PB0" },
-                { "number": 20, "name": "GND",  "function": null, "to": "Ground plane" },
-                { "number": 21, "name": "GND",  "function": null, "to": "Ground plane" },
-                { "number": 22, "name": "3.3V", "function": null, "to": "+3.3V rail" },
-                { "number": 23, "name": "+5V",  "function": null, "to": "+5V rail" },
-                { "number": 24, "name": "+5V",  "function": null, "to": "+5V rail" }
+                { "number": 20, "name": "GND",  "function": null, "to": "GND" },
+                { "number": 21, "name": "GND",  "function": null, "to": "GND" },
+                { "number": 22, "name": "3.3V", "function": null, "to": "3V3" },
+                { "number": 23, "name": "+5V",  "function": null, "to": "5V" },
+                { "number": 24, "name": "+5V",  "function": null, "to": "5V" }
             ]
         },
         {
@@ -177,7 +177,7 @@
             },
             "pins": [
                 { "number": 1,  "name": "LED",  "function": null, "to": "LED D2" },
-                { "number": 2,  "name": "GND",  "function": null, "to": "Ground plane" },
+                { "number": 2,  "name": "GND",  "function": null, "to": "GND" },
                 { "number": 3,  "name": "PB04", "function": null, "to": "PB4" },
                 { "number": 4,  "name": "PB03", "function": null, "to": "PB3" },
                 { "number": 5,  "name": "PA15", "function": null, "to": "PA15" },
@@ -196,10 +196,10 @@
                 { "number": 18, "name": "PB10", "function": null, "to": "PB10" },
                 { "number": 19, "name": "PB02", "function": null, "to": "PB2" },
                 { "number": 20, "name": "PB01", "function": null, "to": "PB1" },
-                { "number": 21, "name": "GND",  "function": null, "to": "Ground plane" },
-                { "number": 22, "name": "GND",  "function": null, "to": "Ground plane" },
-                { "number": 23, "name": "3.3V", "function": null, "to": "+3.3V rail" },
-                { "number": 24, "name": "3.3V", "function": null, "to": "+3.3V rail" }
+                { "number": 21, "name": "GND",  "function": null, "to": "GND" },
+                { "number": 22, "name": "GND",  "function": null, "to": "GND" },
+                { "number": 23, "name": "3.3V", "function": null, "to": "3V3" },
+                { "number": 24, "name": "3.3V", "function": null, "to": "3V3" }
             ]
         },
         {
@@ -217,11 +217,11 @@
                 "size": null
             },
             "pins": [
-                { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 1, "name": null, "function": "VCC", "to": "5V" },
                 { "number": 2, "name": null, "function": "D-",  "to": "PA11" },
                 { "number": 3, "name": null, "function": "D+",  "to": "PA12" },
                 { "number": 4, "name": null, "function": "ID",  "to": null },
-                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+                { "number": 5, "name": null, "function": "GND", "to": "GND" }
             ]
         },
         {
@@ -239,26 +239,26 @@
                 "size": { "length": 10, "width": 2 }
             },
             "pins": [
-                { "number": 1,  "name": null, "function": "VCC",          "to": "+3.3V rail" },
-                { "number": 2,  "name": null, "function": "VCC",          "to": "+3.3V rail" },
+                { "number": 1,  "name": null, "function": "VCC",          "to": "3V3" },
+                { "number": 2,  "name": null, "function": "VCC",          "to": "3V3" },
                 { "number": 3,  "name": null, "function": "TRST",         "to": "PB4" },
-                { "number": 4,  "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 4,  "name": null, "function": "GND",          "to": "GND" },
                 { "number": 5,  "name": null, "function": "TDI",          "to": "PA15" },
-                { "number": 6,  "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 6,  "name": null, "function": "GND",          "to": "GND" },
                 { "number": 7,  "name": null, "function": "TMS / SWDIO",  "to": "PA13" },
-                { "number": 8,  "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 8,  "name": null, "function": "GND",          "to": "GND" },
                 { "number": 9,  "name": null, "function": "TCLK / SWCLK", "to": "PA14" },
-                { "number": 10, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 10, "name": null, "function": "GND",          "to": "GND" },
                 { "number": 11, "name": null, "function": "RTCK",         "to": null },
-                { "number": 12, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 12, "name": null, "function": "GND",          "to": "GND" },
                 { "number": 13, "name": null, "function": "TDO / SWO",    "to": "PB3" },
-                { "number": 14, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 14, "name": null, "function": "GND",          "to": "GND" },
                 { "number": 15, "name": null, "function": "RESET",        "to": "NRST" },
-                { "number": 16, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 16, "name": null, "function": "GND",          "to": "GND" },
                 { "number": 17, "name": null, "function": "N.C.",         "to": null },
-                { "number": 18, "name": null, "function": "GND",          "to": "Ground plane" },
+                { "number": 18, "name": null, "function": "GND",          "to": "GND" },
                 { "number": 19, "name": null, "function": "N.C.",         "to": null },
-                { "number": 20, "name": null, "function": "GND",          "to": "Ground plane" }
+                { "number": 20, "name": null, "function": "GND",          "to": "GND" }
             ]
         },
         {
@@ -276,10 +276,10 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "3.3V", "function": "VCC",   "to": "+3.3V rail" },
+                { "number": 1,  "name": "3.3V", "function": "VCC",   "to": "3V3" },
                 { "number": 2,  "name": "TMS",  "function": "SWDIO", "to": "PA13" },
                 { "number": 3,  "name": "TCK",  "function": "SWCLK", "to": "PA14" },
-                { "number": 4,  "name": "GND",  "function": "GND",   "to": "Ground plane" }
+                { "number": 4,  "name": "GND",  "function": "GND",   "to": "GND" }
             ]
         },
         {
@@ -297,13 +297,13 @@
                 "size": { "length": 4, "width": 2 }
             },
             "pins": [
-                { "number": 1, "name": "+5V",  "function": null, "to": "+5V rail" },
+                { "number": 1, "name": "+5V",  "function": null, "to": "5V" },
                 { "number": 2, "name": "TXD",  "function": null, "to": "PA9" },
-                { "number": 3, "name": "3.3V", "function": null, "to": "+3.3V rail" },
+                { "number": 3, "name": "3.3V", "function": null, "to": "3V3" },
                 { "number": 4, "name": "RXD",  "function": null, "to": "PA10" },
                 { "number": 5, "name": "BT1",  "function": null, "to": "PB2" },
                 { "number": 6, "name": "BT0",  "function": null, "to": "BOOT0" },
-                { "number": 7, "name": "GND",  "function": null, "to": "Ground plane" },
+                { "number": 7, "name": "GND",  "function": null, "to": "GND" },
                 { "number": 8, "name": "RST",  "function": null, "to": "NRST" }
             ]
         },
@@ -322,10 +322,10 @@
                 "size": { "length": 2, "width": 2 }
             },
             "pins": [
-                { "number": 1, "name": "3.3V", "function": null, "to": "+3.3V rail" },
-                { "number": 2, "name": "GND",  "function": null, "to": "Ground plane" },
-                { "number": 3, "name": "3.3V", "function": null, "to": "+3.3V rail" },
-                { "number": 4, "name": "GND",  "function": null, "to": "Ground plane" }
+                { "number": 1, "name": "3.3V", "function": null, "to": "3V3" },
+                { "number": 2, "name": "GND",  "function": null, "to": "GND" },
+                { "number": 3, "name": "3.3V", "function": null, "to": "3V3" },
+                { "number": 4, "name": "GND",  "function": null, "to": "GND" }
             ]
         }
     ],

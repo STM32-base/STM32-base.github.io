@@ -49,6 +49,19 @@
         "image": "img",
         "document": "doc",
         "pdf": "pdf"
+    },
+    "pinConnectionToFullName": {
+        "GND": "Ground plane",
+        "3V3": "+3.3V rail",
+        "5V": "+5V rail",
+        "5V-USB": "USB +5V rail",
+        "VIN": "V<sub>in</sub>",
+        "NRST": "<span class=\"active-low\">NRST</span>",
+        "VBAT": "V<sub>BAT</sub>",
+        "VDDA": "V<sub>DDA</sub>",
+        "VSSA": "V<sub>SSA</sub>",
+        "VREF+": "V<sub>REF+</sub>",
+        "VREF-": "V<sub>REF-</sub>"
     }
 }
 

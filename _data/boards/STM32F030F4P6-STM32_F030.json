@@ -71,7 +71,7 @@
             "name": "Bottom view (additional)",
             "type": "image",
             "file": "STM32F030F4P6_STM32_F030-3-additional.jpg"
-        },
+        }
     ],
     "inputs": [
         {
@@ -106,7 +106,7 @@
             },
             "function": "power",
             "type": "led",
-            "to": "+3.3V rail",
+            "to": "3V3",
             "mode": null
         },
         {
@@ -137,9 +137,9 @@
                 "size": { "length": 12, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "3V3",  "function": null, "to": "+3.3V rail" },
+                { "number": 1,  "name": "3V3",  "function": null, "to": "3V3" },
                 { "number": 2,  "name": "BT0",  "function": null, "to": "BOOT0" },
-                { "number": 3,  "name": "GND",  "function": null, "to": "Ground plane" },
+                { "number": 3,  "name": "GND",  "function": null, "to": "GND" },
                 { "number": 4,  "name": "RST",  "function": null, "to": "NRST" },
                 { "number": 5,  "name": "VDDA", "function": null, "to": "VDDA" },
                 { "number": 6,  "name": "PF0",  "function": null, "to": "PF0" },
@@ -166,10 +166,10 @@
                 "size": { "length": 12, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "5V",   "function": null, "to": "+5V rail" },
-                { "number": 2,  "name": "3V3",  "function": null, "to": "+3.3V rail" },
-                { "number": 3,  "name": "GND",  "function": null, "to": "Ground plane" },
-                { "number": 4,  "name": "GND",  "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "5V",   "function": null, "to": "5V" },
+                { "number": 2,  "name": "3V3",  "function": null, "to": "3V3" },
+                { "number": 3,  "name": "GND",  "function": null, "to": "GND" },
+                { "number": 4,  "name": "GND",  "function": null, "to": "GND" },
                 { "number": 5,  "name": "PA5",  "function": null, "to": "PA5" },
                 { "number": 6,  "name": "PA6",  "function": null, "to": "PA6" },
                 { "number": 7,  "name": "PA7",  "function": null, "to": "PA7" },
@@ -195,11 +195,11 @@
                 "size": null
             },
             "pins": [
-                { "number": 1, "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 1, "name": null, "function": "VCC", "to": "5V" },
                 { "number": 2, "name": null, "function": "D-",  "to": null },
                 { "number": 3, "name": null, "function": "D+",  "to": null },
                 { "number": 4, "name": null, "function": "ID",  "to": null },
-                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+                { "number": 5, "name": null, "function": "GND", "to": "GND" }
             ]
         },
         {
@@ -217,10 +217,10 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1, "name": "3V3", "function": "3V3", "to": "+3.3V rail" },
+                { "number": 1, "name": "3V3", "function": "3V3", "to": "3V3" },
                 { "number": 3, "name": "CLK", "function": "CLK", "to": "PA14" },
                 { "number": 2, "name": "DIO", "function": "DIO", "to": "PA13" },
-                { "number": 4, "name": "GND", "function": "GND", "to": "Ground plane" }
+                { "number": 4, "name": "GND", "function": "GND", "to": "GND" }
             ]
         }
     ],

@@ -429,7 +429,7 @@
                     </tr>
                     <tr>
                         <td>Connected to</td>
-                        <td>{{ input['to'] }}</td>
+                        <td>{{ map['pinConnectionToFullName'][input['to']] | default: input['to'] | default: 'N.C.' }}</td>
                     </tr>
                     <tr>
                         <td>Mode</td>
@@ -470,7 +470,7 @@
                     </tr>
                     <tr>
                         <td>Connected to</td>
-                        <td>{{ output['to'] }}</td>
+                        <td>{{ map['pinConnectionToFullName'][output['to']] | default: output['to'] | default: 'N.C.' }}</td>
                     </tr>
                     <tr>
                         <td>Mode</td>
@@ -546,7 +546,7 @@
                         <td>{{ pin['number'] }}</td>
                         <td>{{ pin['name'] | default: '-' }}</td>
                         <td>{{ pin['function'] | default: '-' }}</td>
-                        <td>{{ pin['to'] | default: 'N.C.' }}</td>
+                        <td>{{ map['pinConnectionToFullName'][pin['to']] | default: pin['to'] | default: 'N.C.' }}</td>
                     </tr>
                     {% endfor %}
                 </table>
@@ -630,7 +630,7 @@
                         <td>{{ pin['number'] }}</td>
                         <td>{{ pin['name'] | default: '-' }}</td>
                         <td>{{ pin['function'] | default: '-' }}</td>
-                        <td>{% if pin['activeLow'] %}<span class="active-low">{% endif %}{{ pin['to'] | default: 'N.C.' }}{% if pin['activeLow'] %}</span>{% endif %}</td>
+                        <td>{{ map['pinConnectionToFullName'][pin['to']] | default: pin['to'] | default: 'N.C.' }}</td>
                     </tr>
                     {% endfor %}
                 </table>

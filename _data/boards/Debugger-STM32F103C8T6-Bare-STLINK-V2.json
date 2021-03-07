@@ -86,10 +86,10 @@
                 { "number": 2, "name": "TXD", "function": null, "to": "PA9" },
                 { "number": 3, "name": "SWD", "function": null, "to": "PB12" },
                 { "number": 4, "name": "RXD", "function": null, "to": "PA10" },
-                { "number": 5, "name": "GND", "function": null, "to": "Ground plane" },
-                { "number": 6, "name": "GND", "function": null, "to": "Ground plane" },
-                { "number": 7, "name": "5V",  "function": null, "to": "+5V rail" },
-                { "number": 8, "name": "5V",  "function": null, "to": "+5V rail" }
+                { "number": 5, "name": "GND", "function": null, "to": "GND" },
+                { "number": 6, "name": "GND", "function": null, "to": "GND" },
+                { "number": 7, "name": "5V",  "function": null, "to": "5V" },
+                { "number": 8, "name": "5V",  "function": null, "to": "5V" }
             ]
         },
         {
@@ -107,8 +107,8 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": null, "function": "VCC",   "to": "+3.3V rail" },
-                { "number": 2,  "name": null, "function": "GND",   "to": "Ground plane" },
+                { "number": 1,  "name": null, "function": "VCC",   "to": "3V3" },
+                { "number": 2,  "name": null, "function": "GND",   "to": "GND" },
                 { "number": 3,  "name": null, "function": "SWCLK", "to": "PA14" },
                 { "number": 4,  "name": null, "function": "SWDIO", "to": "PA13" }
             ]
@@ -128,10 +128,10 @@
                 "size": null
             },
             "pins": [
-                { "number": 1,  "name": null, "function": "VCC", "to": "+5V rail" },
+                { "number": 1,  "name": null, "function": "VCC", "to": "5V" },
                 { "number": 2,  "name": null, "function": "D-",  "to": "PA11" },
                 { "number": 3,  "name": null, "function": "D+",  "to": "PA12" },
-                { "number": 4,  "name": null, "function": "GND", "to": "Ground plane" }
+                { "number": 4,  "name": null, "function": "GND", "to": "GND" }
             ]
         }
     ],

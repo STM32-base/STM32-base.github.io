@@ -100,7 +100,7 @@
             },
             "function": "power",
             "type": "led",
-            "to": "+3.3V rail",
+            "to": "3V3",
             "mode": null
         },
         {
@@ -131,16 +131,16 @@
                 "size": { "length": 10, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "3.3", "function": null, "to": "+3.3V rail" },
-                { "number": 2,  "name": "5V",  "function": null, "to": "+5V rail" },
-                { "number": 3,  "name": "G",   "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "3.3", "function": null, "to": "3V3" },
+                { "number": 2,  "name": "5V",  "function": null, "to": "5V" },
+                { "number": 3,  "name": "G",   "function": null, "to": "GND" },
                 { "number": 4,  "name": "A14", "function": null, "to": "PA14" },
                 { "number": 5,  "name": "A13", "function": null, "to": "PA13" },
                 { "number": 6,  "name": "A10", "function": null, "to": "PA10" },
                 { "number": 7,  "name": "PA9", "function": null, "to": "PA9" },
                 { "number": 8,  "name": "PB1", "function": null, "to": "PB1" },
-                { "number": 9,  "name": "G",   "function": null, "to": "Ground plane" },
-                { "number": 10, "name": "G",   "function": null, "to": "Ground plane" }
+                { "number": 9,  "name": "G",   "function": null, "to": "GND" },
+                { "number": 10, "name": "G",   "function": null, "to": "GND" }
             ]
         },
         {
@@ -185,10 +185,10 @@
                 "size": { "length": 4, "width": 1 }
             },
             "pins": [
-                { "number": 1, "name": "V", "function": "VCC",   "to": "+3.3V rail" },
+                { "number": 1, "name": "V", "function": "VCC",   "to": "3V3" },
                 { "number": 2, "name": "D", "function": "SWDIO", "to": "PA13" },
                 { "number": 3, "name": "C", "function": "SWCLK", "to": "PA14" },
-                { "number": 4, "name": "G", "function": "GND",   "to": "Ground plane" }
+                { "number": 4, "name": "G", "function": "GND",   "to": "GND" }
             ]
         },
         {
@@ -206,11 +206,11 @@
                 "size": null
             },
             "pins": [
-                { "number": 1, "name": null, "function": "VCC", "to": "+3.3V rail" },
+                { "number": 1, "name": null, "function": "VCC", "to": "3V3" },
                 { "number": 2, "name": null, "function": "D-",  "to": null },
                 { "number": 3, "name": null, "function": "D+",  "to": null },
-                { "number": 4, "name": null, "function": "ID",  "to": "Ground plane" },
-                { "number": 5, "name": null, "function": "GND", "to": "Ground plane" }
+                { "number": 4, "name": null, "function": "ID",  "to": "GND" },
+                { "number": 5, "name": null, "function": "GND", "to": "GND" }
             ]
         }
     ],

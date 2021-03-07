@@ -109,7 +109,7 @@
             },
             "function": "power",
             "type": "led",
-            "to": "+3.3V rail",
+            "to": "3V3",
             "mode": null
         },
         {
@@ -140,8 +140,8 @@
                 "size": { "length": 8, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "+5V", "function": null, "to": "+5V rail" },
-                { "number": 2,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "+5V", "function": null, "to": "5V" },
+                { "number": 2,  "name": "GND", "function": null, "to": "GND" },
                 { "number": 3,  "name": "D4",  "function": null, "to": "PA4" },
                 { "number": 4,  "name": "D3",  "function": null, "to": "PA3" },
                 { "number": 5,  "name": "D2",  "function": null, "to": "PA2" },
@@ -165,9 +165,9 @@
                 "size": { "length": 8, "width": 1 }
             },
             "pins": [
-                { "number": 1,  "name": "+5V", "function": null, "to": "+5V rail" },
-                { "number": 2,  "name": "3.3", "function": null, "to": "+3.3V rail" },
-                { "number": 3,  "name": "GND", "function": null, "to": "Ground plane" },
+                { "number": 1,  "name": "+5V", "function": null, "to": "5V" },
+                { "number": 2,  "name": "3.3", "function": null, "to": "3V3" },
+                { "number": 3,  "name": "GND", "function": null, "to": "GND" },
                 { "number": 4,  "name": "UTX", "function": null, "to": "PB14" },
                 { "number": 5,  "name": "URX", "function": null, "to": "PB15" },
                 { "number": 6,  "name": "RST", "function": null, "to": "NRST" },
@@ -191,7 +191,7 @@
             },
             "pins": [
                 { "number": 1, "name": "VIN", "function": null, "to": "+5V rail via diode" },
-                { "number": 2, "name": "GND", "function": null, "to": "Ground plane" }
+                { "number": 2, "name": "GND", "function": null, "to": "GND" }
             ]
         }
     ],
@@ -215,8 +215,8 @@
                 { "number": 9,  "name": null, "function": "AIO0",     "to": null },
                 { "number": 10, "name": null, "function": "AIO1",     "to": null },
                 { "number": 11, "name": null, "function": "RESET",    "to": "PA14" },
-                { "number": 12, "name": null, "function": "3.3V",     "to": "+3.3V rail" },
-                { "number": 13, "name": null, "function": "GND",      "to": "Ground plane" },
+                { "number": 12, "name": null, "function": "3.3V",     "to": "3V3" },
+                { "number": 13, "name": null, "function": "GND",      "to": "GND" },
                 { "number": 14, "name": null, "function": "NC",       "to": null },
                 { "number": 15, "name": null, "function": "USB D-",   "to": null },
                 { "number": 16, "name": null, "function": "CSB",      "to": null },
@@ -224,14 +224,14 @@
                 { "number": 18, "name": null, "function": "MISO",     "to": null },
                 { "number": 19, "name": null, "function": "CLK",      "to": null },
                 { "number": 20, "name": null, "function": "USB D+",   "to": null },
-                { "number": 21, "name": null, "function": "GND",      "to": "Ground plane" },
-                { "number": 22, "name": null, "function": "GND",      "to": "Ground plane" },
+                { "number": 21, "name": null, "function": "GND",      "to": "GND" },
+                { "number": 22, "name": null, "function": "GND",      "to": "GND" },
                 { "number": 23, "name": null, "function": "PIO0",     "to": null },
                 { "number": 24, "name": null, "function": "PIO1",     "to": null },
                 { "number": 25, "name": null, "function": "PIO2",     "to": "Bluetooth module LED" },
                 { "number": 26, "name": null, "function": "PIO3",     "to": "PB0" },
                 { "number": 27, "name": null, "function": "PIO4",     "to": "PB1" },
-                { "number": 28, "name": null, "function": "PIO5",     "to": "Ground plane" },
+                { "number": 28, "name": null, "function": "PIO5",     "to": "GND" },
                 { "number": 29, "name": null, "function": "PIO6",     "to": "PB2" },
                 { "number": 30, "name": null, "function": "PIO7",     "to": null },
                 { "number": 31, "name": null, "function": "PIO8",     "to": null },
