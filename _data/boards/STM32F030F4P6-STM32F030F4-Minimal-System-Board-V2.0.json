@@ -115,7 +115,7 @@
             "function": "user",
             "type": "led",
             "to": "PB1",
-            "mode": "source"
+            "mode": "sink"
         }
     ],
     "connectors": [
