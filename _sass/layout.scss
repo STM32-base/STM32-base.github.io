@@ -202,3 +202,20 @@ body {
         min-width: 8rem;
     }
 }
+
+.note {
+    font-size: 1.125rem;
+    margin: 1rem;
+    padding: 1rem .5rem;
+
+    i {
+        margin: 0 1rem;
+        vertical-align: baseline;
+    }
+}
+
+.note-info {
+    background-color: $color-note-info-background;
+    color: $color-note-info-text;
+    border-left: .25rem solid $color-note-info-text;
+}
