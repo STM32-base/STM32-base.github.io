@@ -5,19 +5,19 @@ title: "Getting Started with PlatformIO"
 # {{ page.title }}
 
 
-Welcome to an introductory guide on taking the first steps with programming the STM32 microcontrollers within the PlatformIO ecosystem. The goal of this tutorial is to demonstrate how simple it is to set up PlatformIO with Visual Studio Code and use it to compile, upload, and debug STM32Cube-based application on the `STM32 Nucleo-F401RE` board.
+This guide will help you take the first steps with programming STM32 microcontrollers using the PlatformIO ecosystem. The goal of this guide is to show how simple it is to set up [PlatformIO](https://platformio.org/?utm_source=stm32-base) with [Visual Studio Code](https://code.visualstudio.com/) and use it to compile, upload, and debug STM32Cube-based application on the [`STM32 Nucleo-F401RE` board](https://www.st.com/en/evaluation-tools/nucleo-f401re.html).
 
 ## What is PlatformIO?
 
-[PlatformIO](https://platformio.org/?utm_source=stm32-base) is a professional collaborative platform for embedded development that includes lots of instruments for the most common development tasks. It has out-of-the-box support for STM32 microcontrollers and allows working with low-level libraries like CMSIS, STM32Cube, and LibOpenCM3 as well as with popular high-level frameworks like Arduino, Mbed, or Zephyr without changing your usual development environment.
+PlatformIO is a professional collaborative platform for embedded development that includes lots of instruments for the most common development tasks. It has out-of-the-box support for STM32 microcontrollers and allows working with low-level libraries like CMSIS, STM32Cube, and LibOpenCM3 as well as with popular high-level frameworks like Arduino, Mbed, or Zephyr without changing your usual development environment.
 
 A detailed overview of the PlatformIO ecosystem and its philosophy can be found in [the official documentation](https://docs.platformio.org/en/latest/what-is-platformio.html).
 
 ## Installation
 
-Before diving into the development process, we need to install some required software. In this tutorial, we will use Visual Studio Code as the editor. The most up-to-date and detailed installation instructions can be found in the official [PlatformIO IDE for VSCode documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#installation).
+Some software is needed to be installed before diving into the development process. In this guide Visual Studio Code is used as the editor. The most up-to-date and detailed installation instructions can be found in the official [PlatformIO IDE for VSCode documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#installation).
 
-Once the PlatformIO IDE is ready, we can install the [ST STM32 development platform](https://docs.platformio.org/en/latest/platforms/ststm32.html). This way PlatformIO will do all the heavy lifting for us by installing everything that is needed (toolchain, framework, etc) automatically. The easiest way to install any development platform is the PlatformIO Home App:
+Once the PlatformIO IDE is ready, the [ST STM32 development platform](https://docs.platformio.org/en/latest/platforms/ststm32.html) can be installed. This way PlatformIO will do all the heavy lifting by installing everything that is needed (toolchain, framework, etc) automatically. The easiest way to install any development platform is the PlatformIO Home App:
 
 ![Getting Started with PlatformIO Installation]({{ site.url }}/assets/img/guides/platformio/platformio-install-1.png)
 {: style="text-align: center;"}
@@ -26,22 +26,21 @@ When all installation steps are completed, a dialog window will pop up to tell y
 
 ## Creating a project
 
-In the first step, we need to create a new project using the same PlatformIO Home App:
+In the first the same PlatformIO Home App is used to create a new project using :
 
 ![Getting Started with PlatformIO Home]({{ site.url }}/assets/img/guides/platformio/setting-up-project-1.png)
 {: style="text-align: center;"}
 
-
-In the next step, we need to select `ST Nucleo-F401RE` as the development board, `STM32Cube` as the framework, and a path to the project location (or use the default one):
+In the next step, `ST Nucleo-F401RE` should be selected as the development board, `STM32Cube` as the framework, and a path to the project location (or use the default one):
 
 ![Getting Started with PlatformIO Project Init]({{ site.url }}/assets/img/guides/platformio/setting-up-project-2.png)
 {: style="text-align: center;"}
 
 ##### Please note:
 
-Processing the selected project may take a considerable amount of time (PlatformIO will download and install all required packages) and after these steps, we have a fully configured project that is ready for developing code with the STM32Cube framework.
+Processing the selected project may take a considerable amount of time as PlatformIO will download and install all required packages. After these steps a fully configured project is ready for developing code with the STM32Cube framework.
 
-Now we can add some actual code to the project. Firstly, we create a new file `main.c` in the `src` folder. Right click on the src in the project window:
+Now some actual code can be added to the project. Firstly, a new file `main.c` should be created in the `src` folder. Right click on the `src` in the project window:
 
 ![Getting Started with PlatformIO New File]({{ site.url }}/assets/img/guides/platformio/setting-up-project-3.png)
 {: style="text-align: center;"}
@@ -83,23 +82,23 @@ void SysTick_Handler(void) {
 }
 ```
 
-After this step, we have a basic project that is ready for compiling and uploading.
+After this step the project is ready for compiling and uploading.
 
 ## Compiling and Uploading the Firmware
 
-Now we can build the project. To compile the final firmware we can use the following options: Build option on the `Project Tasks` menu, Build button on PlatformIO Toolbar, using Command Palette `View: Command Palette > PlatformIO: Build`, using the Task Menu `Tasks: Run Task... > PlatformIO: Build` or via the `cmd-alt-b / ctrl-alt-b` hotkeys:
+Now the project can be built. The following options are available to compile the final firmware : Build option on the `Project Tasks` menu, Build button on PlatformIO Toolbar, using Command Palette `View: Command Palette > PlatformIO: Build`, using the Task Menu `Tasks: Run Task... > PlatformIO: Build` or via the `cmd-alt-b / ctrl-alt-b` hotkeys:
 
 ![Getting Started with PlatformIO Build]({{ site.url }}/assets/img/guides/platformio/setting-up-project-4.png)
 {: style="text-align: center;"}
 
-If everything went well, we should see the successful result in the terminal window:
+If everything went well, the successful result should be printed in the terminal window:
 
 ![Getting Started with PlatformIO]({{ site.url }}/assets/img/guides/platformio/setting-up-project-5.png)
 {: style="text-align: center;"}
 
 If you see errors, please check your typing carefully and try again.
 
-To upload the firmware to the board we can use following options: Upload option on the `Project Tasks` menu, Upload button on PlatformIO Toolbar, using Command Palette `View: Command Palette > PlatformIO: Upload`, using Task Menu `Tasks: Run Task... > PlatformIO: Upload` or via the `cmd-alt-u / ctrl-alt-u` hotkeys:
+The following options can be used to upload the firmware to the board: Upload option on the `Project Tasks` menu, Upload button on PlatformIO Toolbar, using Command Palette `View: Command Palette > PlatformIO: Upload`, using Task Menu `Tasks: Run Task... > PlatformIO: Upload` or via the `cmd-alt-u / ctrl-alt-u` hotkeys:
 
 ![Getting Started with PlatformIO Upload]({{ site.url }}/assets/img/guides/platformio/setting-up-project-6.png)
 {: style="text-align: center;"}
@@ -113,19 +112,19 @@ PlatformIO offers the easiest way to debug your applications. To start a debuggi
 ![Getting Started with PlatformIO Debug Initialization]({{ site.url }}/assets/img/guides/platformio/setting-up-project-7.png)
 {: style="text-align: center;"}
 
-We need to wait some time while PlatformIO is initializing a debug session and when the first line after the `main` function is highlighted we are ready to debug:
+The initialization of a debug session will take some time and when the first line after the `main` function is highlighted the project is ready for debugging:
 
 ![Getting Started with PlatformIO Debug Session]({{ site.url }}/assets/img/guides/platformio/setting-up-project-8.png)
 {: style="text-align: center;"}
 
-We can walk through the code using control buttons, set breakpoints, see peripheral registers, add variables to the `Watch` window:
+During a debug session it's possible to step through the code using control buttons, set breakpoints, see peripheral registers, and add variables to the `Watch` window:
 
 ![Getting Started with PlatformIO Debug Features]({{ site.url }}/assets/img/guides/platformio/setting-up-project-9.png)
 {: style="text-align: center;"}
 
 ## Conclusion
 
-Now we have a project template for the `STM32 Nucleo-F401RE` board that we can use as a boilerplate for the next projects.
+This guide showed how to start developing for STM32 microcontrollers from within Visual Studio Code and the PlatformIO ecosystem. The project created throughout this guide can be used as a boilerplate for the next projects based on the `STM32 Nucleo-F401RE` board.
 
 ## Next steps
 
