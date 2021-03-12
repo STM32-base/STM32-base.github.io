@@ -2,6 +2,8 @@
 title: "Getting Started with PlatformIO"
 ---
 
+{% include note-info.html content="Note that this tutorial is written by and maintained by the PlatformIO team." %}
+
 # {{ page.title }}
 
 
