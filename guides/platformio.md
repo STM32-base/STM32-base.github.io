@@ -7,17 +7,17 @@ title: "Getting Started with PlatformIO"
 # {{ page.title }}
 
 
-This guide will help you take the first steps with programming STM32 microcontrollers using the PlatformIO ecosystem. The goal of this guide is to show how simple it is to set up [PlatformIO](https://platformio.org/?utm_source=stm32-base) with [Visual Studio Code](https://code.visualstudio.com/) and use it to compile, upload, and debug STM32Cube-based application on the [`STM32 Nucleo-F401RE` board](https://www.st.com/en/evaluation-tools/nucleo-f401re.html).
+This guide will help you take the first steps with programming STM32 microcontrollers using the PlatformIO ecosystem. The goal of this guide is to show you how simple it is to set up [PlatformIO](https://platformio.org/?utm_source=stm32-base) with [Visual Studio Code](https://code.visualstudio.com/) and use it to compile, upload, and debug STM32Cube-based application on the [`STM32 Nucleo-F401RE` board](https://www.st.com/en/evaluation-tools/nucleo-f401re.html).
 
 ## What is PlatformIO?
 
-PlatformIO is a professional collaborative platform for embedded development that includes lots of instruments for the most common development tasks. It has out-of-the-box support for STM32 microcontrollers and allows working with low-level libraries like CMSIS, STM32Cube, and LibOpenCM3 as well as with popular high-level frameworks like Arduino, Mbed, or Zephyr without changing your usual development environment.
+PlatformIO is a professional collaborative platform for embedded development that includes lots of instruments for the most common development tasks. It has out-of-the-box support for STM32 microcontrollers and allows working with low-level libraries like CMSIS, STM32Cube, and LibOpenCM3 as well as with popular high-level frameworks like Arduino, Mbed, or Zephyr without changing your development environment.
 
 A detailed overview of the PlatformIO ecosystem and its philosophy can be found in [the official documentation](https://docs.platformio.org/en/latest/what-is-platformio.html).
 
 ## Installation
 
-Some software is needed to be installed before diving into the development process. In this guide Visual Studio Code is used as the editor. The most up-to-date and detailed installation instructions can be found in the official [PlatformIO IDE for VSCode documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#installation).
+Some software needs to be installed before diving into the development process. In this guide Visual Studio Code is used as the editor. The most up-to-date and detailed installation instructions can be found in the official [PlatformIO IDE for VSCode documentation](https://docs.platformio.org/en/latest/integration/ide/vscode.html#installation).
 
 Once the PlatformIO IDE is ready, the [ST STM32 development platform](https://docs.platformio.org/en/latest/platforms/ststm32.html) can be installed. This way PlatformIO will do all the heavy lifting by installing everything that is needed (toolchain, framework, etc) automatically. The easiest way to install any development platform is the PlatformIO Home App:
 
@@ -28,7 +28,7 @@ When all installation steps are completed, a dialog window will pop up to tell y
 
 ## Creating a project
 
-In the first the same PlatformIO Home App is used to create a new project using :
+The same PlatformIO Home App is used to create a new project:
 
 ![Getting Started with PlatformIO Home]({{ site.url }}/assets/img/guides/platformio/setting-up-project-1.png)
 {: style="text-align: center;"}
@@ -88,7 +88,13 @@ After this step the project is ready for compiling and uploading.
 
 ## Compiling and Uploading the Firmware
 
-Now the project can be built. The following options are available to compile the final firmware : Build option on the `Project Tasks` menu, Build button on PlatformIO Toolbar, using Command Palette `View: Command Palette > PlatformIO: Build`, using the Task Menu `Tasks: Run Task... > PlatformIO: Build` or via the `cmd-alt-b / ctrl-alt-b` hotkeys:
+Now the project can be built. The following options are available to compile the final firmware:
+
+- Build option on the `Project Tasks` menu
+- Build button on PlatformIO Toolbar
+- Command Palette `View: Command Palette > PlatformIO: Build`
+- Task Menu `Tasks: Run Task... > PlatformIO: Build`
+- `cmd-alt-b / ctrl-alt-b` hotkeys
 
 ![Getting Started with PlatformIO Build]({{ site.url }}/assets/img/guides/platformio/setting-up-project-4.png)
 {: style="text-align: center;"}
@@ -100,7 +106,13 @@ If everything went well, the successful result should be printed in the terminal
 
 If you see errors, please check your typing carefully and try again.
 
-The following options can be used to upload the firmware to the board: Upload option on the `Project Tasks` menu, Upload button on PlatformIO Toolbar, using Command Palette `View: Command Palette > PlatformIO: Upload`, using Task Menu `Tasks: Run Task... > PlatformIO: Upload` or via the `cmd-alt-u / ctrl-alt-u` hotkeys:
+The following options can be used to upload the firmware to the board:
+
+- Upload option on the `Project Tasks` menu
+- Upload button on PlatformIO Toolbar
+- Command Palette `View: Command Palette > PlatformIO: Upload`
+- Task Menu `Tasks: Run Task... > PlatformIO: Upload`
+- `cmd-alt-u / ctrl-alt-u` hotkeys
 
 ![Getting Started with PlatformIO Upload]({{ site.url }}/assets/img/guides/platformio/setting-up-project-6.png)
 {: style="text-align: center;"}
