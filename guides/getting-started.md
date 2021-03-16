@@ -79,6 +79,7 @@ Other software discussed in this chapter can be used when you do not want to use
 Some IDEs are free, others require a licence to be bought. The IDEs listed here are potentially interesting to beginners and hobbyists since they're free. For a complete overview of available IDEs, refer to the [ST website](https://www.st.com/en/development-tools/stm32-ides.html).
 
  - [Arm Keil MDK](http://www2.keil.com/stmicroelectronics-stm32) - Free for STM32G0, STM32F0, and STM32L0 series (Windows)
+ - [PlatformIO IDE](https://platformio.org/platformio-ide?utm_source=stm32-base) - Free (Windows, Linux, macOS)
  - [STM32CubeIDE](https://www.st.com/content/st_com/en/products/development-tools/software-development-tools/stm32-software-development-tools/stm32-ides/stm32cubeide.html) - Free (Windows, Linux, macOS)
  - [Segger Embedded Studio](https://www.segger.com/products/development-tools/embedded-studio/) - Free for non-commercial use (Windows, Linux, macOS)
  - [SW4STM32](http://www.openstm32.org/HomePage) - Free (Windows, Linux, macOS)
