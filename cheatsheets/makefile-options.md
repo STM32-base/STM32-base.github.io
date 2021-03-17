@@ -38,6 +38,12 @@ _Defaults to: `../../tools/bin`_
 
 The `TOOLCHAIN_PATH` variable can be set to define a non-standard location for the toolchain. With setting this variable, it is also possible to use different versions of the toolchain for different projects. By default, this variable is set to use the tools located at the in the setup guide recommended place. To use the globally installed tools, set the `TOOLCHAIN_PATH` to undefined in your projects makefile like this: `TOOLCHAIN_PATH =`.
 
+### TOOLCHAIN_PREFIX
+
+_Defaults to: `arm-none-eabi-`_
+
+The `TOOLCHAIN_PREFIX` variable can be set to define the prefix used in toolchain application names. For example: GCC is invoked as `arm-none-eabi-gcc`. However, if you set this variable to `my-prefix-`, it will be invoked as `my-prefix-gcc`.
+
 ### BIN_FOLDER
 
 _Defaults to: `./bin`_
