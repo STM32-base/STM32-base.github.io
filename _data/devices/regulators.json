@@ -343,7 +343,7 @@
             "amperage": 0.3
         }
     },
-    "XC6204-SOT23": {
+    "XC6206-SOT23": {
         "manufacturer": {
             "name": "Torex Semiconductor LTD.",
             "url": "https://www.torexsemi.com/"

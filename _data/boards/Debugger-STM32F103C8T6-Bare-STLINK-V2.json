@@ -26,7 +26,7 @@
             "size": null
         }
     },
-    "regulator": "XC6204-SOT23",
+    "regulator": "XC6206-SOT23",
     "pcb": {
         "color": "blakc",
         "size": { "length": 28, "width": 16 },
