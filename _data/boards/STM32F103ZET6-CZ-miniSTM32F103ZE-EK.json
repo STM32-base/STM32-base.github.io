@@ -99,7 +99,7 @@
             },
             "function": "boot",
             "type": "jumper-2",
-            "to": "BOOT1",
+            "to": "PB2",
             "mode": null,
             "remarks": [
                 {
@@ -239,7 +239,7 @@
                 { "number": 44, "name": "D3",    "function": null, "to": "PD3" },
                 { "number": 45, "name": "3V3",   "function": null, "to": "3V3" },
                 { "number": 46, "name": "3V3",   "function": null, "to": "3V3" },
-                { "number": 47, "name": "BOOT1", "function": null, "to": "BOOT1" },
+                { "number": 47, "name": "BOOT1", "function": null, "to": "PB2" },
                 { "number": 48, "name": "BOOT0", "function": null, "to": "BOOT0" },
                 { "number": 49, "name": "GND",   "function": null, "to": "GND" },
                 { "number": 50, "name": "GND",   "function": null, "to": "GND" }

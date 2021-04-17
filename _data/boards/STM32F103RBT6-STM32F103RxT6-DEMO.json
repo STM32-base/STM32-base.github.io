@@ -85,7 +85,7 @@
             },
             "function": "boot",
             "type": "jumper-2",
-            "to": "BOOT1",
+            "to": "PB2",
             "mode": null
         }
     ],
