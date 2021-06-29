@@ -221,8 +221,8 @@
             },
             "pins": [
                 { "number": 1, "name": "3V3", "function": "VCC",   "to": "3V3" },
-                { "number": 2, "name": "CLK", "function": "SWCLK", "to": "PA14" },
-                { "number": 3, "name": "DIO", "function": "SWDIO", "to": "PA13" },
+                { "number": 2, "name": "DIO", "function": "SWDIO", "to": "PA13" },
+                { "number": 3, "name": "CLK", "function": "SWCLK", "to": "PA14" },
                 { "number": 4, "name": "GND", "function": "GND",   "to": "GND" }
             ]
         },
