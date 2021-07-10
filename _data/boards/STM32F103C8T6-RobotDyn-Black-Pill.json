@@ -38,7 +38,6 @@
         "mounting": "Breadboard"
     },
     "remarks": [
-        { "type": "warning", "content": "The +5V pins on this board are directly connected to the +5V pin of the USB connector. There is no protection in place. Do not power this board through USB and an external power supply at the same time." },
         { "type": "trivia", "content": "This board is an improved version of the <a href=\"https://stm32-base.org/boards/STM32F103C8T6-Blue-Pill\">Blue Pill</a>. The name of this board is derived from it." }
     ],
     "resources": [
