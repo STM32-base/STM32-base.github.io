@@ -11,7 +11,7 @@
     },
     "microcontroller": "STM32F407VET6",
     "oscillators": {
-        "hse": 8,
+        "hse": 25,
         "lse": 32.768
     },
     "power": {
