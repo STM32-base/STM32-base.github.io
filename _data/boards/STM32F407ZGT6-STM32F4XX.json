@@ -490,7 +490,7 @@
             },
             "footprint": false,
             "pins": [
-                { "number": 1, "name": null, "function": "/CS",   "to": "+3.3V rail via 10kΩ resistor" },
+                { "number": 1, "name": null, "function": "/CS",   "to": "PB14 with 10kΩ pull-up resistor" },
                 { "number": 2, "name": null, "function": "DO",    "to": "PB4" },
                 { "number": 3, "name": null, "function": "/WP",   "to": "3V3" },
                 { "number": 4, "name": null, "function": "GND",   "to": "GND" },
