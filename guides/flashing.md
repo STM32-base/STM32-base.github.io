@@ -14,6 +14,10 @@ Before flashing code on your device, there are some things to be checked first. 
 
 Each template contains a make file located at the root of the template and is called `Makefile`. This make file contains a variable called `DEVICE`. This variable should contain the name of the device you want to compile your code for. You should format the name of your device like this: `STM32____x_`, where the "_" should be replaced by characters from the actual name (uppercase!) and the "x" is fixed. There are some exceptions to this naming scheme for STM32F4 devices, see the [Device name mapping page]({{ site.url }}/cheatsheets/device-name-mapping) for more information.
 
+### Flashing tool
+
+There are different interfaces (serial, I2C, SPI, SWD, etc.) and programs you can use to flash code to your device. If you want to use [stm32flash](https://github.com/stm32duino/stm32flash), in your makefile set the variables`FLASHING_TOOL` to 'stm32flash' and `FLASHING_SERIAL_PORT` to the name of the serial port to which your device is connected.
+
 ### Connect an LED
 
 This step is optional. You should not have to do this if your board already has an LED built-in.
@@ -41,6 +45,7 @@ Most development boards come with jumpers or (DIP-)switches to set the BOOT-mode
 Before flashing your device, make sure to have done all the things on this checklist:
 
  - Make sure to change the `DEVICE` variable value in the make file to the name of your device;
+ - If you are using `stm32flash`, make sure to set the `FLASHING_TOOL` variable to that name and `FLASHING_SERIAL_PORT` to the name of your serial port;
  - Make sure to have changed the pin to "blink" if the LED on your development board is not connected to pin `PC13`;
  - Optionally, make sure to connect an LED to your development board if your development board does not have one built-in;
  - Make sure that you have properly connected the debugger to your development board;
